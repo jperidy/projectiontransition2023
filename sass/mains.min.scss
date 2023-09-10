@@ -128,20 +128,22 @@ $form-file-button-color:                $gray-600;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@font-face {
-    font-family: 'omotenashi_2regular';
-    src: url('fonts/omotenashi2-4be39-webfont.woff2') format('woff2'),
-        url('fonts/omotenashi2-4be39-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url('fonts/Roboto-Regular.eot');
-    src: local('☺'), url('fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype'), url('fonts/Roboto-Regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@layer base {
+    @font-face {
+        font-family: 'omotenashi_2regular';
+        src: url('/fonts/omotenashi2-4be39-webfont.woff2') format('woff2'),
+            url('/fonts/omotenashi2-4be39-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url('/fonts/Roboto-Regular.eot');
+        src: local('☺'), url('/fonts/Roboto-Regular.woff') format('woff'), url('/fonts/Roboto-Regular.ttf') format('truetype'), url('/fonts/Roboto-Regular.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
 }
 
 :global(body) {
@@ -153,7 +155,7 @@ $form-file-button-color:                $gray-600;
     overflow: hidden;
 }
 main {
-    background-image: url('images/fond-site2023.jpg');
+    background-image: url('/images/fond-site2023.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;

@@ -9,7 +9,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"sass": "node-sass -w --output-style compressed sass -o src ",
-		"deploy": "PORT=3000 pm2 start build/index.js --name projectionTransition2023-web",
+		"deploy": "PORT=3000 npm run build && pm2 start build/index.js --name projectionTransition2023-web",
 		"undeploy": "pm2 stop projectionTransition2023-web",
 		"restart": "npm run build && npm run undeploy && npm run deploy"
 	},
