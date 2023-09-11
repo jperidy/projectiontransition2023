@@ -16,7 +16,7 @@ export const menu = [
   },
   {
     name: "Nos partenaires",
-    url: "/",
+    url: "/partenaires",
     SUBTITLE: [],
   },
   {
