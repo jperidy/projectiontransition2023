@@ -1,7 +1,6 @@
 <script>
-// @ts-nocheck
-
-  export let navBar;
+  import { menu } from "../../config/menu";
+  import { socialNetworks } from "../../config/social-networks";
 
   const handleNavBarClick = () => {
     const collapse = document.getElementsByClassName("navbar-collapse");
@@ -11,36 +10,27 @@
   }
 </script>
 
-<!-- NavBar to display -->
-<nav class={`navbar fixed-top navbar-expand-${navBar.STYLE.expand} navbar-${navBar.STYLE.color} bg-${navBar.STYLE.theme}`}>
+<nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white">
   <div class="container-fluid">
     <a class='navbar-brand' href="/">
       <img 
         class='img-fluid' 
-        style={navBar.BRAND.LOGO.style} 
-        src={navBar.BRAND.LOGO.path} 
-        alt={navBar.BRAND.LOGO.alt}
+        style="max-width: 20vh; height:auto;" 
+        src="/logo/Logo_Principal.jpg" 
+        alt="Retour à la page d'accueil"
       />
     </a>
     <div class='mx-auto d-none d-lg-flex align-items-center'>
-      {#each navBar.SOCIAL_NETWORKS as item}
-        <div class={`fw-bold ${navBar.STYLE.SOCIAL_NETWORKS.bootstrapClass}`}>
+      {#each socialNetworks as item}
+        <div class="fw-bold">
           <a class="" target={item.target} href={item.redirect}>
             <img 
-              style={navBar.STYLE.SOCIAL_NETWORKS.style} 
+              style="max-width: 7vh;height: auto;" 
               src={item.icon} 
               alt={item.alt} 
             />
           </a>
         </div>
-        <!-- <div class="mx-3">
-          <a target={item.target} href={item.redirect}>
-            <i 
-              class={item.bootstrapClass}
-              style={navBar.STYLE.SOCIAL_NETWORKS.style}
-            ></i>
-          </a>
-        </div> -->
       {/each}
     </div>
     <button 
@@ -56,12 +46,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto align-items-center">
-        {#each navBar.TITLE as item, ind}
+        {#each menu as item, ind}
         <li class="nav-item active">
           <a 
-            class={`nav-link ${ind === navBar.TITLE.length-1 ? 'text-outremer' : navBar.STYLE.TITLE.bootstrapClass}`}
+            class={`nav-link ${ind === menu.length-1 ? 'text-outremer' : "text-outremer mx-1"}`}
             href={item.url}
-            style={navBar.STYLE.TITLE.style}
+            style="font-family: Roboto-Regular;font-size: 1.2rem;font-weight: bold;"
             aria-current="page" 
             on:click={() => handleNavBarClick()}
           >{item.name.toString()}</a>
