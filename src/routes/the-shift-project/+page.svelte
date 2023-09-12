@@ -1,4 +1,8 @@
-<div class="container">
+<script>
+  import Container from "../../ui/Container.svelte";
+</script>
+
+<Container>
   <div class="organisation">
     <img src="/the-shift-project/the-shifters.png" alt="les shifters" />
     <div class="organisation-description">
@@ -37,17 +41,9 @@
       </p>
     </div>
   </div>
-</div>
+</Container>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-top: 56px;
-    align-items: center;
-    max-width: 1000px;
-  }
   .organisation {
     display: flex;
     flex-direction: row;

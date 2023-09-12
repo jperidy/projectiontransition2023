@@ -1,7 +1,7 @@
 export const menu = [
   {
     name: "Le festival",
-    url: "/",
+    url: "/le-festival",
     SUBTITLE: [],
   },
   {
