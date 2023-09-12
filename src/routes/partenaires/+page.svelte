@@ -1,12 +1,7 @@
 <script>
-  import {
-    partenairesAssociatifs,
-    partenairesMedia,
-    partenairesPrives,
-  } from "./../../data-local/2023/partenaires.ts";
+  import { partenairesSections } from "./../../data-local/2023/partenaires";
   import SeoComponent from "../../components/SeoComponent.svelte";
   import PartenairesSection from "../../components/partenaires/PartenairesSection.svelte";
-  import { partenairesInstitutionnels } from "../../data-local/2023/partenaires";
   import Title from "../../ui/Title.svelte";
 </script>
 
@@ -16,22 +11,12 @@
     Ils nous font confiance et nous soutiennent, un grand MERCI à tous nos
     partenaires.
   </p>
-  <PartenairesSection
-    sectionTitle="Partenaires institutionnels et publics"
-    partenaires={partenairesInstitutionnels}
-  />
-  <PartenairesSection
-    sectionTitle="Partenaires privés"
-    partenaires={partenairesPrives}
-  />
-  <PartenairesSection
-    sectionTitle="Partenaires associatifs"
-    partenaires={partenairesAssociatifs}
-  />
-  <PartenairesSection
-    sectionTitle="Partenaires média"
-    partenaires={partenairesMedia}
-  />
+  {#each partenairesSections as section}
+    <PartenairesSection
+      sectionTitle={section.title}
+      partenaires={section.partenaires}
+    />
+  {/each}
 </div>
 <SeoComponent
   pageContent={{
