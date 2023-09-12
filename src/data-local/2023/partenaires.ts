@@ -29,7 +29,7 @@ export const partenairesSections = [
         logo: "axa-climate.jpg",
         url: "https://www.axaclimateschool.com/",
       },
-      { name: "ESSEC", logo: "/essec.jpg", url: "https://www.essec.edu/fr/" },
+      { name: "ESSEC", logo: "essec.jpg", url: "https://www.essec.edu/fr/" },
       {
         name: "Gobi",
         logo: "gobi.png",
