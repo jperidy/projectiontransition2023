@@ -6,17 +6,17 @@ export const bottomMenu = [
   },
   {
     name: "PRESSE",
-    url: "/pages/presse#up",
+    url: "/presse#up",
     SUBTITLE: [],
   },
   {
     name: "ARCHIVES 2020",
-    url: "/pages/archives-2020#up",
+    url: "/archives-2020#up",
     SUBTITLE: [],
   },
   {
     name: "MENTIONS LÉGALES",
-    url: "/pages/mentions-legales#up",
+    url: "/mentions-legales#up",
     SUBTITLE: [],
   },
 ];
