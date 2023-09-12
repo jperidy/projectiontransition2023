@@ -1,7 +1,7 @@
 export const bottomMenu = [
   {
     name: "QUI SOMMES-NOUS",
-    url: "/pages/the-shift-project#up",
+    url: "/the-shift-project#up",
     SUBTITLE: [],
   },
   {
