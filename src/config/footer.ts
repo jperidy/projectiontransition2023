@@ -10,11 +10,6 @@ export const bottomMenu = [
     SUBTITLE: [],
   },
   {
-    name: "ARCHIVES 2020",
-    url: "/archives-2020#up",
-    SUBTITLE: [],
-  },
-  {
     name: "MENTIONS LÉGALES",
     url: "/mentions-legales#up",
     SUBTITLE: [],
