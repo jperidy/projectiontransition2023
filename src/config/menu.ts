@@ -1,16 +1,17 @@
+import config from "../../config.json";
 export const menu = [
   {
     name: "Le festival",
     url: "/le-festival",
     SUBTITLE: [],
   },
+  // {
+  //   name: "L'équipe",
+  //   url: "/",
+  //   SUBTITLE: [],
+  // },
   {
-    name: "L'équipe",
-    url: "/",
-    SUBTITLE: [],
-  },
-  {
-    name: "Programmation 2022",
+    name: `Programmation ${config.EDITION}`,
     url: "/programmation",
     SUBTITLE: [],
   },

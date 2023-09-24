@@ -1,8 +1,11 @@
 <script>
-  import { CITIES } from "../../data-local/2022/films";
   import { city } from "../../store";
+  import config from "../../../config.json";
+  import { cities } from "../../data-local";
 
-  $: selectedCity = Object.values(CITIES).find((x) => x === $city);
+  const edition = config.EDITION;
+
+  $: selectedCity = Object.values(cities[edition]).find((x) => x === $city);
 
   let showCityMenu = false;
 </script>
@@ -19,7 +22,7 @@
     </button>
     {#if showCityMenu}
       <ul class="list-group position-absolute city-list">
-        {#each Object.values(CITIES) as item}
+        {#each Object.values(cities[edition]) as item}
           <button
             type="button"
             class="list-group-item list-group-item-action bg-white text-dark"

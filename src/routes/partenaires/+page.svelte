@@ -1,8 +1,11 @@
 <script>
-  import { partenairesSections } from "./../../data-local/2023/partenaires";
   import SeoComponent from "../../components/SeoComponent.svelte";
   import PartenairesSection from "../../components/partenaires/PartenairesSection.svelte";
   import Title from "../../ui/Title.svelte";
+  import config from "../../../config.json";
+  import { partenairesSections } from "../../data-local";
+
+  const edition = config.EDITION;
 </script>
 
 <div class="container">
@@ -11,7 +14,7 @@
     Ils nous font confiance et nous soutiennent, un grand MERCI à tous nos
     partenaires.
   </p>
-  {#each partenairesSections as section}
+  {#each partenairesSections[edition] as section}
     <PartenairesSection
       sectionTitle={section.title}
       partenaires={section.partenaires}

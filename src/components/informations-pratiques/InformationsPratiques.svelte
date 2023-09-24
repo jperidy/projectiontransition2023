@@ -1,17 +1,20 @@
 <script>
   import { city } from "../../store";
-  import { CINEMAS } from "../../data-local/2022/films";
   import SelecteCity from "../programmation/SelecteCity.svelte";
   import ContactForm from "../ContactForm.svelte";
   import MapComponent from "../MapComponent.svelte";
+  import config from "../../../config.json";
+  import { cinemas } from "../../data-local";
+
+  const edition = config.EDITION;
 
   const onlyUnique = (value, index, self) => {
     return (
       self.findIndex((selfValue) => selfValue.name === value.name) === index
     );
   };
-  $: cinemasList = Object.keys(CINEMAS)
-    .map((key) => CINEMAS[key])
+  $: cinemasList = Object.keys(cinemas[edition])
+    .map((key) => cinemas[edition][key])
     .filter((cinema) => cinema.organization === $city)
     .filter(onlyUnique);
 
@@ -32,8 +35,8 @@
     <div class="col-12 col-md-6">
       <MapComponent
         adresse={`${location.name}, ${location.address}, ${location.zip} ${location.city}`}
-        latitude={location.gps.latitude}
-        longitude={location.gps.longitude}
+        latitude={Number(location.gps.latitude)}
+        longitude={Number(location.gps.longitude)}
         mapid={`${index}`}
       />
     </div>

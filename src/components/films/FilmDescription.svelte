@@ -13,8 +13,11 @@
 
 <h1
   class="banner d-flex justify-content-center align-items-center"
-  style="background-image: url(/films/programmation/{film.image
-    .programmation});"
+  style={`background-image: ${
+    film.image.programmation
+      ? `url(/films/programmation/${film.image.programmation})`
+      : ""
+  } ;`}
 >
   {film.title}
 </h1>

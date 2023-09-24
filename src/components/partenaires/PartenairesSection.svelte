@@ -1,5 +1,11 @@
 <script>
+  /**
+   * @type {string}
+   */
   export let sectionTitle;
+  /**
+   * @type {import("../../data-local").Partenaire[]}
+   */
   export let partenaires;
 </script>
 
@@ -11,6 +17,7 @@
         <img
           src={`/partenaires/${partenaire.logo}`}
           alt={`logo ${partenaire.name}`}
+          class={`${partenaire.dark ? "dark" : ""}`}
         />
       </a>
     {/each}
@@ -34,10 +41,16 @@
   .partenaire {
     max-width: 200px;
     border-radius: 8px;
+    background-color: white;
   }
   img {
     border-radius: 8px;
     width: 200px;
     height: 200px;
+    object-fit: contain;
+  }
+
+  .dark {
+    background-color: black;
   }
 </style>
