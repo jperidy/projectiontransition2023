@@ -5,7 +5,7 @@
    */
   export let film;
   /**
-   * @type {import('../../data-local').City}
+   * @type {string?}
    */
   export let city;
 </script>
