@@ -42,7 +42,7 @@
               perPage: 3,
             },
             600: {
-              perPage: 2,
+              perPage: 1,
             },
           },
           gap: 8,
