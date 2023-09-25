@@ -2,11 +2,19 @@
   import CustomLayout from "../CustomLayout.svelte";
   import FilmSummary from "../films/FilmSummary.svelte";
 
+  /**
+   * @type {import("../../data-local").Film}
+   */
   export let film;
+  /**
+   * @type {string}
+   */
   export let city;
 
-  const getCityInformations = (film, city) =>
-    film.cities.find((item) => item.city === city);
+  const getCityInformations = (
+    /** @type {import("../../data-local").Film} */ film,
+    /** @type {string} */ city
+  ) => film.cities.find((item) => item.city === city);
 
   $: cityInformation = getCityInformations(film, city);
 </script>
@@ -50,21 +58,21 @@
     >
       <h1 class="text-white text-center text-lg-start">Résumé du film</h1>
       <p class="text-pomme">
-        Début du film : {cityInformation.moment}.
+        Début du film : {cityInformation && cityInformation.moment}.
       </p>
       <div class="border-bottom border-3 border-pomme line" />
       <p class="text-center text-lg-start">{film.summary}</p>
       <h1 class="text-white text-center text-lg-start pt-3">
-        Débat. {cityInformation.theme || film.theme}
+        Débat. {(cityInformation && cityInformation.theme) || film.theme}
       </h1>
       <p class="text-pomme">
         Début du débat :
-        {#if cityInformation.debatMoment}
+        {#if cityInformation && cityInformation.debatMoment}
           {cityInformation.debatMoment}.
         {:else}
           à venir
         {/if}
-        {#if cityInformation.animator}
+        {#if cityInformation && cityInformation.animator}
           Débat animé par {cityInformation.animator}
         {/if}
       </p>
@@ -73,19 +81,21 @@
 
       <p class="text-pomme fw-bold">Intervenants :</p>
 
-      {#each cityInformation.participants as participant}
-        {#if participant && participant.name}
-          <p class="text-white">
-            <span class="fw-bold">{participant.name.toUpperCase()} - </span>
-            <span>{participant.description}</span>
-          </p>
-        {/if}
-      {/each}
+      {#if cityInformation}
+        {#each cityInformation.participants as participant}
+          {#if participant && participant.name}
+            <p class="text-white">
+              <span class="fw-bold">{participant.name.toUpperCase()} - </span>
+              <span>{participant.description}</span>
+            </p>
+          {/if}
+        {/each}
+      {/if}
 
       <div class="border-bottom border-3 border-pomme line" />
 
       <p class="text-center text-lg-start">
-        {cityInformation.debat || film.debat}
+        {(cityInformation && cityInformation.debat) || film.debat}
       </p>
 
       <h1 class="text-white text-center text-lg-start pt-3">Bande-annonce</h1>
@@ -102,26 +112,30 @@
     <div
       class="col-12 col-lg-2 d-flex flex-column align-items-start align-items-center align-items-lg-start side-panel"
     >
-      <h2 class="text-pomme">Projection à {cityInformation.cinema.city}</h2>
-      <p class="fw-bold">{cityInformation.cinema.name}</p>
-      <p class="p-0 m-0">{cityInformation.cinema.address}</p>
+      <h2 class="text-pomme">
+        Projection à {cityInformation && cityInformation.cinema.city}
+      </h2>
+      <p class="fw-bold">{cityInformation && cityInformation.cinema.name}</p>
+      <p class="p-0 m-0">{cityInformation && cityInformation.cinema.address}</p>
       <p class="p-0 m-0">
-        {cityInformation.cinema.zip}
-        {cityInformation.cinema.city}
+        {cityInformation && cityInformation.cinema.zip}
+        {cityInformation && cityInformation.cinema.city}
       </p>
       <h3 class="text-pomme">
-        {cityInformation.day} à {cityInformation.moment}
+        {cityInformation && cityInformation.day} à {cityInformation &&
+          cityInformation.moment}
       </h3>
       <a class="text-white mt-3" href="/informations-pratiques">Plan d'accès</a>
-      {#if cityInformation.cinema.ticketingOpenDate && cityInformation.cinema.ticketingRedirection && new Date() > new Date(cityInformation.cinema.ticketingOpenDate)}
+      {#if cityInformation && cityInformation.cinema.ticketingOpenDate && cityInformation.cinema.ticketingRedirection && new Date() > new Date(cityInformation.cinema.ticketingOpenDate)}
         <button
           class="btn btn-outline-pomme rounded-0 mt-3"
           on:click={() =>
+            cityInformation &&
             window.open(cityInformation.cinema.ticketingRedirection, "_blank")}
         >
           Réserver
         </button>
-      {:else if cityInformation.cinema.ticketingMessage}
+      {:else if cityInformation && cityInformation.cinema.ticketingMessage}
         <div class="mt-3 fst-italic">
           {cityInformation.cinema.ticketingMessage}
         </div>
@@ -142,6 +156,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
     font-size: 48px;
     padding: 16px;
   }

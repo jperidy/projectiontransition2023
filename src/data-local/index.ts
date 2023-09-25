@@ -57,6 +57,21 @@ export const cinemas: Record<string, Record<string, Cinema>> = {
   "2023": CINEMAS_2023,
 };
 
+export interface City {
+  city: string;
+  day: string;
+  theme?: string;
+  moment: string;
+  debatMoment: string;
+  debat?: string;
+  animator: string;
+  participants: {
+    name: string;
+    description: string;
+  }[];
+  cinema: Cinema;
+}
+
 export interface Film {
   edition: number;
   title: string;
@@ -74,20 +89,7 @@ export interface Film {
   debat: string;
   redirect: string;
   styles: { color: string };
-  cities: {
-    city: string;
-    day: string;
-    theme?: string;
-    moment: string;
-    debatMoment: string;
-    debat?: string;
-    animator: string;
-    participants: {
-      name: string;
-      description: string;
-    }[];
-    cinema: Cinema;
-  }[];
+  cities: City[];
 }
 export const films: Record<string, Film[]> = {
   "2022": FILMS_2022,

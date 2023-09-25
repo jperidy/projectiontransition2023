@@ -4,12 +4,29 @@
   import { city } from "../../store";
   import SelecteCity from "./SelecteCity.svelte";
   import Thumbnail from "./Thumbnail.svelte";
+  import Title from "../../ui/Title.svelte";
 
   const edition = config.EDITION;
+
+  const sortByDate = (
+    /** @type {import("../../data-local").Film} */ a,
+    /** @type {import("../../data-local").Film} */ b
+  ) => {
+    const cityA = a.cities.find((item) => item.city === $city) || {
+      moment: "",
+    };
+    const cityB = b.cities.find((item) => item.city === $city) || {
+      moment: "",
+    };
+    if (cityA.moment > cityB.moment) {
+      return 1;
+    }
+    return -1;
+  };
 </script>
 
 <div class="d-flex flex-column my-5 text-center align-items-center">
-  <h1 class="text-pomme">La programmation {config.EDITION}</h1>
+  <Title>La programmation {config.EDITION}</Title>
   <SelecteCity />
 </div>
 
@@ -25,7 +42,7 @@
       <div class="row mt-1">
         {#each films[edition]
           .filter( (film) => film.cities.find((item) => item.city === $city && item.day === day) )
-          .sort((a, b) => Number(a.cities[0].moment.split("h")[0]) - Number(b.cities[0].moment.split("h")[0])) as film}
+          .sort(sortByDate) as film}
           <Thumbnail
             film={{
               ...film,

@@ -3,7 +3,7 @@ export const socialNetworks = [
     name: "Mail",
     icon: "/social-networks/MAIL.png",
     alt: "Lien vers le formulaire de contacts",
-    redirect: "/pages/informationsPratiques#contact",
+    redirect: "/informations-pratiques#contact",
     target: "",
     bootstrapClass: "bi bi-envelope",
   },

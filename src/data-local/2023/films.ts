@@ -160,6 +160,25 @@ export const CINEMAS: Record<string, Cinema> = {
     navigation:
       "https://www.google.com/maps/place/American+Cosmograph/@43.603963,1.4442191,17z/data=!3m1!4b1!4m6!3m5!1s0x12aebc9c23f36ed9:0x13cd48f5eb29ea15!8m2!3d43.603963!4d1.446794!16s%2Fg%2F11gb3grk0r?entry=ttu",
   },
+  ANGERS: {
+    name: "Pathé Angers",
+    address: "1 avenue des Droits de l'homme",
+    zip: "49100",
+    city: "Angers",
+    gps: {
+      latitude: "47.479613914702604",
+      longitude: "-0.5507840801074252",
+    },
+    access:
+      'Tram : Ligne A - arrêt "Berges de Maine". En bus : accès direct par la ligne 9 (direction Evantard) arrêt "faculté ou Berges de Maine". Accès en voiture : direct par l’autoroute Océane A11, sortie CHU / Palais des Congrès, en bordure du quai Félix Faure, à proximité de la Faculté de Droit et d’Economie Saint Serge. Parkings : Berge de Maine attenant au cinéma (1.60€ les 3h), Saint Serge (à 150m).',
+    ticketingOpenDate: "2022-10-07",
+    ticketingRedirection: "https://www.pathe.fr/cinemas/cinema-pathe-angers",
+    organization: CITIES.ANGERS,
+    phone: "+33 (0)2 41 18 57 63",
+    website: "https://www.pathe.fr/cinemas/cinema-pathe-angers",
+    navigation:
+      "https://www.google.com/maps/place/Path%C3%A9+Angers/@47.4794762,-0.5533268,17z/data=!3m2!4b1!5s0x480878e654ad009d:0x7d7af2035a8c3b4d!4m6!3m5!1s0x480878e64de14687:0x29bbb1cd4f1b4f72!8m2!3d47.4794762!4d-0.5507519!16s%2Fg%2F1tf709nj?entry=ttu",
+  },
 };
 
 export const films: Film[] = [
@@ -173,7 +192,7 @@ export const films: Film[] = [
     theme: "Modernité et écologie : quel sens donner au progrès ?",
     image: {
       summary: "2023/Les temps modernes.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Charlot est ouvrier dans une immense usine. Il resserre quotidiennement des boulons. Mais les machines, le travail à la chaîne le rendent malade, il abandonne son poste et recueille une orpheline…",
@@ -208,7 +227,7 @@ export const films: Film[] = [
     theme: "Dans quelle ville vivre demain ?",
     image: {
       summary: "2023/Gagarine.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       'Youri, 16 ans, a grandi à Gagarine, immense cité de briques rouges d’Ivry-sur-Seine, où il rêve de devenir cosmonaute. Quand il apprend qu’elle est menacée de démolition, Youri décide de rentrer en résistance. Avec la complicité de Diana, Houssam et des habitants, il se donne pour mission de sauver la cité, devenue son "vaisseau spatial".',
@@ -289,20 +308,6 @@ export const films: Film[] = [
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
-      {
-        city: CITIES.NANTES,
-        day: DAYS.VENDREDI_17_11,
-        moment: "",
-        debatMoment: "",
-        animator: "",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.NANTES,
-      },
     ],
   },
   {
@@ -315,7 +320,7 @@ export const films: Film[] = [
     theme: "Modernité et écologie : quel sens donner au progrès ?",
     image: {
       summary: "2023/2001 l'odyssée de l'espace.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "À l'aube de l'Humanité, dans le désert africain, une tribu de primates subit les assauts répétés d'une bande rivale, qui lui dispute un point d'eau. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste inédit et décisif. Brandissant un os, il passe à l'attaque et massacre ses adversaires. Le premier instrument est né.",
@@ -354,7 +359,7 @@ export const films: Film[] = [
       },
       {
         city: CITIES.BRUXELLES,
-        day: DAYS.VENDREDI_17_11,
+        day: "",
         moment: "",
         debatMoment: "",
         animator: "",
@@ -364,7 +369,7 @@ export const films: Film[] = [
             description: "",
           },
         ],
-        cinema: CINEMAS.PARIS,
+        cinema: CINEMAS.BRUXELLES,
       },
     ],
   },
@@ -378,7 +383,7 @@ export const films: Film[] = [
     theme: "L’eau, une ressource pas si commune ?",
     image: {
       summary: "2023/Même la pluie.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Sebastian, jeune réalisateur passionné et son producteur arrivent dans le décor somptueux des montagnes boliviennes pour entamer le tournage d'un film. Les budgets de production sont serrés et Costa, le producteur, se félicite de pouvoir employer des comédiens et des figurants locaux à moindre coût. Mais bientôt le tournage est interrompu par la révolte menée par l'un des principaux figurants contre le pouvoir en place qui souhaite privatiser l'accès à l'eau courante. Costa et Sebastian se trouvent malgré eux emportés dans cette lutte pour la survie d'un peuple démuni. Ils devront choisir entre soutenir la cause de la population et la poursuite de leur propre entreprise sur laquelle ils ont tout misé. Ce combat pour la justice va bouleverser leur existence.",
@@ -475,7 +480,7 @@ export const films: Film[] = [
     theme: "Transition : comment faire basculer les opinions ?",
     image: {
       summary: "2023/12 hommes.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Un jeune homme d'origine modeste est accusé du meurtre de son père et risque la peine de mort. Le jury composé de douze hommes se retire pour délibérer et procède immédiatement à un vote : onze votent coupable, or la décision doit être prise à l'unanimité. Le juré qui a voté non-coupable, sommé de se justifier, explique qu'il a un doute et que la vie d'un homme mérite quelques heures de discussion. Il s'emploie alors à les convaincre un par un.",
@@ -542,7 +547,7 @@ export const films: Film[] = [
       },
       {
         city: CITIES.BRUXELLES,
-        day: DAYS.SAMEDI_18_11,
+        day: "",
         moment: "",
         debatMoment: "",
         animator: "",
@@ -566,7 +571,7 @@ export const films: Film[] = [
     theme: "L'engagement rend-il fou ?",
     image: {
       summary: "2023/Fight Club 1.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Le narrateur, sans identité précise, vit seul, travaille seul, dort seul, mange seul ses plateaux-repas pour une personne comme beaucoup d'autres personnes seules qui connaissent la misère humaine, morale et sexuelle. C'est pourquoi il va devenir membre du Fight club, un lieu clandestin ou il va pouvoir retrouver sa virilité, l'échange et la communication. Ce club est dirigé par Tyler Durden, une sorte d'anarchiste entre gourou et philosophe qui prêche l'amour de son prochain.",
@@ -648,7 +653,7 @@ export const films: Film[] = [
     theme: "",
     image: {
       summary: "2023/Le règne animal.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Dans un monde en proie à une vague de mutations qui transforment peu à peu certains humains en animaux, François fait tout pour sauver sa femme, touchée par ce phénomène mystérieux. Alors que la région se peuple de créatures d'un nouveau genre, il embarque Émile, leur fils de 16 ans, dans une quête qui bouleversera à jamais leur existence.",
@@ -683,7 +688,7 @@ export const films: Film[] = [
     theme: "Du rêve à la réalité, comment faire société(s) demain ?",
     image: {
       summary: "2023/Captain Fantastic.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Dans les forêts reculées du nord-ouest des Etats-Unis, vivant isolé de la société, un père dévoué a consacré sa vie toute entière à faire de ses six jeunes enfants d’extraordinaires adultes.",
@@ -785,7 +790,7 @@ export const films: Film[] = [
     theme: "Comment faire entendre sa voix quand personne ne vous écoute ?",
     image: {
       summary: "2023/woman at war.jpg",
-      programmation: "",
+      programmation: "2023/empty.png",
     },
     summary:
       "Halla, la cinquantaine, déclare la guerre à l’industrie locale de l’aluminium, qui défigure son pays. Elle prend tous les risques pour protéger les Hautes Terres d’Islande… Mais la situation pourrait changer avec l’arrivée inattendue d’une petite orpheline dans sa vie…  ",

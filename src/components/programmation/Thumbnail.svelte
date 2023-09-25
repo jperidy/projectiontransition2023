@@ -1,11 +1,14 @@
 <script>
   import { goto } from "$app/navigation";
+  /**
+   * @type {import("../../data-local").Film & import("../../data-local").City}
+   */
   export let film;
 </script>
 
 <div class="wrapper col-12 col-lg-6 py-2 my-3 m-0 d-flex flex-column">
   <div class="flex-grow-1">
-    <h2 class="text-pomme">
+    <h2 class="text-primary">
       {film.moment}. {film.title} <em>de {film.author}</em>
     </h2>
     <p>
@@ -42,6 +45,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .film-wrapper {
     margin: auto auto 16px auto;

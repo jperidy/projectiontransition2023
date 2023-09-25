@@ -5,6 +5,7 @@
   import MapComponent from "../MapComponent.svelte";
   import config from "../../../config.json";
   import { cinemas } from "../../data-local";
+  import Title from "../../ui/Title.svelte";
 
   const edition = config.EDITION;
 
@@ -25,7 +26,7 @@
 </script>
 
 <div class="d-flex flex-column my-5 text-center align-items-center">
-  <h1 class="text-pomme">Informations pratiques</h1>
+  <Title>Informations pratiques</Title>
   <SelecteCity />
 </div>
 
@@ -85,7 +86,7 @@
   </div>
 {/each}
 
-<div class="mt-5">
+<div class="contact">
   <h2 id="contact">Contactez-nous</h2>
   <div class="col-12 col-md-6 mb-3 pe-4">
     <select class="form-select" on:change={selectContactHandler}>
@@ -108,5 +109,11 @@
   .external-link:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+  .contact {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 32px;
   }
 </style>

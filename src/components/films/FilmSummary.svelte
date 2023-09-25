@@ -4,6 +4,9 @@
   import Film from "./Film.svelte";
   import config from "../../../config.json";
   import { films } from "../../data-local";
+  import Title from "../../ui/Title.svelte";
+  import { Splide, SplideSlide, SplideTrack } from "@splidejs/svelte-splide";
+  import "@splidejs/svelte-splide/css";
 
   const edition = config.EDITION;
 
@@ -22,37 +25,42 @@
 
 <div>
   <CustomLayout size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
-    <h1 class="text-center text-pomme">La programmation {config.EDITION}</h1>
-    <div class="d-flex flex-wrap justify-content-center">
+    <Title>La programmation {config.EDITION}</Title>
+    <!-- <div class="d-flex flex-wrap justify-content-center">
       {#each filmList as film}
         <Film {film} {city} />
       {/each}
+    </div> -->
+    <div class="splide-container mt-3">
+      <Splide
+        aria-label="Liste des films"
+        hasTrack={false}
+        options={{
+          perPage: 5,
+          breakpoints: {
+            800: {
+              perPage: 3,
+            },
+            600: {
+              perPage: 2,
+            },
+          },
+          gap: 8,
+        }}
+      >
+        <div class="custom-wrapper">
+          <SplideTrack>
+            {#each filmList as film}
+              <SplideSlide>
+                <div class="carousel-slide">
+                  <Film {film} {city} />
+                </div>
+              </SplideSlide>
+            {/each}
+          </SplideTrack>
+        </div>
+      </Splide>
     </div>
-    <!-- <div class="mt-3">
-            <Splide 
-                aria-label="Liste des films"
-                options={{
-                    perPage: 4,
-                    breakpoints: {
-                        800: {
-                            perPage: 2,
-                        },
-                        600: {
-                            perPage: 1,
-                        }
-                    },
-                    gap: 8,
-                }}
-            >
-                {#each filmList as film}
-                    <SplideSlide>
-                        <div class="carousel-slide">
-                            <Film film={film} city={city}/>
-                        </div>
-                    </SplideSlide>
-                {/each}
-            </Splide>
-        </div> -->
   </CustomLayout>
 
   {#if !city}
@@ -72,8 +80,13 @@
     font-family: "omotenashi_2regular";
     font-size: 24px;
   }
-  /* .carousel-slide {
-        display: flex;
-        justify-content: center;
-    } */
+  .carousel-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .custom-wrapper {
+    width: 85vw;
+    max-width: 1400px;
+    margin: auto;
+  }
 </style>
