@@ -16,7 +16,7 @@
       <p>
         Projection Transition le festival de ciné-débat autour de la transition
         écologique organisé par Les Shifters, association de bénévoles du Shift
-        Project, fait son grand retour du 14 au 16 octobre prochains. A travers
+        Project, fait son grand retour du 17 au 19 novembre prochains. A travers
         films et débats, les festivaliers sont invités à se créer leur propre
         récit plein d'espoir et de nouveaux repères et imaginaires.
       </p>
@@ -31,7 +31,7 @@
         échelles à travers une programmation engagée. Découvrez la
         bande-annonce.
       </p>
-      <iframe
+      <!-- <iframe
         width="848"
         height="476"
         src="https://www.youtube.com/embed/8jyFzkIz86g"
@@ -39,7 +39,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      />
+      /> -->
     </div>
     <SidePanel
       description="Depuis toujours le cinéma s'est emparé de thèmes de société, et, pour une partie c'est une question environnementale qui était au centre de l'intrigue (...) Venez nombreux !"

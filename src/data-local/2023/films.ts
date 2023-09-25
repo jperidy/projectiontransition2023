@@ -1,11 +1,11 @@
 import type { Cinema, Film } from "..";
 
 export const CITIES = {
-  NANTES: "Nantes",
   PARIS: "Paris",
-  TOULOUSE: "Toulouse",
   ANGERS: "Angers",
   LYON: "Lyon",
+  TOULOUSE: "Toulouse",
+  NANTES: "Nantes",
   BRUXELLES: "Bruxelles",
 };
 
@@ -184,41 +184,6 @@ export const CINEMAS: Record<string, Cinema> = {
 export const films: Film[] = [
   {
     edition: 2023,
-    title: "Les Temps modernes",
-    author: "Charles Chapelin",
-    releaseDate: 1936,
-    duration: "1h27",
-    originalTitle: "Modern Times",
-    theme: "Modernité et écologie : quel sens donner au progrès ?",
-    image: {
-      summary: "2023/Les temps modernes.jpg",
-      programmation: "2023/empty.png",
-    },
-    summary:
-      "Charlot est ouvrier dans une immense usine. Il resserre quotidiennement des boulons. Mais les machines, le travail à la chaîne le rendent malade, il abandonne son poste et recueille une orpheline…",
-    trailer: "GLeDdzGUTq0",
-    debat: "",
-    redirect: "/films/les-temps-modernes",
-    styles: { color: "text-dark" },
-    cities: [
-      {
-        city: CITIES.TOULOUSE,
-        day: DAYS.SAMEDI_18_11,
-        moment: "15h45",
-        debatMoment: "17h15",
-        animator: "",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.TOULOUSE_AMERICAN,
-      },
-    ],
-  },
-  {
-    edition: 2023,
     title: "Gagarine",
     author: "Fanny Liatard / Jérémy Trouilh",
     releaseDate: 2021,
@@ -227,7 +192,7 @@ export const films: Film[] = [
     theme: "Dans quelle ville vivre demain ?",
     image: {
       summary: "2023/Gagarine.jpg",
-      programmation: "2023/empty.png",
+      programmation: "2023/Gagarine.webp",
     },
     summary:
       'Youri, 16 ans, a grandi à Gagarine, immense cité de briques rouges d’Ivry-sur-Seine, où il rêve de devenir cosmonaute. Quand il apprend qu’elle est menacée de démolition, Youri décide de rentrer en résistance. Avec la complicité de Diana, Houssam et des habitants, il se donne pour mission de sauver la cité, devenue son "vaisseau spatial".',
@@ -320,7 +285,7 @@ export const films: Film[] = [
     theme: "Modernité et écologie : quel sens donner au progrès ?",
     image: {
       summary: "2023/2001 l'odyssée de l'espace.jpg",
-      programmation: "2023/empty.png",
+      programmation: "2023/2001-1.webp",
     },
     summary:
       "À l'aube de l'Humanité, dans le désert africain, une tribu de primates subit les assauts répétés d'une bande rivale, qui lui dispute un point d'eau. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste inédit et décisif. Brandissant un os, il passe à l'attaque et massacre ses adversaires. Le premier instrument est né.",
@@ -375,103 +340,6 @@ export const films: Film[] = [
   },
   {
     edition: 2023,
-    title: "Même la pluie",
-    author: "Icíar Bollaín",
-    releaseDate: 2010,
-    duration: "1h43",
-    originalTitle: "También la lluvia",
-    theme: "L’eau, une ressource pas si commune ?",
-    image: {
-      summary: "2023/Même la pluie.jpg",
-      programmation: "2023/empty.png",
-    },
-    summary:
-      "Sebastian, jeune réalisateur passionné et son producteur arrivent dans le décor somptueux des montagnes boliviennes pour entamer le tournage d'un film. Les budgets de production sont serrés et Costa, le producteur, se félicite de pouvoir employer des comédiens et des figurants locaux à moindre coût. Mais bientôt le tournage est interrompu par la révolte menée par l'un des principaux figurants contre le pouvoir en place qui souhaite privatiser l'accès à l'eau courante. Costa et Sebastian se trouvent malgré eux emportés dans cette lutte pour la survie d'un peuple démuni. Ils devront choisir entre soutenir la cause de la population et la poursuite de leur propre entreprise sur laquelle ils ont tout misé. Ce combat pour la justice va bouleverser leur existence.",
-    trailer: "jX-X4hgbycw",
-    debat: "",
-    redirect: "/films/meme-la-pluie",
-    styles: { color: "text-dark" },
-    cities: [
-      {
-        city: CITIES.PARIS,
-        day: DAYS.SAMEDI_18_11,
-        moment: "10h15",
-        debatMoment: "12h00",
-        animator: "Audrey boehly",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.PARIS,
-      },
-      {
-        city: CITIES.ANGERS,
-        day: DAYS.DIMANCHE_19_11,
-        moment: "19h00",
-        debatMoment: "20h45",
-        animator: "Audrey boehly",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.ANGERS,
-      },
-      {
-        city: CITIES.LYON,
-        day: DAYS.SAMEDI_18_11,
-        moment: "18h00",
-        debatMoment: "19h50",
-        animator:
-          "Valentine Ambert - Chargée de mission Dévelopement Durable chez Suez Environnement",
-        participants: [
-          {
-            name: "Sébastien LEGRAND",
-            description: "Ingénieur chef de projets au CNR",
-          },
-          {
-            name: "Nicolas ALBAN",
-            description:
-              "Directeur délégation de Lyon à l'Agence de l'eau Rhone Mediterranée Corse",
-          },
-        ],
-        cinema: CINEMAS.LYON_BELLECOURT,
-      },
-      {
-        city: CITIES.TOULOUSE,
-        day: DAYS.DIMANCHE_19_11,
-        moment: "11h00",
-        debatMoment: "12h45",
-        animator: "",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
-      },
-      {
-        city: CITIES.BRUXELLES,
-        day: "",
-        moment: "1h43",
-        debatMoment: "",
-        animator: "",
-        participants: [
-          {
-            name: "Jean-Marc Jancovici",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.PARIS,
-      },
-    ],
-  },
-  {
-    edition: 2023,
     title: "12 Hommes en colère",
     author: "Sidney Lumet",
     releaseDate: 1957,
@@ -479,8 +347,9 @@ export const films: Film[] = [
     originalTitle: "Twelve Angry Men",
     theme: "Transition : comment faire basculer les opinions ?",
     image: {
-      summary: "2023/12 hommes.jpg",
-      programmation: "2023/empty.png",
+      summary: "2023/12 hommes en colère.jpg",
+      programmation: "2023/12-hommes.webp",
+      programmationPosition: "center -100px",
     },
     summary:
       "Un jeune homme d'origine modeste est accusé du meurtre de son père et risque la peine de mort. Le jury composé de douze hommes se retire pour délibérer et procède immédiatement à un vote : onze votent coupable, or la décision doit être prise à l'unanimité. Le juré qui a voté non-coupable, sommé de se justifier, explique qu'il a un doute et que la vie d'un homme mérite quelques heures de discussion. Il s'emploie alors à les convaincre un par un.",
@@ -570,8 +439,9 @@ export const films: Film[] = [
     originalTitle: "Fight Club",
     theme: "L'engagement rend-il fou ?",
     image: {
-      summary: "2023/Fight Club 1.jpg",
-      programmation: "2023/empty.png",
+      summary: "2023/Fight club 2.jpg",
+      programmation: "2023/fight-club.webp",
+      programmationPosition: "center top",
     },
     summary:
       "Le narrateur, sans identité précise, vit seul, travaille seul, dort seul, mange seul ses plateaux-repas pour une personne comme beaucoup d'autres personnes seules qui connaissent la misère humaine, morale et sexuelle. C'est pourquoi il va devenir membre du Fight club, un lieu clandestin ou il va pouvoir retrouver sa virilité, l'échange et la communication. Ce club est dirigé par Tyler Durden, une sorte d'anarchiste entre gourou et philosophe qui prêche l'amour de son prochain.",
@@ -645,41 +515,6 @@ export const films: Film[] = [
   },
   {
     edition: 2023,
-    title: "Le Règne animal",
-    author: "Thomas Cailley",
-    releaseDate: 2023,
-    duration: "2h08",
-    originalTitle: "Le Règne animal",
-    theme: "",
-    image: {
-      summary: "2023/Le règne animal.jpg",
-      programmation: "2023/empty.png",
-    },
-    summary:
-      "Dans un monde en proie à une vague de mutations qui transforment peu à peu certains humains en animaux, François fait tout pour sauver sa femme, touchée par ce phénomène mystérieux. Alors que la région se peuple de créatures d'un nouveau genre, il embarque Émile, leur fils de 16 ans, dans une quête qui bouleversera à jamais leur existence.",
-    trailer: "K1pfR_IC7pU",
-    debat: "",
-    redirect: "/films/le-regne-animal",
-    styles: { color: "text-dark" },
-    cities: [
-      {
-        city: CITIES.PARIS,
-        day: DAYS.DIMANCHE_19_11,
-        moment: "10h00",
-        debatMoment: "12h15",
-        animator: "",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.PARIS,
-      },
-    ],
-  },
-  {
-    edition: 2023,
     title: "Captain Fantastic",
     author: "Matt Ross",
     releaseDate: 2016,
@@ -688,7 +523,8 @@ export const films: Film[] = [
     theme: "Du rêve à la réalité, comment faire société(s) demain ?",
     image: {
       summary: "2023/Captain Fantastic.jpg",
-      programmation: "2023/empty.png",
+      programmation: "2023/captain-fantastic.webp",
+      programmationPosition: "center top",
     },
     summary:
       "Dans les forêts reculées du nord-ouest des Etats-Unis, vivant isolé de la société, un père dévoué a consacré sa vie toute entière à faire de ses six jeunes enfants d’extraordinaires adultes.",
@@ -782,6 +618,41 @@ export const films: Film[] = [
   },
   {
     edition: 2023,
+    title: "Le Règne animal",
+    author: "Thomas Cailley",
+    releaseDate: 2023,
+    duration: "2h08",
+    originalTitle: "Le Règne animal",
+    theme: "",
+    image: {
+      summary: "2023/Le règne animal.jpg",
+      programmation: "2023/le-regne-animal.webp",
+    },
+    summary:
+      "Dans un monde en proie à une vague de mutations qui transforment peu à peu certains humains en animaux, François fait tout pour sauver sa femme, touchée par ce phénomène mystérieux. Alors que la région se peuple de créatures d'un nouveau genre, il embarque Émile, leur fils de 16 ans, dans une quête qui bouleversera à jamais leur existence.",
+    trailer: "K1pfR_IC7pU",
+    debat: "",
+    redirect: "/films/le-regne-animal",
+    styles: { color: "text-dark" },
+    cities: [
+      {
+        city: CITIES.PARIS,
+        day: DAYS.DIMANCHE_19_11,
+        moment: "10h00",
+        debatMoment: "12h15",
+        animator: "",
+        participants: [
+          {
+            name: "",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.PARIS,
+      },
+    ],
+  },
+  {
+    edition: 2023,
     title: "Woman at war",
     author: "Charles Chapelin",
     releaseDate: 2018,
@@ -790,7 +661,7 @@ export const films: Film[] = [
     theme: "Comment faire entendre sa voix quand personne ne vous écoute ?",
     image: {
       summary: "2023/woman at war.jpg",
-      programmation: "2023/empty.png",
+      programmation: "2023/woman-at-war-1.webp",
     },
     summary:
       "Halla, la cinquantaine, déclare la guerre à l’industrie locale de l’aluminium, qui défigure son pays. Elle prend tous les risques pour protéger les Hautes Terres d’Islande… Mais la situation pourrait changer avec l’arrivée inattendue d’une petite orpheline dans sa vie…  ",
@@ -827,6 +698,139 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.BRUXELLES,
+      },
+    ],
+  },
+  {
+    edition: 2023,
+    title: "Même la pluie",
+    author: "Icíar Bollaín",
+    releaseDate: 2010,
+    duration: "1h43",
+    originalTitle: "También la lluvia",
+    theme: "L’eau, une ressource pas si commune ?",
+    image: {
+      summary: "2023/Même la pluie.jpg",
+      programmation: "2023/Tambien.webp",
+      programmationPosition: "center -100px",
+    },
+    summary:
+      "Sebastian, jeune réalisateur passionné et son producteur arrivent dans le décor somptueux des montagnes boliviennes pour entamer le tournage d'un film. Les budgets de production sont serrés et Costa, le producteur, se félicite de pouvoir employer des comédiens et des figurants locaux à moindre coût. Mais bientôt le tournage est interrompu par la révolte menée par l'un des principaux figurants contre le pouvoir en place qui souhaite privatiser l'accès à l'eau courante. Costa et Sebastian se trouvent malgré eux emportés dans cette lutte pour la survie d'un peuple démuni. Ils devront choisir entre soutenir la cause de la population et la poursuite de leur propre entreprise sur laquelle ils ont tout misé. Ce combat pour la justice va bouleverser leur existence.",
+    trailer: "jX-X4hgbycw",
+    debat: "",
+    redirect: "/films/meme-la-pluie",
+    styles: { color: "text-dark" },
+    cities: [
+      {
+        city: CITIES.PARIS,
+        day: DAYS.SAMEDI_18_11,
+        moment: "10h15",
+        debatMoment: "12h00",
+        animator: "Audrey boehly",
+        participants: [
+          {
+            name: "",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.PARIS,
+      },
+      {
+        city: CITIES.ANGERS,
+        day: DAYS.DIMANCHE_19_11,
+        moment: "19h00",
+        debatMoment: "20h45",
+        animator: "Audrey boehly",
+        participants: [
+          {
+            name: "",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.ANGERS,
+      },
+      {
+        city: CITIES.LYON,
+        day: DAYS.SAMEDI_18_11,
+        moment: "18h00",
+        debatMoment: "19h50",
+        animator:
+          "Valentine Ambert - Chargée de mission Dévelopement Durable chez Suez Environnement",
+        participants: [
+          {
+            name: "Sébastien LEGRAND",
+            description: "Ingénieur chef de projets au CNR",
+          },
+          {
+            name: "Nicolas ALBAN",
+            description:
+              "Directeur délégation de Lyon à l'Agence de l'eau Rhone Mediterranée Corse",
+          },
+        ],
+        cinema: CINEMAS.LYON_BELLECOURT,
+      },
+      {
+        city: CITIES.TOULOUSE,
+        day: DAYS.DIMANCHE_19_11,
+        moment: "11h00",
+        debatMoment: "12h45",
+        animator: "",
+        participants: [
+          {
+            name: "",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
+      },
+      {
+        city: CITIES.BRUXELLES,
+        day: "",
+        moment: "1h43",
+        debatMoment: "",
+        animator: "",
+        participants: [
+          {
+            name: "Jean-Marc Jancovici",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.PARIS,
+      },
+    ],
+  },
+  {
+    edition: 2023,
+    title: "Les Temps modernes",
+    author: "Charles Chapelin",
+    releaseDate: 1936,
+    duration: "1h27",
+    originalTitle: "Modern Times",
+    theme: "Modernité et écologie : quel sens donner au progrès ?",
+    image: {
+      summary: "2023/Les temps modernes.jpg",
+      programmation: "2023/les-temps-modernes.webp",
+    },
+    summary:
+      "Charlot est ouvrier dans une immense usine. Il resserre quotidiennement des boulons. Mais les machines, le travail à la chaîne le rendent malade, il abandonne son poste et recueille une orpheline…",
+    trailer: "GLeDdzGUTq0",
+    debat: "",
+    redirect: "/films/les-temps-modernes",
+    styles: { color: "text-dark" },
+    cities: [
+      {
+        city: CITIES.TOULOUSE,
+        day: DAYS.SAMEDI_18_11,
+        moment: "15h45",
+        debatMoment: "17h15",
+        animator: "",
+        participants: [
+          {
+            name: "",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.TOULOUSE_AMERICAN,
       },
     ],
   },

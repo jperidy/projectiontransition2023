@@ -83,6 +83,7 @@ export interface Film {
   image: {
     summary: string;
     programmation: string;
+    programmationPosition?: string;
   };
   summary: string;
   trailer: string;

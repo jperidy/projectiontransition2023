@@ -25,7 +25,9 @@
     film.image.programmation
       ? `url(/films/programmation/${film.image.programmation})`
       : ""
-  } ;`}
+  }; background-position: ${
+    film.image.programmationPosition ? film.image.programmationPosition : ""
+  };`}
 >
   {film.title}
 </h1>
