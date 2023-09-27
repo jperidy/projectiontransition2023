@@ -2,6 +2,9 @@
   import { page } from "$app/stores";
   import { defaultSEO } from "../config/seo";
 
+  /**
+   * @type {{ titleSeo: string; descriptionSeo: string; titleOG: string; descriptionOG: string; homePage?: boolean; }}
+   */
   export let pageContent;
   const href = $page.url.href;
 </script>
@@ -16,27 +19,12 @@
   >
   <meta
     name="description"
-    content={`${
-      pageContent && pageContent.descriptionSeo
-        ? pageContent.descriptionSeo
-        : defaultSEO.DEFAULT_DESCRIPTION
-    }`}
+    content={pageContent && pageContent.descriptionSeo}
   />
-  <meta
-    property="og:title"
-    content={`${
-      pageContent && pageContent.titleOG
-        ? pageContent.titleOG
-        : defaultSEO.DEFAULT_OG_TITLE
-    }`}
-  />
+  <meta property="og:title" content={pageContent && pageContent.titleOG} />
   <meta
     property="og:description"
-    content={`${
-      pageContent && pageContent.descriptionOG
-        ? pageContent.descriptionOG
-        : defaultSEO.DEFAULT_OG_DESCRIPTION
-    }`}
+    content={pageContent && pageContent.descriptionOG}
   />
   <meta property="og:type" content="website" />
   <meta property="og:image" content={defaultSEO.DEFAULT_OG_IMAGE} />
@@ -48,10 +36,12 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:description"
-    content={`${
-      pageContent && pageContent.descriptionOG
-        ? pageContent.descriptionOG
-        : defaultSEO.DEFAULT_OG_DESCRIPTION
-    }`}
+    content={pageContent && pageContent.descriptionOG}
   />
+  {#if pageContent.homePage}
+    <meta
+      name="google-site-verification"
+      content="bQsBDj2jHI9Il3ch7mdAPAyFAlXtwwBn7dAEGwqTMwk"
+    />
+  {/if}
 </svelte:head>

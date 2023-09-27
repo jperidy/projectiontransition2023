@@ -11,5 +11,6 @@
     descriptionSeo: "Festival de ciné-débat pour la transition écologique",
     titleOG: "Projection Transition | 17 > 19 novembre 2023",
     descriptionOG: "Festival de ciné-débat pour la transition écologique !",
+    homePage: true,
   }}
 />
