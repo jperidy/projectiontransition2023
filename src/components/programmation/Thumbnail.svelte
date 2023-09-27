@@ -22,7 +22,7 @@
         film.image.programmation
           ? `url(films/programmation/${film.image.programmation})`
           : ""
-      };`}
+      }; background-position: ${film.image.thumbnailPosition || ""}`}
     >
       <button
         class={`btn btn-transparent film-wrapper rounded ${film.styles.color}`}

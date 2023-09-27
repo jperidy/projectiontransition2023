@@ -10,7 +10,7 @@
 </script>
 
 <div class="partenaire-container">
-  <h2>{sectionTitle}</h2>
+  <h2 class="text-center">{sectionTitle}</h2>
   <div class="logo-container">
     {#each partenaires as partenaire}
       <a class="partenaire" href={partenaire.url} target="_blank">
@@ -34,23 +34,29 @@
   .logo-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 50px;
     justify-content: center;
     padding-top: 24px;
   }
   .partenaire {
-    max-width: 200px;
+    max-width: 250px;
     border-radius: 8px;
     background-color: white;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   img {
     border-radius: 8px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
   }
 
   .dark {
     background-color: black;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 </style>

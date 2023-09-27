@@ -25,7 +25,7 @@
 
 <div>
   <CustomLayout size={{ xs: 12, sm: 12, md: 12, lg: 12, xl: 12 }}>
-    <Title>La programmation {config.EDITION}</Title>
+    <Title>La programmation {config.EDITION}{city ? ` à ${city}` : ""}</Title>
     <!-- <div class="d-flex flex-wrap justify-content-center">
       {#each filmList as film}
         <Film {film} {city} />

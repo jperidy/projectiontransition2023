@@ -2,7 +2,8 @@ import config from "../../config.json";
 export const menu = [
   {
     name: "Le festival",
-    url: "/le-festival",
+    // url: "/le-festival",
+    url: "/",
     SUBTITLE: [],
   },
   // {
@@ -27,7 +28,7 @@ export const menu = [
   },
   {
     name: "BILLETTERIE",
-    url: "/",
+    url: "/billetterie",
     SUBTITLE: [],
   },
 ];

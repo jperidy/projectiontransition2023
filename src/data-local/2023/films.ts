@@ -27,7 +27,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access:
       "Bus 29, 71 (Arenberg), Bus 38, 63, 66 (Gare Centrale), Métros 1, 5, 3, 4 (Gare Centrale, De Brouckere)",
-    ticketingOpenDate: "2022-09-30",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
       "https://galeries.be/fr/festival-projection-transition/",
     organization: CITIES.BRUXELLES,
@@ -53,7 +53,7 @@ export const CINEMAS: Record<string, Cinema> = {
         "Nous vous proposons également de trouver et/ou de proposer un covoiturage sur la communauté Ouest Go spécialement créée pour l'évènement",
       link: "https://ouestgo.fr/covoiturage-communaute/623",
     },
-    ticketingOpenDate: "2022-09-15",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
       "https://www.cinepolesud.fr/evenement/2029044-projection-transition",
     organization: CITIES.NANTES,
@@ -73,7 +73,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access:
       "M4 (Vavin), M6 (Edgard Quinet ou Montparnasse Bienvenue), M12 (Montparnasse Bienvenue), M13 (Notre-Dame-des-Champs), Bus 58, 68, 82, 91 (Vavin)",
-    ticketingOpenDate: "2022-09-15",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
       "https://www.parnassiens.com/evenement/2029152-projection-transition",
     organization: CITIES.PARIS,
@@ -93,7 +93,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access:
       'Métro ligne A ou D, arrêt "Bellecour" ; en voiture sortie centre-ville et direction Presqu\'Ile de Lyon ; parkings : République, Bellecour, Lyon Antonin Poncet.',
-    ticketingOpenDate: "2022-10-18",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection: "https://www.pathe.fr/cinemas/cinema-pathe-bellecour",
     organization: CITIES.LYON,
     phone: "",
@@ -112,7 +112,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access:
       'Métro ligne A ou D, arrêt "Bellecour" ; en voiture sortie centre-ville et direction Presqu\'Ile de Lyon ; parkings : République, Bellecour, Lyon Antonin Poncet.',
-    ticketingOpenDate: "2022-10-18",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
       "https://bm.mairie-vaulxenvelin.fr/content/mediatheque-maison-de-quartier-leonard-de-vinci-0",
     organization: CITIES.LYON,
@@ -133,7 +133,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access:
       "Métro A (Arênes) puis BUS 3 (Tournefeuille Les Chênes), Bus 63 (Mairie Tournefeuille)",
-    ticketingOpenDate: "2022-10-07",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
       "https://www.helloasso.com/associations/the-shifters/evenements/ehguxqci",
     organization: CITIES.TOULOUSE,
@@ -152,7 +152,7 @@ export const CINEMAS: Record<string, Cinema> = {
       longitude: "1.4468047320334827",
     },
     access: "",
-    ticketingOpenDate: "2022-10-07",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection: "https://www.american-cosmograph.fr/",
     organization: CITIES.TOULOUSE,
     phone: "+33 (0)5 61 50 50 43",
@@ -171,7 +171,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access:
       'Tram : Ligne A - arrêt "Berges de Maine". En bus : accès direct par la ligne 9 (direction Evantard) arrêt "faculté ou Berges de Maine". Accès en voiture : direct par l’autoroute Océane A11, sortie CHU / Palais des Congrès, en bordure du quai Félix Faure, à proximité de la Faculté de Droit et d’Economie Saint Serge. Parkings : Berge de Maine attenant au cinéma (1.60€ les 3h), Saint Serge (à 150m).',
-    ticketingOpenDate: "2022-10-07",
+    ticketingOpenDate: "2023-10-18",
     ticketingRedirection: "https://www.pathe.fr/cinemas/cinema-pathe-angers",
     organization: CITIES.ANGERS,
     phone: "+33 (0)2 41 18 57 63",
@@ -185,10 +185,10 @@ export const films: Film[] = [
   {
     edition: 2023,
     title: "Gagarine",
-    author: "Fanny Liatard / Jérémy Trouilh",
+    author: "Fanny Liatard et Jérémy Trouilh",
     releaseDate: 2021,
     duration: "1h38",
-    originalTitle: "Gagarine",
+    // originalTitle: "Gagarine",
     theme: "Dans quelle ville vivre demain ?",
     image: {
       summary: "2023/Gagarine.jpg",
@@ -277,15 +277,15 @@ export const films: Film[] = [
   },
   {
     edition: 2023,
-    title: "2001 : l'Odysée de l'espace",
+    title: "2001 : l'Odyseée de l'espace",
     author: "Stanley Kubrick",
     releaseDate: 1968,
-    duration: "1h38",
+    duration: "2h21",
     originalTitle: "2001: A Space Odyssey ",
     theme: "Modernité et écologie : quel sens donner au progrès ?",
     image: {
       summary: "2023/2001 l'odyssée de l'espace.jpg",
-      programmation: "2023/2001-1.webp",
+      programmation: "2023/2001-2.webp",
     },
     summary:
       "À l'aube de l'Humanité, dans le désert africain, une tribu de primates subit les assauts répétés d'une bande rivale, qui lui dispute un point d'eau. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste inédit et décisif. Brandissant un os, il passe à l'attaque et massacre ses adversaires. Le premier instrument est né.",
@@ -436,8 +436,7 @@ export const films: Film[] = [
     author: "David Fincher",
     releaseDate: 1999,
     duration: "2h19",
-    originalTitle: "Fight Club",
-    theme: "L'engagement rend-il fou ?",
+    theme: "L'engagement, une crise d'identité ?",
     image: {
       summary: "2023/Fight club 2.jpg",
       programmation: "2023/fight-club.webp",
@@ -519,10 +518,10 @@ export const films: Film[] = [
     author: "Matt Ross",
     releaseDate: 2016,
     duration: "1h58",
-    originalTitle: "Captain Fantastic",
     theme: "Du rêve à la réalité, comment faire société(s) demain ?",
     image: {
       summary: "2023/Captain Fantastic.jpg",
+      thumbnailPosition: "top",
       programmation: "2023/captain-fantastic.webp",
       programmationPosition: "center top",
     },
@@ -622,8 +621,7 @@ export const films: Film[] = [
     author: "Thomas Cailley",
     releaseDate: 2023,
     duration: "2h08",
-    originalTitle: "Le Règne animal",
-    theme: "",
+    theme: "Comment (re)bâtir notre lien au vivant ?",
     image: {
       summary: "2023/Le règne animal.jpg",
       programmation: "2023/le-regne-animal.webp",
@@ -654,7 +652,7 @@ export const films: Film[] = [
   {
     edition: 2023,
     title: "Woman at war",
-    author: "Charles Chapelin",
+    author: "Benedikt Erlingsson",
     releaseDate: 2018,
     duration: "1h41",
     originalTitle: "Kona fer í stríð",
@@ -703,11 +701,10 @@ export const films: Film[] = [
   },
   {
     edition: 2023,
-    title: "Même la pluie",
+    title: "También la lluvia",
     author: "Icíar Bollaín",
     releaseDate: 2010,
     duration: "1h43",
-    originalTitle: "También la lluvia",
     theme: "L’eau, une ressource pas si commune ?",
     image: {
       summary: "2023/Même la pluie.jpg",
@@ -802,11 +799,11 @@ export const films: Film[] = [
   {
     edition: 2023,
     title: "Les Temps modernes",
-    author: "Charles Chapelin",
+    author: "Charlie Chaplin",
     releaseDate: 1936,
     duration: "1h27",
     originalTitle: "Modern Times",
-    theme: "Modernité et écologie : quel sens donner au progrès ?",
+    theme: "Écologie et modernité : quel sens donner au progrès ?",
     image: {
       summary: "2023/Les temps modernes.jpg",
       programmation: "2023/les-temps-modernes.webp",

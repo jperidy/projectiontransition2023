@@ -78,10 +78,11 @@ export interface Film {
   author: string;
   releaseDate: number;
   duration: string;
-  originalTitle: string;
+  originalTitle?: string;
   theme: string;
   image: {
     summary: string;
+    thumbnailPosition?: string;
     programmation: string;
     programmationPosition?: string;
   };

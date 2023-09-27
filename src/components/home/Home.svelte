@@ -23,13 +23,27 @@
       <img src="home/feuille-jaune.png" alt="" class="img-fluid petale" />
       <h1 class="text-primary pt-3">Un monde à rebâtir</h1>
       <p>
-        Afin de faire écho au dernier rapport du GIEC alertant sur les impacts
-        croissants du dérèglement climatique et soulignant les inégalités face à
-        ceux-ci, Projection Transition portera haut et fort la thématique de la
-        justice climatique et sociale. Six films, chacun suivi d'un débat,
-        permettront de mettre l'accent sur les enjeux de justice à différentes
-        échelles à travers une programmation engagée. Découvrez la
-        bande-annonce.
+        Face à la multiplication des crises, la tentation est grande de perdre
+        espoir et de se sentir impuissant. En adaptant nos modes de vie, nous
+        pouvons changer le cours des choses, mais pour y parvenir, nous devons
+        mobiliser la société toute entière. <strong
+          >C'est ensemble que nous pouvons relever le défi de la reconstruction
+          écologique et sociale de nos sociétés. C'est ensemble que nous devons
+          imaginer, réinventer et réenchanter le monde que nous partagerons
+          demain.</strong
+        >
+      </p>
+      <p>
+        Pour nous aider à nous projeter dans cet avenir, nous avons besoin
+        d'histoires qui nourrissent notre imagination. Le cinéma possède un
+        pouvoir évocateur exceptionnel et une capacité à susciter des questions,
+        à mobiliser et à inspirer qui sont plus nécessaires que jamais pour
+        accompagner cet élan. C'est pourquoi Projection Transition s'engage à
+        semer les graines de l'action collective, de la réflexion commune et de
+        la vie en communauté. <strong
+          >Les solutions existent, et l'avenir dépend de notre capacité à
+          coopérer vers ce monde en commun.</strong
+        >
       </p>
       <!-- <iframe
         width="848"

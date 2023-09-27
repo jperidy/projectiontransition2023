@@ -9,7 +9,7 @@
 </script>
 
 <div class="container">
-  <Title>Nos partenaires 2021 & 2022</Title>
+  <Title>Nos partenaires 2023</Title>
   <p>
     Ils nous font confiance et nous soutiennent, un grand MERCI à tous nos
     partenaires.
