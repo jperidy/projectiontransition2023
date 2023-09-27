@@ -37,7 +37,7 @@
 <main>
   <Nav />
   <div class="m-0">
-    <!-- <div class="overlay">
+    <div class="overlay">
       <div class="warning bg-tangerine px-3 py-3 text-center rounded">
         <h1>
           Le festival revient du 17 au 19 novembre 2023 à Paris, Angers,
@@ -51,7 +51,7 @@
           >
         </p>
       </div>
-    </div> -->
+    </div>
     <slot />
   </div>
 </main>
