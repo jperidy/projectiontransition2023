@@ -5,7 +5,7 @@
 </script>
 
 <!-- display the footer -->
-<div class="row bg-white text-dark align-items-center">
+<div class="row bg-white text-dark align-items-center mx-0">
   <div
     class="row bg-white text-dark align-items-center px-3 py-2"
     style="min-height:15vh;"
