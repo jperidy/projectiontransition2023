@@ -6,32 +6,32 @@ export const partenairesSections: PartenaireSection[] = [
     partenaires: [
       {
         name: "Ademe",
-        logo: "2023/2023_ADEME.png",
+        logo: "2023/2023_ademe.webp",
         url: "https://www.ademe.fr/",
       },
       {
         name: "CCI Maine et Loire",
-        logo: "2023/2023_CCI Maine et Loire.png",
+        logo: "2023/2023_cci-maine-et-loire.webp",
         url: "https://www.maineetloire.cci.fr/",
       },
       {
         name: "Métropole de Lyon",
-        logo: "2023/2023_Métropole Grand Lyon.png",
+        logo: "2023/2023_metropole-grand-lyon.webp",
         url: "https://www.grandlyon.com",
       },
       {
         name: "Région Occitanie",
-        logo: "2023/2023_Région Occitanie.png",
+        logo: "2023/2023_region-occitanie.webp",
         url: "https://www.laregion.fr",
       },
       {
         name: "Vaulx en Velin",
-        logo: "2023/2023_Vaulx en velin.png",
+        logo: "2023/2023_vaulx-en-velin.webp",
         url: "https://vaulx-en-velin.net/",
       },
       {
         name: "Ville de Paris",
-        logo: "2023/2023_Ville de Paris.JPG",
+        logo: "2023/2023_ville-de-paris.webp",
         url: "https://www.paris.fr",
       },
     ],
@@ -41,198 +41,103 @@ export const partenairesSections: PartenaireSection[] = [
     partenaires: [
       {
         name: "ADECC",
-        logo: "2023/2023_ADECC.png",
+        logo: "2023/2023_adecc.webp",
         url: "https://adecc.org/",
       },
       {
         name: "ALDEV",
-        logo: "2023/2023_ALDEV.png",
+        logo: "2023/2023_aldev.webp",
         url: "https://www.angers-developpement.com/",
       },
       {
         name: "Codekraft",
-        logo: "2023/2023_CODEKRAFT+YELLOW_BR1CKS.png",
+        logo: "2023/2023_codekraft-yellow-bricks.webp",
         url: "https://codekraft.fr/",
       },
       {
         name: "Hellio",
-        logo: "2023/2023_HELLIO.png",
+        logo: "2023/2023_hellio.webp",
         url: "https://www.hellio.com/",
       },
       {
         name: "Kyoterra",
-        logo: "2023/2023_KYOTERRA.png",
+        logo: "2023/2023_kyoterra.webp",
         url: "https://kyoterra.fr/",
       },
       {
         name: "Leasétic",
-        logo: "2023/2023_LEASÉTIC.png",
+        logo: "2023/2023_leasetic.webp",
         url: "https://www.leasetic.fr/",
       },
       {
         name: "Logicités",
-        logo: "2023/2023_LOGICITÉS.png",
+        logo: "2023/2023_logicites.webp",
         url: "https://logicites.fr/",
       },
       {
         name: "Opéo",
-        logo: "2023/2023_OPÉO.png",
+        logo: "2023/2023_opeo.webp",
         url: "https://opeo-conseil.fr/",
       },
       {
         name: "Weforge",
-        logo: "2023/2023_Weforge.png",
+        logo: "2023/2023_weforge.webp",
         url: "https://www.weforge.fr/office-angers/",
       },
     ],
   },
-  // {
-  //   title: "Partenaires associatifs",
-  //   partenaires: [
-  //     {
-  //       name: "Fondation Good Planel",
-  //       logo: "good-planet.jpg",
-  //       url: "https://www.goodplanet.org/fr/",
-  //     },
-  //     {
-  //       name: "Les Halles de la transition",
-  //       logo: "les_halles_transition.png",
-  //       url: "https://www.linkedin.com/company/halles-transition/",
-  //     },
-  //     {
-  //       name: "Lycées en transition",
-  //       logo: "lycees_transition.png",
-  //       url: "https://lycees-en-transition.com/en/accueil-english/",
-  //     },
-  //     {
-  //       name: "Make sens",
-  //       logo: "make_sens.png",
-  //       url: "https://makesense.org/",
-  //     },
-  //     {
-  //       name: "Youth for good",
-  //       logo: "youth_for_good.png",
-  //       url: "https://www.instagram.com/youthforgood_/",
-  //     },
-  //   ],
-  // },
   {
     title: "Partenaires média",
     partenaires: [
       {
         name: "CUT",
-        logo: "2023/2023_CUT.png",
+        logo: "2023/2023_cut.webp",
         url: "https://www.cut-collectif.fr/",
       },
       {
         name: "Novethic",
-        logo: "2023/2023_Novethic.png",
+        logo: "2023/2023_novethic.webp",
         url: "https://www.novethic.fr/qui-sommes-nous.html",
       },
       {
         name: "Socialter",
-        logo: "2023/2023_Socialter.png",
+        logo: "2023/2023_socialter.webp",
         url: "https://www.socialter.fr/",
         dark: true,
       },
     ],
   },
-  // {
-  //   title: "Partenaires programmation",
-  //   partenaires: [
-  //     {
-  //       name: "Blutopia",
-  //       logo: "blutopia.jpg",
-  //       url: "https://blutopia.org/",
-  //     },
-  //     {
-  //       name: "Glazeo",
-  //       logo: "glazeo.jpg",
-  //       url: "https://www.glazeo.net/",
-  //     },
-  //     {
-  //       name: "Grandir",
-  //       logo: "grandir.jpg",
-  //       url: "https://grandir.fr/",
-  //     },
-  //     {
-  //       name: "La fresque océane",
-  //       logo: "la-fresque-oceane.jpg",
-  //       url: "https://www.fresqueoceane.org/",
-  //     },
-  //     {
-  //       name: "Agir pour la biodiversité",
-  //       logo: "agir.jpg",
-  //       url: "https://www.loire-atlantique.lpo.fr/",
-  //     },
-  //     {
-  //       name: "Mediacités",
-  //       logo: "mediacites.jpg",
-  //       url: "https://www.mediacites.fr/",
-  //     },
-  //     {
-  //       name: "Impact France",
-  //       logo: "impact-france.jpg",
-  //       url: "https://www.impactfrance.eco/",
-  //     },
-  //     {
-  //       name: "On air-consulting",
-  //       logo: "on-aire.jpg",
-  //       url: "https://www.onair-consulting.fr/",
-  //     },
-  //     {
-  //       name: "Océans connectés",
-  //       logo: "oceans-connectes.jpg",
-  //       url: "https://oceansconnectes.org",
-  //     },
-  //     {
-  //       name: "Seastemic",
-  //       logo: "seastemic.jpg",
-  //       url: "https://seastemic.com/",
-  //     },
-  //     {
-  //       name: "Surfrider",
-  //       logo: "surfrider.jpg",
-  //       url: "https://www.surfrider.eu/",
-  //     },
-  //     {
-  //       name: "Underthepole",
-  //       logo: "under-the-pole.jpg",
-  //       url: "https://underthepole.org/",
-  //     },
-  //   ],
-  // },
   {
     title: "Cinémas",
     partenaires: [
       {
         name: "7 Parnassiens",
-        logo: "2023/2023_7 Parnassiens.png",
+        logo: "2023/2023_7-parnassiens.webp",
         url: "https://www.parnassiens.com/",
       },
       {
         name: "Ciné Pôle Sud",
-        logo: "cine-pole-sud.jpeg",
+        logo: "2023/2023_cine-pole-sud.webp",
         url: "https://www.cinepolesud.fr/",
       },
       {
         name: "Cosmograph Toulouse",
-        logo: "2023/2023_AMERICAN COSMOGRAPH.png",
+        logo: "2023/2023_american-cosmograph.webp",
         url: "https://www.american-cosmograph.fr/",
       },
       {
         name: "Pathé Angers",
-        logo: "2023/2023_PATHÉ ANGERS.png",
+        logo: "2023/2023_pathe-angers.webp",
         url: "https://www.pathe.fr/cinemas/cinema-pathe-angers",
       },
       {
         name: "Pathé Lyon",
-        logo: "2023/2023_PATHÉ LYON.png",
+        logo: "2023/2023_pathe-lyon.webp",
         url: "https://www.pathe.fr/cinemas/cinema-pathe-bellecour",
       },
       {
         name: "Utopia",
-        logo: "utopia.jpeg",
+        logo: "2023/2023_utopia.webp",
         url: "http://www.cinemas-utopia.org/toulouse/",
       },
     ],
@@ -242,12 +147,12 @@ export const partenairesSections: PartenaireSection[] = [
     partenaires: [
       {
         name: "Les Shifters",
-        logo: "shifters.jpg",
+        logo: "2023/2023_shifters.webp",
         url: "https://docs.google.com/forms/d/e/1FAIpQLSdeJCuwuSlATkH1PdOBJpXoIbbtm5eJMdT7WG5EVl3pG-frqA/viewform",
       },
       {
         name: "Le Shift Project",
-        logo: "shift-project.jpg",
+        logo: "2023/2023_shift-project.webp",
         url: "https://theshiftproject.org/",
       },
     ],

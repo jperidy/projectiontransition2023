@@ -191,7 +191,7 @@ export const films: Film[] = [
     // originalTitle: "Gagarine",
     theme: "Dans quelle ville vivre demain ?",
     image: {
-      summary: "2023/Gagarine.jpg",
+      summary: "2023/gagarine.webp",
       programmation: "2023/Gagarine.webp",
     },
     summary:
@@ -284,7 +284,7 @@ export const films: Film[] = [
     originalTitle: "2001: A Space Odyssey ",
     theme: "Modernité et écologie : quel sens donner au progrès ?",
     image: {
-      summary: "2023/2001 l'odyssée de l'espace.jpg",
+      summary: "2023/2001-l-odyssee-de-l-espace.webp",
       programmation: "2023/2001-2.webp",
     },
     summary:
@@ -347,7 +347,7 @@ export const films: Film[] = [
     originalTitle: "Twelve Angry Men",
     theme: "Transition : comment faire basculer les opinions ?",
     image: {
-      summary: "2023/12 hommes en colère.jpg",
+      summary: "2023/12-hommes-en-colere.webp",
       programmation: "2023/12-hommes.webp",
       programmationPosition: "center -100px",
     },
@@ -438,7 +438,7 @@ export const films: Film[] = [
     duration: "2h19",
     theme: "L'engagement, une crise d'identité ?",
     image: {
-      summary: "2023/Fight club 2.jpg",
+      summary: "2023/fight-club-2.webp",
       programmation: "2023/fight-club.webp",
       programmationPosition: "center top",
     },
@@ -518,15 +518,15 @@ export const films: Film[] = [
     author: "Matt Ross",
     releaseDate: 2016,
     duration: "1h58",
-    theme: "Du rêve à la réalité, comment faire société(s) demain ?",
+    theme: "Du rêve à la réalité, comment faire société demain ?",
     image: {
-      summary: "2023/Captain Fantastic.jpg",
+      summary: "2023/captain-fantastic.webp",
       thumbnailPosition: "top",
       programmation: "2023/captain-fantastic.webp",
       programmationPosition: "center top",
     },
     summary:
-      "Dans les forêts reculées du nord-ouest des Etats-Unis, vivant isolé de la société, un père dévoué a consacré sa vie toute entière à faire de ses six jeunes enfants d’extraordinaires adultes.",
+      "Dans les forêts reculés du nord-ouest des Etats-Unis, Ben, un père dévoué élève seul ses 6 enfants. Accès illimité à la culture, esprit critique, respect de la nature, entraînement physique régulier, autosuffisance alimentaire, à travers un mode d’éducation alternatif, Ben espère en faire des futurs adultes responsables et les préserver d’un monde extérieur dont il déteste les futilités et excès. La famille vit isolée du monde ordinaire jusqu’à ce que Leslie, la mère bipolaire mette fin à ces jours à l’hôpital psychiatrique. Pour se rendre à l’enterrement, Ben et ses enfants doivent retrouver le monde extérieur, ce qui questionne les méthodes d’éducation et remet en cause leurs modes de vie anticonformistes.",
     trailer: "0h0LnWAdwbM",
     debat: "",
     redirect: "/films/captain-fantastic",
@@ -537,7 +537,7 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "17h00",
         debatMoment: "19h00",
-        animator: "Juliette Quef",
+        animator: "Loup Espargillière",
         participants: [
           {
             name: "",
@@ -623,7 +623,7 @@ export const films: Film[] = [
     duration: "2h08",
     theme: "Comment (re)bâtir notre lien au vivant ?",
     image: {
-      summary: "2023/Le règne animal.jpg",
+      summary: "2023/le-regne-animal.webp",
       programmation: "2023/le-regne-animal.webp",
     },
     summary:
@@ -658,7 +658,7 @@ export const films: Film[] = [
     originalTitle: "Kona fer í stríð",
     theme: "Comment faire entendre sa voix quand personne ne vous écoute ?",
     image: {
-      summary: "2023/woman at war.jpg",
+      summary: "2023/woman-at-war.webp",
       programmation: "2023/woman-at-war-1.webp",
     },
     summary:
@@ -705,9 +705,9 @@ export const films: Film[] = [
     author: "Icíar Bollaín",
     releaseDate: 2010,
     duration: "1h43",
-    theme: "L’eau, une ressource pas si commune ?",
+    theme: "L’eau, une ressource pas si commune.",
     image: {
-      summary: "2023/Même la pluie.jpg",
+      summary: "2023/meme-la-pluie.webp",
       programmation: "2023/Tambien.webp",
       programmationPosition: "center -100px",
     },
@@ -737,7 +737,7 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "19h00",
         debatMoment: "20h45",
-        animator: "Audrey boehly",
+        animator: "",
         participants: [
           {
             name: "",
@@ -805,7 +805,7 @@ export const films: Film[] = [
     originalTitle: "Modern Times",
     theme: "Écologie et modernité : quel sens donner au progrès ?",
     image: {
-      summary: "2023/Les temps modernes.jpg",
+      summary: "2023/les-temps-modernes.webp",
       programmation: "2023/les-temps-modernes.webp",
     },
     summary:
