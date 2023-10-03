@@ -11,7 +11,7 @@
       author="Vincent Lindon,"
       authorDescription="discours d'ouverture du Festival de Cannes 2022"
     />
-    <div class="text-center px-5 content">
+    <div class="text-center px-lg-5 content">
       <h1 class="text-primary">Ouvrir le débat écologique via le cinéma</h1>
       <p>
         Projection Transition le festival de ciné-débat autour de la transition
@@ -20,8 +20,8 @@
         films et débats, les festivaliers sont invités à se créer leur propre
         récit plein d'espoir et de nouveaux repères et imaginaires.
       </p>
-      <img src="home/feuille-jaune.png" alt="" class="img-fluid petale" />
-      <h1 class="text-primary pt-3">Un monde à rebâtir</h1>
+      <img src="home/feuille-jaune.png" alt="" class="img-fluid petale my-4" />
+      <h1 class="text-primary">Un monde à rebâtir</h1>
       <p>
         Face à la multiplication des crises, la tentation est grande de perdre
         espoir et de se sentir impuissant. En adaptant nos modes de vie, nous
@@ -67,7 +67,7 @@
 
 <style>
   .content {
-    max-width: 800px;
+    max-width: 992px;
   }
   .petale {
     width: 32px;

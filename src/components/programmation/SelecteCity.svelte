@@ -4,48 +4,28 @@
   import { cities } from "../../data-local";
 
   const edition = config.EDITION;
-
-  $: selectedCity = Object.values(cities[edition]).find((x) => x === $city);
-
-  let showCityMenu = false;
 </script>
 
 <div class="col d-flex flex-column align-items-center pt-3">
   <em>Sélectionnez votre ville</em>
   <div>
-    <button
-      class="btn d-flex align-items-center border border-white rounded-0 py-1 mt-1 city-button"
-      on:click={() => (showCityMenu = !showCityMenu)}
-    >
-      <h2 class="mx-3 p-0 my-0 flex-grow-1">{selectedCity}</h2>
-      <i class="bi bi-caret-down-fill" />
-    </button>
-    {#if showCityMenu}
-      <ul class="list-group position-absolute city-list">
-        {#each Object.values(cities[edition]) as item}
-          <button
-            type="button"
-            class="list-group-item list-group-item-action bg-white text-dark"
-            on:click={() => {
-              selectedCity = item;
-              city.set(item);
-              showCityMenu = false;
-            }}
-          >
-            {item}
-          </button>
-        {/each}
-      </ul>
-    {/if}
+    <select name="city" id="city" bind:value={$city}>
+      {#each Object.values(cities[edition]) as item}
+        <option value={item}>{item}</option>
+      {/each}
+    </select>
   </div>
 </div>
 
 <style>
-  .city-button {
+  select {
     width: 200px;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    text-align: center;
   }
-  .city-list {
-    width: 200px;
-    z-index: 10;
+  option {
+    color: black;
   }
 </style>
