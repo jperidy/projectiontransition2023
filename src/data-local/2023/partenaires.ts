@@ -116,9 +116,9 @@ export const partenairesSections: PartenaireSection[] = [
         url: "https://www.parnassiens.com/",
       },
       {
-        name: "Ciné Pôle Sud",
-        logo: "2023/2023_cine-pole-sud.webp",
-        url: "https://www.cinepolesud.fr/",
+        name: "Cinéma Saint-Paul",
+        logo: "2023/2023_cinema_saint_paul.webp",
+        url: "https://cinemastpaul.fr/",
       },
       {
         name: "Cosmograph Toulouse",

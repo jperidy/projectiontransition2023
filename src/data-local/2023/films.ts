@@ -37,30 +37,23 @@ export const CINEMAS: Record<string, Cinema> = {
       "https://www.google.com/maps/place/Cin%C3%A9ma+Galeries/@50.8474672,4.3529874,16.83z/data=!4m5!3m4!1s0x47c3c47f64b4b03b:0xb60ed3be0edcc0f!8m2!3d50.847458!4d4.354624",
   },
   NANTES: {
-    name: "Cinéma centre commercial Pôle Sud",
-    address: "route de Clisson",
-    zip: "44115",
-    city: "Basse Goulaine",
+    name: "Cinéma Saint-Paul",
+    address: "38 Rue Julien Douillard",
+    zip: "44400",
+    city: "Rezé",
     gps: {
-      latitude: "47.18845277860192",
-      longitude: "-1.4705002865065424",
+      latitude: "47.18436318956963",
+      longitude: "-1.544098836510106",
     },
-    bus: "ligne 2 (Pirmil), Bus 39 (Challonges), Bus 27 (Pôle Sud)",
-    ter: `C6 au départ de la Gare de Nantes jusqu'à l'arrêt "Vertou" puis 10 minutes de marche`,
-    otherTransport: {
-      name: "Ouest Go",
-      description:
-        "Nous vous proposons également de trouver et/ou de proposer un covoiturage sur la communauté Ouest Go spécialement créée pour l'évènement",
-      link: "https://ouestgo.fr/covoiturage-communaute/623",
-    },
+    bus: "",
+    ter: ``,
     ticketingOpenDate: "2023-10-18",
-    ticketingRedirection:
-      "https://www.cinepolesud.fr/evenement/2029044-projection-transition",
+    ticketingRedirection: "https://cinemastpaul.fr/",
     organization: CITIES.NANTES,
-    phone: "+33 (0)2 28 00 98 98",
-    website: "https://www.cinepolesud.fr/",
+    phone: "+33 (0)2 40 75 41 91",
+    website: "https://cinemastpaul.fr/",
     navigation:
-      "https://www.google.fr/maps/place/Cin%C3%A9+P%C3%B4le+Sud/@47.1883106,-1.4704681,17z/data=!3m1!4b1!4m5!3m4!1s0x4805e5efe8d6b5fd:0x3e5faedbc6377a51!8m2!3d47.1883106!4d-1.4704681",
+      "https://www.google.com/maps/place/Cin%C3%A9ma+Saint+Paul/@47.182759,-1.5483476,15z/data=!4m14!1m7!3m6!1s0x4805e969e716f681:0x1964a21f6c21e39b!2sCin%C3%A9ma+Saint+Paul!8m2!3d47.1838674!4d-1.5441848!16s%2Fg%2F1tdqn0jv!3m5!1s0x4805e969e716f681:0x1964a21f6c21e39b!8m2!3d47.1838674!4d-1.5441848!16s%2Fg%2F1tdqn0jv?entry=ttu",
   },
   PARIS: {
     name: "Cinéma les 7 Parnassiens",
@@ -188,7 +181,6 @@ export const films: Film[] = [
     author: "Fanny Liatard et Jérémy Trouilh",
     releaseDate: 2021,
     duration: "1h38",
-    // originalTitle: "Gagarine",
     theme: "Dans quelle ville vivre demain ?",
     image: {
       summary: "2023/gagarine.webp",
@@ -197,7 +189,8 @@ export const films: Film[] = [
     summary:
       'Youri, 16 ans, a grandi à Gagarine, immense cité de briques rouges d’Ivry-sur-Seine, où il rêve de devenir cosmonaute. Quand il apprend qu’elle est menacée de démolition, Youri décide de rentrer en résistance. Avec la complicité de Diana, Houssam et des habitants, il se donne pour mission de sauver la cité, devenue son "vaisseau spatial".',
     trailer: "vZSx8bpiVe4",
-    debat: "",
+    debat:
+      "Déconstruire, reconstruire, rénover : le film Gagarine pose en miniature une partie des questions de plus en plus urgentes aujourd’hui : quelle ville souhaitons-nous pour demain ? Comment recréer du lien dans une société de plus en plus individualisée ? Comment s’adapter au réchauffement climatique en cours et à venir ? Comment imaginer une ville désirable, sobre et résiliente ? Avec nos intervenant.es et en présence des lycéennes et lycéens, nous chercherons à dessiner des pistes pour l’avenir, au croisement de l’architecture, de l’urbanisme, de la sociologie et de nos imaginaires.",
     redirect: "/films/gagarine",
     styles: { color: "text-dark" },
     cities: [
@@ -206,19 +199,23 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "14h",
         debatMoment: "15h50",
-        animator: "Simon Lebrette",
+        animator: "Simon Lebrette - Bénévole Shifter - Bibliothécaire",
         participants: [
           {
             name: "Fanny Liatard",
-            description: "",
+            description: "Réalisatrice scénariste ",
           },
           {
             name: "Jérémy Trouilh",
-            description: "",
+            description: "Réalisateur scénariste ",
           },
           {
             name: "Olivier Faber",
             description: "Architecte | Co-fondateur de Roofscapes",
+          },
+          {
+            name: "Sabrina Decanton",
+            description: "1ère adjointe au Maire de Saint-Ouen-sur-Seine",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -272,6 +269,29 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
+      },
+      {
+        city: CITIES.NANTES,
+        day: DAYS.VENDREDI_17_11,
+        moment: "14h00",
+        debatMoment: "15h50",
+        animator: "",
+        participants: [
+          {
+            name: "Sylvanie GREE",
+            description:
+              "Paysagiste concepteur et urbaniste chez Agence d'ici Là",
+          },
+          {
+            name: "Eric GERARD",
+            description: "Directeur général de ICEO Habitat",
+          },
+          {
+            name: "Camille MAY",
+            description: "",
+          },
+        ],
+        cinema: CINEMAS.NANTES,
       },
     ],
   },
@@ -363,10 +383,10 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h",
         debatMoment: "16h40",
-        animator: "",
+        animator: "Anastasia Magat",
         participants: [
           {
-            name: "",
+            name: "Chloé Ridel",
             description: "",
           },
         ],
@@ -528,7 +548,8 @@ export const films: Film[] = [
     summary:
       "Dans les forêts reculés du nord-ouest des Etats-Unis, Ben, un père dévoué élève seul ses 6 enfants. Accès illimité à la culture, esprit critique, respect de la nature, entraînement physique régulier, autosuffisance alimentaire, à travers un mode d’éducation alternatif, Ben espère en faire des futurs adultes responsables et les préserver d’un monde extérieur dont il déteste les futilités et excès. La famille vit isolée du monde ordinaire jusqu’à ce que Leslie, la mère bipolaire mette fin à ces jours à l’hôpital psychiatrique. Pour se rendre à l’enterrement, Ben et ses enfants doivent retrouver le monde extérieur, ce qui questionne les méthodes d’éducation et remet en cause leurs modes de vie anticonformistes.",
     trailer: "0h0LnWAdwbM",
-    debat: "",
+    debat:
+      "Si l’éducation parentale alternative est au coeur du film, il met aussi en lumière la difficulté de s’extraire du système a fortiori quand il s’agit d’une collectivité, aussi petite soit-elle comme la famille. Pour changer le système la meilleure méthode est-elle d’en sortir ou ne faut-il pas y rester et composer avec pour le changer ? A défaut de se mettre à l’écart du monde, les citoyens qui constatent jour après jour les dégâts de nos modes de vie, composent déjà avec ce conlit interne, chacun agissant au mieux pour limiter les dégâts. Pourtant, est-ce que cela ne participe pas à la persistance d'un système socio-économique délétère ? Dans quelle mesure ne sommes-nous pas complice ?",
     redirect: "/films/captain-fantastic",
     styles: { color: "text-dark" },
     cities: [
@@ -537,11 +558,17 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "17h00",
         debatMoment: "19h00",
-        animator: "Loup Espargillière",
+        animator:
+          "Loup Espargillière - Co-fondateur et rédacteur en chef de Vert, le média",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Cyril Dion",
+            description: "Réalisateur, écrivain, poète et activiste",
+          },
+          {
+            name: "Lucile Schmid ",
+            description:
+              "Co-fondatrcie et Vice présidente de La Fabrique écologique",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -714,7 +741,8 @@ export const films: Film[] = [
     summary:
       "Sebastian, jeune réalisateur passionné et son producteur arrivent dans le décor somptueux des montagnes boliviennes pour entamer le tournage d'un film. Les budgets de production sont serrés et Costa, le producteur, se félicite de pouvoir employer des comédiens et des figurants locaux à moindre coût. Mais bientôt le tournage est interrompu par la révolte menée par l'un des principaux figurants contre le pouvoir en place qui souhaite privatiser l'accès à l'eau courante. Costa et Sebastian se trouvent malgré eux emportés dans cette lutte pour la survie d'un peuple démuni. Ils devront choisir entre soutenir la cause de la population et la poursuite de leur propre entreprise sur laquelle ils ont tout misé. Ce combat pour la justice va bouleverser leur existence.",
     trailer: "jX-X4hgbycw",
-    debat: "",
+    debat:
+      "L’eau est devenu le tube de l’été 2022 puis du printemps 2023 et de l’été 2023 et il y a fort à parier qu’il reste haut placé dans les enjeux environnementaux. Réchauffement climatique, sécheresse, conflits d’usage, les causes produisent les mêmes effets un peu partout, ce qui met en lumière le fait que l’eau n’est pas une ressource comme les autres. Elle a non seulement permis de donner naissance à la vie mais elle est aussi indispensable pour qu’elle perdure. L’eau est un commun si vital que nous avons voulu en faire le cœur du débat. A travers le débat, nous aborderons la question du cycle de l’eau douce, le rôle de l’eau bleue, de l’eau verte, nous ferons un état des lieux des solutions mises en place pour pallier au manque d’eau dans certains secteurs comme l’industrie ou l’agriculture, nous évoquerons la question de la mal-adaptation et les différents types de gouvernance possibles de communs tels que l’eau.",
     redirect: "/films/meme-la-pluie",
     styles: { color: "text-dark" },
     cities: [
@@ -723,11 +751,18 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "10h15",
         debatMoment: "12h00",
-        animator: "Audrey boehly",
+        animator:
+          "Audrey boehly - Conférencière et autrice du podcast et livre LIMITES PLANETAIRES",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Dan Lert",
+            description:
+              "Adjoint à la Maire de Paris en charge de la transition écologique, du Plan Climat, de l’eau et de l’énergie et Président d’Eau de Paris",
+          },
+          {
+            name: "Gaspard Manesse",
+            description:
+              "Maraîcher bio en AMAP, Porte parole IdF et membre du Comité National de la Confédération Paysanne.",
           },
         ],
         cinema: CINEMAS.PARIS,
