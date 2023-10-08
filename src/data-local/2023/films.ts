@@ -102,8 +102,7 @@ export const CINEMAS: Record<string, Cinema> = {
       latitude: "45.783706725892166",
       longitude: "4.911255203973906",
     },
-    access:
-      'Métro ligne A ou D, arrêt "Bellecour" ; en voiture sortie centre-ville et direction Presqu\'Ile de Lyon ; parkings : République, Bellecour, Lyon Antonin Poncet.',
+    access: "",
     ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
       "https://bm.mairie-vaulxenvelin.fr/content/mediatheque-maison-de-quartier-leonard-de-vinci-0",

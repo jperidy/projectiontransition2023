@@ -9,7 +9,11 @@
 
   const edition = config.EDITION;
 
-  const onlyUnique = (value, index, self) => {
+  const onlyUnique = (
+    /** @type {{ name: string; }} */ value,
+    /** @type {number} */ index,
+    /** @type {import("../../data-local").Cinema[]} */ self
+  ) => {
     return (
       self.findIndex((selfValue) => selfValue.name === value.name) === index
     );
@@ -61,23 +65,21 @@
       {#if location.otherTransport}
         <div>
           {location.otherTransport.description} :
-          <span
-            class="external-link bg-pomme text-outremer"
-            on:click={window.open(location.otherTransport.link, "_blank")}
-            >{location.otherTransport.name}</span
+          <a href={location.otherTransport.link} target="_blank"
+            >{location.otherTransport.name}</a
           >
         </div>
       {/if}
       <div class="d-flex flex-wrap justify-content-center py-3">
         <button
           class="btn btn-pomme m-3"
-          on:click={window.open(location.website, "_blank")}
+          on:click={() => window.open(location.website, "_blank")}
         >
           Site web du cinéma
         </button>
         <button
           class="btn btn-pomme m-3"
-          on:click={window.open(location.navigation, "_blank")}
+          on:click={() => window.open(location.navigation, "_blank")}
         >
           Se rendre au cinéma
         </button>
@@ -102,13 +104,6 @@
 <style>
   button {
     min-width: 180px;
-  }
-  .external-link {
-    text-decoration: underline;
-  }
-  .external-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
   }
   .contact {
     max-width: 600px;
