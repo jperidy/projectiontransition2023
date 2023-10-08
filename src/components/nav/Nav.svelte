@@ -34,7 +34,7 @@
       {/each}
     </div>
     <button
-      class="navbar-toggler bg-outremer border-0"
+      class="navbar-toggler border-0"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -73,5 +73,8 @@
   .nav-item:last-child a {
     color: white !important;
     padding: 4px 8px !important;
+  }
+  .navbar-toggler {
+    filter: invert(1);
   }
 </style>

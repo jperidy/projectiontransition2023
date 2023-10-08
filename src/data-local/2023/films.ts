@@ -17,24 +17,22 @@ export const DAYS = {
 
 export const CINEMAS: Record<string, Cinema> = {
   BRUXELLES: {
-    name: "Cinéma Galeries",
-    address: "Galerie de la Reine 28",
-    zip: "1000",
-    city: "Bruxelles",
+    name: "Cinéma Vendôme",
+    address: "Chau. de Wavre 18",
+    zip: "1050",
+    city: "Ixelles",
     gps: {
-      latitude: "50.84758881010562",
-      longitude: "4.354691462449957",
+      latitude: "50.838361717988114",
+      longitude: "4.36288717708155",
     },
-    access:
-      "Bus 29, 71 (Arenberg), Bus 38, 63, 66 (Gare Centrale), Métros 1, 5, 3, 4 (Gare Centrale, De Brouckere)",
+    access: "",
     ticketingOpenDate: "2023-10-18",
-    ticketingRedirection:
-      "https://galeries.be/fr/festival-projection-transition/",
+    ticketingRedirection: "http://www.cinema-vendome.be/",
     organization: CITIES.BRUXELLES,
-    phone: "+32 2 514 74 98",
-    website: "https://galeries.be/fr/",
+    phone: "+32 2 502 37 00",
+    website: "http://www.cinema-vendome.be/",
     navigation:
-      "https://www.google.com/maps/place/Cin%C3%A9ma+Galeries/@50.8474672,4.3529874,16.83z/data=!4m5!3m4!1s0x47c3c47f64b4b03b:0xb60ed3be0edcc0f!8m2!3d50.847458!4d4.354624",
+      "https://www.google.com/maps/place/Cin%C3%A9ma+Vend%C3%B4me/@50.8411603,4.3575887,13.83z/data=!4m6!3m5!1s0x47c3c4860471f58b:0xda76963eb34642ba!8m2!3d50.837458!4d4.36291!16s%2Fg%2F1tj7_3v8?entry=ttu",
   },
   NANTES: {
     name: "Cinéma Saint-Paul",
@@ -47,8 +45,9 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     bus: "",
     ter: ``,
-    ticketingOpenDate: "2023-10-18",
+    ticketingOpenDate: "",
     ticketingRedirection: "https://cinemastpaul.fr/",
+    ticketingMessage: "Complet",
     organization: CITIES.NANTES,
     phone: "+33 (0)2 40 75 41 91",
     website: "https://cinemastpaul.fr/",
@@ -239,7 +238,8 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "14h",
         debatMoment: "15h50",
-        animator: "",
+        animator:
+          "Hugo Struna - Journaliste environnement pour Euractiv France",
         participants: [
           {
             name: "Lucille PAULET",
@@ -264,8 +264,14 @@ export const films: Film[] = [
         animator: "",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Guillaume Dumas",
+            description:
+              "Ingénieur de recherche en thèse CIFRE (recherche-action sur les îlots de chaleur)",
+          },
+          {
+            name: "Jules Guironnet",
+            description:
+              "Ingénieur agronome (agriculture urbaine, projets de méthanisation à petite échelle)",
           },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
@@ -499,6 +505,10 @@ export const films: Film[] = [
             name: "Sarah KOLLER",
             description: "Chercheuse à l'université de Lausanne",
           },
+          {
+            name: "Benoit Rolland de Ravel",
+            description: "Co-fondateur de la Fresque des Nouveaux Récits",
+          },
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
       },
@@ -507,11 +517,12 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "20h00",
         debatMoment: "22h20",
-        animator: "",
+        animator:
+          "Marie Pierre Cassagne & THomas  Bouyer - Toulouse en transition",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Guillaume Mouillet",
+            description: "Shifters toulouse",
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
@@ -617,7 +628,7 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "18h00",
         debatMoment: "20h00",
-        animator: "",
+        animator: "Caroline  Leroy",
         participants: [
           {
             name: "",
@@ -634,8 +645,13 @@ export const films: Film[] = [
         animator: "",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Pierre LARROUTUROU",
+            description: "Parlementaire européen",
+          },
+          {
+            name: "Pierre-Alexandre Klein",
+            description:
+              'Co fondateur Tiers Lieu "l\'arbre qui pousse" à Ottignie',
           },
         ],
         cinema: CINEMAS.BRUXELLES,
@@ -718,8 +734,8 @@ export const films: Film[] = [
           "DEKEGELEER Gwenaëlle - journaliste, éditrice, présentatrice à la RTBF. Animatrice de «Alors on change !»",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Carine Thibaut",
+            description: "Directrice générale Amnesty Belgique",
           },
         ],
         cinema: CINEMAS.BRUXELLES,
@@ -772,11 +788,22 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "19h00",
         debatMoment: "20h45",
-        animator: "",
+        animator: "Vincent Raimbault - Shifter",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Charlène Descollonges",
+            description:
+              'Ingénieure hydrologue indépendante à "Pour une Hydrologie Régénérative"',
+          },
+          {
+            name: "Morgan Priol",
+            description:
+              "Directrice de la délégation Maine-Loire-Océan chez Agence de l'eau Loire-Bretagne",
+          },
+          {
+            name: "Jean-Paul Pavillon",
+            description:
+              "Maire des Ponts-de-Cé / Vice-Président d’Angers Loire Métropole Eau, Assainissement, GEMAPI",
           },
         ],
         cinema: CINEMAS.ANGERS,
@@ -809,7 +836,7 @@ export const films: Film[] = [
         animator: "",
         participants: [
           {
-            name: "",
+            name: "Sandrine Nieto",
             description: "",
           },
         ],
@@ -823,11 +850,17 @@ export const films: Film[] = [
         animator: "",
         participants: [
           {
-            name: "Jean-Marc Jancovici",
-            description: "",
+            name: "Claire Baffert",
+            description:
+              "Senior Water Policy Officer at WWF (European Policy Office)",
+          },
+          {
+            name: "Martin Oohse",
+            description:
+              "Team Manager/ Water Departement at Bruxelles Environnement",
           },
         ],
-        cinema: CINEMAS.PARIS,
+        cinema: CINEMAS.BRUXELLES,
       },
     ],
   },
@@ -858,7 +891,7 @@ export const films: Film[] = [
         animator: "",
         participants: [
           {
-            name: "",
+            name: "Alexandre Tisserant",
             description: "",
           },
         ],
