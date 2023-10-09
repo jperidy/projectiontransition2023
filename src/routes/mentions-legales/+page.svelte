@@ -19,7 +19,7 @@
       >.
     </p>
     <h3>Directeur de la publication</h3>
-    <p>Alexandre Barré, Président de l’association THE SHIFTERS</p>
+    <p>Grégoire Carpentier, Président de l’association THE SHIFTERS</p>
     <h3>Développement du site</h3>
     <p>
       L'édition du site<a href="www.projectiontransition.fr"
