@@ -13,6 +13,9 @@ export const DAYS = {
   VENDREDI_17_11: "Vendredi 17 novembre",
   SAMEDI_18_11: "Samedi 18 novembre",
   DIMANCHE_19_11: "Dimanche 19 novembre",
+  MARDI_21_11: "Mardi 21 novembre",
+  MERCREDI_22_11: "Mercredi 22 novembre",
+  JEUDI_23_11: "Jeudi 23 novembre",
 };
 
 export const CINEMAS: Record<string, Cinema> = {
@@ -201,11 +204,11 @@ export const films: Film[] = [
         participants: [
           {
             name: "Fanny Liatard",
-            description: "Réalisatrice scénariste ",
+            description: "Réalisatrice scénariste",
           },
           {
             name: "Jérémy Trouilh",
-            description: "Réalisateur scénariste ",
+            description: "Réalisateur scénariste",
           },
           {
             name: "Olivier Faber",
@@ -223,12 +226,20 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "13h45",
         debatMoment: "15h25",
-        animator: "",
+        animator: "Vinz Kante",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Thomas GRENOUILLEAU",
+            description: "Dirigeant de ERB, entreprise générale de construction",
           },
+          {
+            name: "Jean-Louis LEHUGER",
+            description: ""
+          },
+          {
+            name: "Hélène CRUYPENNINCK",
+            description: "",
+          }
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -324,10 +335,14 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "21h",
         debatMoment: "23h40",
-        animator: "Simon Lebrette",
+        animator: "",
         participants: [
           {
             name: "Jean-Marc Jancovici",
+            description: "",
+          },
+          {
+            name: "Alexandra Bidet ",
             description: "",
           },
         ],
@@ -388,8 +403,12 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h",
         debatMoment: "16h40",
-        animator: "Anastasia Magat",
+        animator: "Akos Barrin",
         participants: [
+          {
+            name: "Anastasia Magat",
+            description: "",
+          },
           {
             name: "Chloé Ridel",
             description: "",
@@ -416,12 +435,20 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "20h",
         debatMoment: "21h35",
-        animator: "",
+        animator: "Paul Messad - Journaliste environnement à Euractiv France",
         participants: [
           {
             name: "Louise TSCHANZ",
             description: "Avocate associée - Fondatrice de Kaizen Avocat",
           },
+          {
+            name: "Léa Falco",
+            description: "Formation aux enjeux écologiques & Membre du collectif Pour un réveil écologique"
+          },
+          {
+            name: "Nathalie Dompnier",
+            description: ""
+          }
         ],
         cinema: CINEMAS.LYON_LEONARD,
       },
@@ -479,7 +506,7 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "19h15",
         debatMoment: "21h40",
-        animator: "",
+        animator: "Thierry Keller",
         participants: [
           {
             name: "Anastasia Magat",
@@ -498,11 +525,11 @@ export const films: Film[] = [
           {
             name: "Nadège RAFFOUX",
             description:
-              "Doctorante en psychologie sur le thème de l'écoanxiété à l'université lumière Lyon 2",
+              "Psychologue à Université Lumière Lyon 2, Centre de Recherche en Psychopathologie et Psychologie Clinique",
           },
           {
             name: "Sarah KOLLER",
-            description: "Chercheuse à l'université de Lausanne",
+            description: "Chercheuse et praticienne en écopsychologie, Université de Lausanne",
           },
           {
             name: "Benoit Rolland de Ravel",
@@ -517,11 +544,19 @@ export const films: Film[] = [
         moment: "20h00",
         debatMoment: "22h20",
         animator:
-          "Marie Pierre Cassagne & THomas  Bouyer - Toulouse en transition",
+          "Marie Pierre Cassagne & Thomas  Bouyer - Toulouse en transition",
         participants: [
           {
             name: "Guillaume Mouillet",
             description: "Shifters toulouse",
+          },
+          {
+            name: "Claire Wallez",
+            description: "Psychologue spécialisée dans l’éco-anxiété",
+          },
+          {
+            name: "Iris-Amata Dion",
+            description: "",
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
@@ -572,10 +607,6 @@ export const films: Film[] = [
           "Loup Espargillière - Co-fondateur et rédacteur en chef de Vert, le média",
         participants: [
           {
-            name: "Cyril Dion",
-            description: "Réalisateur, écrivain, poète et activiste",
-          },
-          {
             name: "Lucile Schmid ",
             description:
               "Co-fondatrcie et Vice présidente de La Fabrique écologique",
@@ -588,10 +619,14 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "19h45",
         debatMoment: "21h45",
-        animator: "",
+        animator: "Amélie Tissot - Shifteuse",
         participants: [
           {
-            name: "",
+            name: "Virginie Raisson-Victor",
+            description: "",
+          },
+          {
+            name: "Adrien Salomé",
             description: "",
           },
         ],
@@ -630,7 +665,7 @@ export const films: Film[] = [
         animator: "Caroline  Leroy",
         participants: [
           {
-            name: "",
+            name: "Jean Phillipe Decka",
             description: "",
           },
         ],
@@ -638,7 +673,7 @@ export const films: Film[] = [
       },
       {
         city: CITIES.BRUXELLES,
-        day: "",
+        day: DAYS.JEUDI_23_11,
         moment: "",
         debatMoment: "",
         animator: "",
@@ -683,7 +718,7 @@ export const films: Film[] = [
         animator: "",
         participants: [
           {
-            name: "",
+            name: "Alexandre Florentin",
             description: "",
           },
         ],
@@ -715,10 +750,10 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "19h45",
         debatMoment: "21h25",
-        animator: "",
+        animator: "Clément Mabi - Maître de conférence en Science de l’information et de la communication",
         participants: [
           {
-            name: "",
+            name: "William AUCANT",
             description: "",
           },
         ],
@@ -726,9 +761,9 @@ export const films: Film[] = [
       },
       {
         city: CITIES.BRUXELLES,
-        day: "",
-        moment: "",
-        debatMoment: "",
+        day: DAYS.MARDI_21_11 ,
+        moment: "18h30",
+        debatMoment: "20h30",
         animator:
           "DEKEGELEER Gwenaëlle - journaliste, éditrice, présentatrice à la RTBF. Animatrice de «Alors on change !»",
         participants: [
@@ -777,7 +812,12 @@ export const films: Film[] = [
           {
             name: "Gaspard Manesse",
             description:
-              "Maraîcher bio en AMAP, Porte parole IdF et membre du Comité National de la Confédération Paysanne.",
+              "Maraîcher bio en AMAP, Porte parole IdF et membre du Comité National de la Confédération Paysanne",
+          },
+          {
+            name: "Agnés Ducharne ",
+            description:
+              "Hydrologue et climatologue",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -843,9 +883,9 @@ export const films: Film[] = [
       },
       {
         city: CITIES.BRUXELLES,
-        day: "",
-        moment: "1h43",
-        debatMoment: "",
+        day: DAYS.MERCREDI_22_11,
+        moment: "18h30",
+        debatMoment: "20h30",
         animator: "",
         participants: [
           {
@@ -887,10 +927,14 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h45",
         debatMoment: "17h15",
-        animator: "",
+        animator: "Emilce Ligneau",
         participants: [
           {
             name: "Alexandre Tisserant",
+            description: "",
+          },
+          {
+            name: "Guillaume Carbou",
             description: "",
           },
         ],

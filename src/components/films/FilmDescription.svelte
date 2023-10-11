@@ -87,8 +87,11 @@
         {#each cityInformation.participants as participant}
           {#if participant && participant.name}
             <p class="text-white">
-              <span class="fw-bold">{participant.name.toUpperCase()} - </span>
-              <span>{participant.description}</span>
+              <span class="fw-bold">{participant.name.toUpperCase()}</span>
+              <span
+                >{participant.description &&
+                  ` - ${participant.description}`}</span
+              >
             </p>
           {/if}
         {/each}
@@ -123,7 +126,7 @@
         {cityInformation && cityInformation.cinema.zip}
         {cityInformation && cityInformation.cinema.city}
       </p>
-      <h3 class="text-pomme">
+      <h3 class="text-pomme mt-3">
         {cityInformation && cityInformation.day} à {cityInformation &&
           cityInformation.moment}
       </h3>

@@ -5,7 +5,7 @@
 </script>
 
 <CustomLayout>
-  <div class="d-flex justify-content-center align-items-center py-3">
+  <div class="d-flex justify-content-center align-items-center py-3 mt-5">
     <SidePanel
       description="Pouvons-nous faire autre chose qu'utiliser le cinéma, cette arme d'émotion massive, pour réveiller les consciences et bousculer les indifférences ? Je ne l'imagine pas."
       author="Vincent Lindon,"

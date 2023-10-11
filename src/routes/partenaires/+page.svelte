@@ -4,23 +4,26 @@
   import Title from "../../ui/Title.svelte";
   import config from "../../../config.json";
   import { partenairesSections } from "../../data-local";
+  import CustomContainer from "../../components/CustomContainer.svelte";
 
   const edition = config.EDITION;
 </script>
 
-<div class="container">
-  <Title>Nos partenaires 2023</Title>
-  <p>
-    Ils nous font confiance et nous soutiennent, un grand MERCI à tous nos
-    partenaires.
-  </p>
-  {#each partenairesSections[edition] as section}
-    <PartenairesSection
-      sectionTitle={section.title}
-      partenaires={section.partenaires}
-    />
-  {/each}
-</div>
+<CustomContainer>
+  <div class="container mt-5">
+    <Title>Nos partenaires 2023</Title>
+    <p>
+      Ils nous font confiance et nous soutiennent, un grand MERCI à tous nos
+      partenaires.
+    </p>
+    {#each partenairesSections[edition] as section}
+      <PartenairesSection
+        sectionTitle={section.title}
+        partenaires={section.partenaires}
+      />
+    {/each}
+  </div>
+</CustomContainer>
 <SeoComponent
   pageContent={{
     titleSeo: "Projection Transition - Nos partenaires 2023",
