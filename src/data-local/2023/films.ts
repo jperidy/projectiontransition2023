@@ -362,20 +362,6 @@ export const films: Film[] = [
         ],
         cinema: CINEMAS.ANGERS,
       },
-      {
-        city: CITIES.BRUXELLES,
-        day: "",
-        moment: "",
-        debatMoment: "",
-        animator: "",
-        participants: [
-          {
-            name: "Jean-Marc Jancovici",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.BRUXELLES,
-      },
     ],
   },
   {
@@ -466,20 +452,6 @@ export const films: Film[] = [
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
-      {
-        city: CITIES.BRUXELLES,
-        day: "",
-        moment: "",
-        debatMoment: "",
-        animator: "",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.BRUXELLES,
-      },
     ],
   },
   {
@@ -560,20 +532,6 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
-      },
-      {
-        city: CITIES.BRUXELLES,
-        day: "",
-        moment: "",
-        debatMoment: "",
-        animator: "",
-        participants: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-        cinema: CINEMAS.BRUXELLES,
       },
     ],
   },
@@ -674,8 +632,8 @@ export const films: Film[] = [
       {
         city: CITIES.BRUXELLES,
         day: DAYS.JEUDI_23_11,
-        moment: "",
-        debatMoment: "",
+        moment: "18h30",
+        debatMoment: "20h45",
         animator: "",
         participants: [
           {
