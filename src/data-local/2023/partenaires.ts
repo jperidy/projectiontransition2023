@@ -55,6 +55,16 @@ export const partenairesSections: PartenaireSection[] = [
         url: "https://codekraft.fr/",
       },
       {
+        name: "ESCP",
+        logo: "2023/2023_escp.webp",
+        url: "https://escp.eu/",
+      },
+      {
+        name: "France Hydro-Électricité",
+        logo: "2023/2023_france_hydro.webp",
+        url: "https://www.france-hydro-electricite.fr/",
+      },
+      {
         name: "Hellio",
         logo: "2023/2023_hellio.webp",
         url: "https://www.hellio.com/",
@@ -106,6 +116,31 @@ export const partenairesSections: PartenaireSection[] = [
         dark: true,
       },
     ],
+  },
+  {
+    title: "Partenaires opérationnels",
+    partenaires: [
+      {
+        name: "L'atelier Gourmand",
+        logo: "2023/2023_atelier_gourmand.webp",
+        url: "https://www.atelier-gourmand.fr/nos-ateliers/cours-cuisine-angers/accueil",
+      },
+      {
+        name: "La caba (Biocoop)",
+        logo: "2023/2023_la_caba.webp",
+        url: "https://www.biocoop-caba.fr/",
+      },
+      {
+        name: "La Fourche",
+        logo: "2023/2023_la_fourche.webp",
+        url: "https://lafourche.fr/",
+      },
+      {
+        name: "P'tits poids carottes",
+        logo: "2023/2023_ptits_poids.webp",
+        url: "https://ptitspoidscarottes.fr/",
+      }
+    ]
   },
   {
     title: "Cinémas",

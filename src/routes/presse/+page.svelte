@@ -1,5 +1,5 @@
 <script>
-  import { communiques, photos2021 } from "../../data-local/2023/presse";
+  import { communiques, photos2022 } from "../../data-local/2023/presse";
   import Container from "../../ui/Container.svelte";
   import Title from "../../ui/Title.svelte";
 </script>
@@ -17,10 +17,10 @@
         <li><a href={communique.href} download="">{communique.title}</a></li>
       {/each}
     </ul>
-    <h2>Photos 2021</h2>
+    <h2>Photos 2022</h2>
     <p>Retrouvez une sélection des photos officielles du festival :</p>
     <ul>
-      {#each photos2021 as photo}
+      {#each photos2022 as photo}
         <li><a href={photo.href} target="_blank">{photo.title}</a></li>
       {/each}
     </ul>
@@ -31,9 +31,9 @@
         target="_blank">bande-annonce</a
       >.
     </p>
-    <h2>Valise graphique 2021</h2>
-    <a href="/presse/valise-graphique-2021.zip" download=""
-      >Téléchargez les logos et visuels de l'édition 2021</a
+    <h2>Valise graphique 2023</h2>
+    <a href="/presse/valise-graphique-2023.zip" download=""
+      >Téléchargez les logos et visuels de l'édition 2023</a
     >
     <h2>Contacts presse</h2>
     <p>
