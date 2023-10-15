@@ -63,6 +63,7 @@ export interface City {
   theme?: string;
   moment: string;
   debatMoment: string;
+  ticketingRedirection?: string,
   debat?: string;
   animator: string;
   participants: {

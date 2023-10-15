@@ -17,6 +17,12 @@
   ) => film.cities.find((item) => item.city === city);
 
   $: cityInformation = getCityInformations(film, city);
+
+  $: ticketingIsfulfillAndOpen =
+    ((cityInformation?.cinema.ticketingOpenDate &&
+      cityInformation?.cinema.ticketingRedirection) ||
+      cityInformation?.ticketingRedirection) &&
+    new Date() > new Date(cityInformation.cinema.ticketingOpenDate);
 </script>
 
 <h1
@@ -131,12 +137,16 @@
           cityInformation.moment}
       </h3>
       <a class="text-white mt-3" href="/informations-pratiques">Plan d'accès</a>
-      {#if cityInformation && cityInformation.cinema.ticketingOpenDate && cityInformation.cinema.ticketingRedirection && new Date() > new Date(cityInformation.cinema.ticketingOpenDate)}
+      {#if ticketingIsfulfillAndOpen}
         <button
           class="btn btn-outline-pomme rounded-0 mt-3"
           on:click={() =>
             cityInformation &&
-            window.open(cityInformation.cinema.ticketingRedirection, "_blank")}
+            window.open(
+              cityInformation.ticketingRedirection ||
+                cityInformation.cinema.ticketingRedirection,
+              "_blank"
+            )}
         >
           Réserver
         </button>

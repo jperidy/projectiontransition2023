@@ -116,6 +116,26 @@ export const CINEMAS: Record<string, Cinema> = {
     navigation:
       "https://www.google.com/maps/place/L'Atelier+L%C3%A9onard+de+Vinci+%2F+M%C3%A9diath%C3%A8que+Maison+de+quartier/@45.783617,4.9086803,17z/data=!4m14!1m7!3m6!1s0x47f4c1a450f08e7b:0xc386b6add080c4d6!2sL'Atelier+L%C3%A9onard+de+Vinci+%2F+M%C3%A9diath%C3%A8que+Maison+de+quartier!8m2!3d45.783617!4d4.9112552!16s%2Fg%2F11snpsrr_8!3m5!1s0x47f4c1a450f08e7b:0xc386b6add080c4d6!8m2!3d45.783617!4d4.9112552!16s%2Fg%2F11snpsrr_8?entry=ttu",
   },
+  LYON_PP: {
+    name: "L'Atelier Léonard de Vinci / Médiathèque Maison de quartier",
+    address: "7 avenue Maurice Thorez",
+    zip: "69120",
+    city: "Vaulx-en-Velin ",
+    gps: {
+      latitude: "45.783706725892166",
+      longitude: "4.911255203973906",
+    },
+    access: "",
+    ticketingOpenDate: "",
+    ticketingRedirection: "",
+    ticketingMessage: "Séance réservée au projet pédagogique",
+    organization: CITIES.LYON,
+    phone: "",
+    website:
+      "https://bm.mairie-vaulxenvelin.fr/content/mediatheque-maison-de-quartier-leonard-de-vinci-0",
+    navigation:
+      "https://www.google.com/maps/place/L'Atelier+L%C3%A9onard+de+Vinci+%2F+M%C3%A9diath%C3%A8que+Maison+de+quartier/@45.783617,4.9086803,17z/data=!4m14!1m7!3m6!1s0x47f4c1a450f08e7b:0xc386b6add080c4d6!2sL'Atelier+L%C3%A9onard+de+Vinci+%2F+M%C3%A9diath%C3%A8que+Maison+de+quartier!8m2!3d45.783617!4d4.9112552!16s%2Fg%2F11snpsrr_8!3m5!1s0x47f4c1a450f08e7b:0xc386b6add080c4d6!8m2!3d45.783617!4d4.9112552!16s%2Fg%2F11snpsrr_8?entry=ttu",
+  },
   TOULOUSE_TOURNEFEUILLE: {
     name: "Utopia Tournefeuille",
     address: "impasse du Château",
@@ -264,7 +284,7 @@ export const films: Film[] = [
             description: "Directeur CCO La Rayonne",
           },
         ],
-        cinema: CINEMAS.LYON_LEONARD,
+        cinema: CINEMAS.LYON_PP,
       },
       {
         city: CITIES.TOULOUSE,
@@ -437,6 +457,7 @@ export const films: Film[] = [
           }
         ],
         cinema: CINEMAS.LYON_LEONARD,
+        ticketingRedirection: "https://www.eventbrite.fr/e/billets-festival-projection-transition-lyon-12-hommes-en-colere-737800851207?aff=oddtdtcreator",
       },
       {
         city: CITIES.TOULOUSE,
@@ -509,6 +530,7 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
+        ticketingRedirection: "https://urlz.fr/nLpQ"
       },
       {
         city: CITIES.TOULOUSE,
@@ -614,6 +636,7 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
+        ticketingRedirection: "https://urlz.fr/nLpw"
       },
       {
         city: CITIES.TOULOUSE,
@@ -824,6 +847,7 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
+        ticketingRedirection: "https://urlz.fr/nLpH",
       },
       {
         city: CITIES.TOULOUSE,
