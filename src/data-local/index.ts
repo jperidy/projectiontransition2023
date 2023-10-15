@@ -28,6 +28,7 @@ export const days: Record<string, Record<string, string>> = {
 
 export interface Cinema {
   name: string;
+  hideTicketingPage?: boolean,
   address: string;
   zip: string;
   city: string;
