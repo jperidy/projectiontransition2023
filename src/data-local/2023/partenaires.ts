@@ -55,6 +55,11 @@ export const partenairesSections: PartenaireSection[] = [
         url: "https://codekraft.fr/",
       },
       {
+        name: "Colibris",
+        logo: "2023/2023_colibris.webp",
+        url: "https://www.leasetic.fr/entreprise"
+      },
+      {
         name: "ESCP",
         logo: "2023/2023_escp.webp",
         url: "https://escp.eu/",
@@ -75,8 +80,13 @@ export const partenairesSections: PartenaireSection[] = [
         url: "https://kyoterra.fr/",
       },
       {
-        name: "Leasétic",
+        name: "Léasetic",
         logo: "2023/2023_leasetic.webp",
+        url: "https://www.leasetic.fr/",
+      },
+      {
+        name: "Loopix",
+        logo: "2023/2023_loopix.webp",
         url: "https://www.leasetic.fr/",
       },
       {
@@ -148,6 +158,11 @@ export const partenairesSections: PartenaireSection[] = [
       {
         name: "7 Parnassiens",
         logo: "2023/2023_7-parnassiens.webp",
+        url: "https://www.parnassiens.com/",
+      },
+      {
+        name: "Multiciné",
+        logo: "2023/2023_multicine.webp",
         url: "https://www.parnassiens.com/",
       },
       {
