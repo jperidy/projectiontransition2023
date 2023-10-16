@@ -229,7 +229,7 @@ export const films: Film[] = [
             description: "Réalisatrice scénariste",
           },
           {
-            name: "Jérémy Trouilh",
+            name: "Jérémy Trouilh (sous réserve)",
             description: "Réalisateur scénariste",
           },
           {
@@ -256,7 +256,7 @@ export const films: Film[] = [
           },
           {
             name: "Jean-Louis LEHUGER",
-            description: ""
+            description: "adjointe au maire environnement de la mairie d'Angers"
           },
           {
             name: "Hélène CRUYPENNINCK",
@@ -298,13 +298,17 @@ export const films: Film[] = [
           {
             name: "Guillaume Dumas",
             description:
-              "Ingénieur de recherche en thèse CIFRE (recherche-action sur les îlots de chaleur)",
+              "Urbaniste Climatologue - Ingénieur recherche chez CNRS - Centre national de la recherche scientifique",
           },
           {
             name: "Jules Guironnet",
             description:
-              "Ingénieur agronome (agriculture urbaine, projets de méthanisation à petite échelle)",
+              "Ingénieur agronome en service civique dans une association de méthanisation a petite échelle",
           },
+          {
+            name: "Xavier Normand",
+            description: "maire et urbaniste",
+          }
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
@@ -375,7 +379,7 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "14h",
         debatMoment: "16h25",
-        animator: "",
+        animator: "Julia Meyer - Ingénieure Numérique Responsable à l'ADEME",
         participants: [
           {
             name: "",
@@ -429,12 +433,20 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h",
         debatMoment: "16h30",
-        animator: "",
+        animator: "François Desset - Shifter angevin et archéologue",
         participants: [
           {
-            name: "",
+            name: "François Gallon",
             description: "",
           },
+          {
+            name: "Vincent Drouet",
+            description: "Chargé de projet et associé de la SCOP"
+          },
+          {
+            name: "Boris Butaeye",
+            description: "Light. Communication responsable"
+          }
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -455,7 +467,7 @@ export const films: Film[] = [
           },
           {
             name: "Nathalie Dompnier",
-            description: ""
+            description: "Présidente Université Lumière Lyon 2 - Professeure de sciences économiques et sociales"
           }
         ],
         cinema: CINEMAS.LYON_LEONARD,
@@ -507,6 +519,10 @@ export const films: Film[] = [
             name: "Anastasia Magat",
             description: "",
           },
+          {
+            name: "Marion Robin",
+            description: "",
+          },
         ],
         cinema: CINEMAS.PARIS,
       },
@@ -523,10 +539,6 @@ export const films: Film[] = [
               "Psychologue à Université Lumière Lyon 2, Centre de Recherche en Psychopathologie et Psychologie Clinique",
           },
           {
-            name: "Sarah KOLLER",
-            description: "Chercheuse et praticienne en écopsychologie, Université de Lausanne",
-          },
-          {
             name: "Benoit Rolland de Ravel",
             description: "Co-fondateur de la Fresque des Nouveaux Récits",
           },
@@ -540,11 +552,11 @@ export const films: Film[] = [
         moment: "20h00",
         debatMoment: "22h20",
         animator:
-          "Marie Pierre Cassagne & Thomas  Bouyer - Toulouse en transition",
+          "Marie Pierre Cassagne & Thomas  Bouyer - Membres de l'association Toulouse en Transition",
         participants: [
           {
             name: "Guillaume Mouillet",
-            description: "Shifters toulouse",
+            description: "Référent du groupe local Midi Pyrénées des Shifters et ingénieur informaticien",
           },
           {
             name: "Claire Wallez",
@@ -552,7 +564,7 @@ export const films: Film[] = [
           },
           {
             name: "Iris-Amata Dion",
-            description: "",
+            description: "Climatologue",
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
@@ -605,11 +617,11 @@ export const films: Film[] = [
         participants: [
           {
             name: "Virginie Raisson-Victor",
-            description: "",
+            description: "Présidente du GIEC des Pays-de-la-Loire, Co-fondatrice du Grand Défi des entreprises pour la planète",
           },
           {
             name: "Adrien Salomé",
-            description: "",
+            description: "Enseignant & consultant énergie/climat - Administrateur du Tiers lieu 122",
           },
         ],
         cinema: CINEMAS.ANGERS,
@@ -645,7 +657,7 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "18h00",
         debatMoment: "20h00",
-        animator: "Caroline  Leroy",
+        animator: "Caroline  Leroy - Doctorante chercheuse en Gouvernance adaptative et résilience des territoires touristiques",
         participants: [
           {
             name: "Jean Phillipe Decka",
@@ -754,6 +766,10 @@ export const films: Film[] = [
             name: "Carine Thibaut",
             description: "Directrice générale Amnesty Belgique",
           },
+          {
+            name: "Chloé mikolajczak",
+            description: "Coordinatrice à Fossil Free Politics Campaign",
+          },
         ],
         cinema: CINEMAS.BRUXELLES,
       },
@@ -840,7 +856,7 @@ export const films: Film[] = [
         participants: [
           {
             name: "Sébastien LEGRAND",
-            description: "Ingénieur chef de projets au CNR",
+            description: "Co-créateur de la Fresque de l'Eau, vice-président de l'association Eau'Dyssée",
           },
           {
             name: "Nicolas ALBAN",
@@ -882,6 +898,11 @@ export const films: Film[] = [
             description:
               "Team Manager/ Water Departement at Bruxelles Environnement",
           },
+          {
+            name: "Aurore Degré",
+            description:
+              "Université de Liège, Professeur agronomie et hydrologie ",
+          },
         ],
         cinema: CINEMAS.BRUXELLES,
       },
@@ -915,11 +936,11 @@ export const films: Film[] = [
         participants: [
           {
             name: "Alexandre Tisserant",
-            description: "",
+            description: "Dirigeant de l'entreprise Kineis",
           },
           {
             name: "Guillaume Carbou",
-            description: "",
+            description: "Maître de conférences en sciences de l'information et de la communication à l'Université de Bordeaux.",
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
