@@ -23,6 +23,10 @@
       cityInformation?.cinema.ticketingRedirection) ||
       cityInformation?.ticketingRedirection) &&
     new Date() > new Date(cityInformation.cinema.ticketingOpenDate);
+
+  $: ticketingMessage =
+    cityInformation?.cinema.ticketingMessage ||
+    cityInformation?.ticketingMessage;
 </script>
 
 <h1
@@ -64,6 +68,9 @@
     <div
       class="col-12 col-lg-8 d-flex flex-column align-items-center align-items-lg-start px-5 content"
     >
+      {#if film.disclaimer}
+        <p class="disclaimer">{film.disclaimer}</p>
+      {/if}
       <h1 class="text-white text-center text-lg-start">Résumé du film</h1>
       <p class="text-pomme">
         Début du film : {cityInformation && cityInformation.moment}.
@@ -137,7 +144,12 @@
           cityInformation.moment}
       </h3>
       <a class="text-white mt-3" href="/informations-pratiques">Plan d'accès</a>
-      {#if ticketingIsfulfillAndOpen}
+      {#if ticketingMessage}
+        <div class="mt-3 fst-italic">
+          {cityInformation?.ticketingMessage ||
+            cityInformation?.cinema.ticketingMessage}
+        </div>
+      {:else if ticketingIsfulfillAndOpen}
         <button
           class="btn btn-outline-pomme rounded-0 mt-3"
           on:click={() =>
@@ -150,10 +162,6 @@
         >
           Réserver
         </button>
-      {:else if cityInformation && cityInformation.cinema.ticketingMessage}
-        <div class="mt-3 fst-italic">
-          {cityInformation.cinema.ticketingMessage}
-        </div>
       {:else}
         <div class="mt-3 fst-italic">
           Ouverture de la billetterie prochainement
@@ -175,14 +183,10 @@
     font-size: 48px;
     padding: 16px;
   }
-  /* .content {
-        max-width: 800px;
-        min-width: 600px;
-    } */
-  /* .side-panel {
-        min-width: 200px;
-        max-width: 200px;;
-    } */
+  .disclaimer {
+    margin-bottom: 16px;
+    font-style: italic;
+  }
   .line {
     max-width: 64px;
     margin: 8px 0;

@@ -28,7 +28,7 @@ export const days: Record<string, Record<string, string>> = {
 
 export interface Cinema {
   name: string;
-  hideTicketingPage?: boolean,
+  hideTicketingPage?: boolean;
   address: string;
   zip: string;
   city: string;
@@ -64,7 +64,9 @@ export interface City {
   theme?: string;
   moment: string;
   debatMoment: string;
-  ticketingRedirection?: string,
+  withoutTicketing?: boolean;
+  ticketingRedirection?: string;
+  ticketingMessage?: string;
   debat?: string;
   animator: string;
   participants: {
@@ -82,6 +84,7 @@ export interface Film {
   duration: string;
   originalTitle?: string;
   theme: string;
+  disclaimer?: string;
   image: {
     summary: string;
     thumbnailPosition?: string;

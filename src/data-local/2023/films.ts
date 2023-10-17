@@ -151,7 +151,7 @@ export const CINEMAS: Record<string, Cinema> = {
       "Métro A (Arênes) puis BUS 3 (Tournefeuille Les Chênes), Bus 63 (Mairie Tournefeuille)",
     ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
-      "https://www.helloasso.com/associations/the-shifters/evenements/ehguxqci",
+      "https://www.helloasso.com/associations/the-shifters/evenements/projectiontransition2023toulouse",
     organization: CITIES.TOULOUSE,
     phone: "+33 (0)5 61 50 50 43",
     website: "http://www.cinemas-utopia.org/toulouse/",
@@ -169,7 +169,8 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access: "",
     ticketingOpenDate: "2023-10-18",
-    ticketingRedirection: "https://www.american-cosmograph.fr/",
+    ticketingRedirection:
+      "https://www.helloasso.com/associations/the-shifters/evenements/projectiontransition2023toulouse",
     organization: CITIES.TOULOUSE,
     phone: "+33 (0)5 61 50 50 43",
     website: "https://www.american-cosmograph.fr/",
@@ -215,6 +216,8 @@ export const films: Film[] = [
     debat:
       "Déconstruire, reconstruire, rénover : le film Gagarine pose en miniature une partie des questions de plus en plus urgentes aujourd’hui : quelle ville souhaitons-nous pour demain ? Comment recréer du lien dans une société de plus en plus individualisée ? Comment s’adapter au réchauffement climatique en cours et à venir ? Comment imaginer une ville désirable, sobre et résiliente ? Avec nos intervenant.es et en présence des lycéennes et lycéens, nous chercherons à dessiner des pistes pour l’avenir, au croisement de l’architecture, de l’urbanisme, de la sociologie et de nos imaginaires.",
     redirect: "/films/gagarine",
+    disclaimer:
+      "Ce film est diffusé dans le cadre d'un projet pédagogique mené avec des lycées par l'équipe du festival.",
     styles: { color: "text-dark" },
     cities: [
       {
@@ -223,6 +226,8 @@ export const films: Film[] = [
         moment: "14h",
         debatMoment: "15h50",
         animator: "Simon Lebrette - Bénévole Shifter - Bibliothécaire",
+        ticketingMessage: "Séance réservée au projet pédagogique",
+        withoutTicketing: true,
         participants: [
           {
             name: "Fanny Liatard",
@@ -249,19 +254,23 @@ export const films: Film[] = [
         moment: "13h45",
         debatMoment: "15h25",
         animator: "Vinz Kante",
+        withoutTicketing: true,
+        ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
           {
             name: "Thomas GRENOUILLEAU",
-            description: "Dirigeant de ERB, entreprise générale de construction",
+            description:
+              "Dirigeant de ERB, entreprise générale de construction",
           },
           {
             name: "Jean-Louis LEHUGER",
-            description: "adjointe au maire environnement de la mairie d'Angers"
+            description:
+              "adjointe au maire environnement de la mairie d'Angers",
           },
           {
             name: "Hélène CRUYPENNINCK",
             description: "",
-          }
+          },
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -272,6 +281,8 @@ export const films: Film[] = [
         debatMoment: "15h50",
         animator:
           "Hugo Struna - Journaliste environnement pour Euractiv France",
+        withoutTicketing: true,
+        ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
           {
             name: "Lucille PAULET",
@@ -294,6 +305,8 @@ export const films: Film[] = [
         moment: "14h00",
         debatMoment: "15h50",
         animator: "",
+        withoutTicketing: true,
+        ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
           {
             name: "Guillaume Dumas",
@@ -308,7 +321,7 @@ export const films: Film[] = [
           {
             name: "Xavier Normand",
             description: "maire et urbaniste",
-          }
+          },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
@@ -318,6 +331,8 @@ export const films: Film[] = [
         moment: "14h00",
         debatMoment: "15h50",
         animator: "",
+        withoutTicketing: true,
+        ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
           {
             name: "Sylvanie GREE",
@@ -362,6 +377,8 @@ export const films: Film[] = [
         moment: "21h",
         debatMoment: "23h40",
         animator: "",
+        ticketingRedirection:
+          "https://www.parnassiens.com/film/2001-l-odyssee-de-l-espace-2001/",
         participants: [
           {
             name: "Jean-Marc Jancovici",
@@ -380,6 +397,8 @@ export const films: Film[] = [
         moment: "14h",
         debatMoment: "16h25",
         animator: "Julia Meyer - Ingénieure Numérique Responsable à l'ADEME",
+        ticketingRedirection:
+          "https://s.pathe.fr/fr/V3308S70014/booking?_gl=1*bfziri*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "",
@@ -416,6 +435,8 @@ export const films: Film[] = [
         moment: "15h",
         debatMoment: "16h40",
         animator: "Akos Barrin",
+        ticketingRedirection:
+          "https://www.parnassiens.com/film/12-hommes-en-colere-2007/",
         participants: [
           {
             name: "Anastasia Magat",
@@ -434,6 +455,8 @@ export const films: Film[] = [
         moment: "15h",
         debatMoment: "16h30",
         animator: "François Desset - Shifter angevin et archéologue",
+        ticketingRedirection:
+          "https://s.pathe.fr/fr/V3308S69865/booking?_gl=1*1ly0fpd*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "François Gallon",
@@ -441,12 +464,12 @@ export const films: Film[] = [
           },
           {
             name: "Vincent Drouet",
-            description: "Chargé de projet et associé de la SCOP"
+            description: "Chargé de projet et associé de la SCOP",
           },
           {
             name: "Boris Butaeye",
-            description: "Light. Communication responsable"
-          }
+            description: "Light. Communication responsable",
+          },
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -463,15 +486,18 @@ export const films: Film[] = [
           },
           {
             name: "Léa Falco",
-            description: "Formation aux enjeux écologiques & Membre du collectif Pour un réveil écologique"
+            description:
+              "Formation aux enjeux écologiques & Membre du collectif Pour un réveil écologique",
           },
           {
             name: "Nathalie Dompnier",
-            description: "Présidente Université Lumière Lyon 2 - Professeure de sciences économiques et sociales"
-          }
+            description:
+              "Présidente Université Lumière Lyon 2 - Professeure de sciences économiques et sociales",
+          },
         ],
         cinema: CINEMAS.LYON_LEONARD,
-        ticketingRedirection: "https://www.eventbrite.fr/e/billets-festival-projection-transition-lyon-12-hommes-en-colere-737800851207?aff=oddtdtcreator",
+        ticketingRedirection:
+          "https://www.eventbrite.fr/e/billets-festival-projection-transition-lyon-12-hommes-en-colere-737800851207?aff=oddtdtcreator",
       },
       {
         city: CITIES.TOULOUSE,
@@ -514,6 +540,8 @@ export const films: Film[] = [
         moment: "19h15",
         debatMoment: "21h40",
         animator: "Thierry Keller",
+        ticketingRedirection:
+          "https://www.parnassiens.com/film/fight-club-1999/",
         participants: [
           {
             name: "Anastasia Magat",
@@ -544,7 +572,7 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
-        ticketingRedirection: "https://urlz.fr/nLpQ"
+        ticketingRedirection: "https://urlz.fr/nLpQ",
       },
       {
         city: CITIES.TOULOUSE,
@@ -556,7 +584,8 @@ export const films: Film[] = [
         participants: [
           {
             name: "Guillaume Mouillet",
-            description: "Référent du groupe local Midi Pyrénées des Shifters et ingénieur informaticien",
+            description:
+              "Référent du groupe local Midi Pyrénées des Shifters et ingénieur informaticien",
           },
           {
             name: "Claire Wallez",
@@ -599,6 +628,8 @@ export const films: Film[] = [
         debatMoment: "19h00",
         animator:
           "Loup Espargillière - Co-fondateur et rédacteur en chef de Vert, le média",
+        ticketingRedirection:
+          "https://www.parnassiens.com/film/captain-fantastic-2016-2/",
         participants: [
           {
             name: "Lucile Schmid ",
@@ -614,14 +645,18 @@ export const films: Film[] = [
         moment: "19h45",
         debatMoment: "21h45",
         animator: "Amélie Tissot - Shifteuse",
+        ticketingRedirection:
+          "https://s.pathe.fr/fr/V3308S69863/booking?_gl=1*2ifr99*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "Virginie Raisson-Victor",
-            description: "Présidente du GIEC des Pays-de-la-Loire, Co-fondatrice du Grand Défi des entreprises pour la planète",
+            description:
+              "Présidente du GIEC des Pays-de-la-Loire, Co-fondatrice du Grand Défi des entreprises pour la planète",
           },
           {
             name: "Adrien Salomé",
-            description: "Enseignant & consultant énergie/climat - Administrateur du Tiers lieu 122",
+            description:
+              "Enseignant & consultant énergie/climat - Administrateur du Tiers lieu 122",
           },
         ],
         cinema: CINEMAS.ANGERS,
@@ -650,14 +685,15 @@ export const films: Film[] = [
           },
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
-        ticketingRedirection: "https://urlz.fr/nLpw"
+        ticketingRedirection: "https://urlz.fr/nLpw",
       },
       {
         city: CITIES.TOULOUSE,
         day: DAYS.DIMANCHE_19_11,
         moment: "18h00",
         debatMoment: "20h00",
-        animator: "Caroline  Leroy - Doctorante chercheuse en Gouvernance adaptative et résilience des territoires touristiques",
+        animator:
+          "Caroline  Leroy - Doctorante chercheuse en Gouvernance adaptative et résilience des territoires touristiques",
         participants: [
           {
             name: "Jean Phillipe Decka",
@@ -711,6 +747,7 @@ export const films: Film[] = [
         moment: "10h00",
         debatMoment: "12h15",
         animator: "",
+        ticketingRedirection: "https://www.parnassiens.com/film/556376/#jour9",
         participants: [
           {
             name: "Alexandre Florentin",
@@ -745,7 +782,10 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "19h45",
         debatMoment: "21h25",
-        animator: "Clément Mabi - Maître de conférence en Science de l’information et de la communication",
+        animator:
+          "Clément Mabi - Maître de conférence en Science de l’information et de la communication",
+        ticketingRedirection:
+          "https://s.pathe.fr/fr/V3308S69867/booking?_gl=1*vm23wb*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx",
         participants: [
           {
             name: "William AUCANT",
@@ -756,7 +796,7 @@ export const films: Film[] = [
       },
       {
         city: CITIES.BRUXELLES,
-        day: DAYS.MARDI_21_11 ,
+        day: DAYS.MARDI_21_11,
         moment: "18h30",
         debatMoment: "20h30",
         animator:
@@ -802,6 +842,8 @@ export const films: Film[] = [
         debatMoment: "12h00",
         animator:
           "Audrey boehly - Conférencière et autrice du podcast et livre LIMITES PLANETAIRES",
+        ticketingRedirection:
+          "https://www.parnassiens.com/film/meme-la-pluie-2011/",
         participants: [
           {
             name: "Dan Lert",
@@ -815,8 +857,7 @@ export const films: Film[] = [
           },
           {
             name: "Agnés Ducharne ",
-            description:
-              "Hydrologue et climatologue",
+            description: "Hydrologue et climatologue",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -827,6 +868,8 @@ export const films: Film[] = [
         moment: "19h00",
         debatMoment: "20h45",
         animator: "Vincent Raimbault - Shifter",
+        ticketingRedirection:
+          "https://s.pathe.fr/fr/V3308S71305/booking?_gl=1*1ugagqu*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "Charlène Descollonges",
@@ -856,7 +899,8 @@ export const films: Film[] = [
         participants: [
           {
             name: "Sébastien LEGRAND",
-            description: "Co-créateur de la Fresque de l'Eau, vice-président de l'association Eau'Dyssée",
+            description:
+              "Co-créateur de la Fresque de l'Eau, vice-président de l'association Eau'Dyssée",
           },
           {
             name: "Nicolas ALBAN",
@@ -940,7 +984,8 @@ export const films: Film[] = [
           },
           {
             name: "Guillaume Carbou",
-            description: "Maître de conférences en sciences de l'information et de la communication à l'Université de Bordeaux.",
+            description:
+              "Maître de conférences en sciences de l'information et de la communication à l'Université de Bordeaux.",
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
