@@ -264,12 +264,11 @@ export const films: Film[] = [
           },
           {
             name: "Jean-Louis LEHUGER",
-            description:
-              "adjointe au maire environnement de la mairie d'Angers",
+            description: "",
           },
           {
             name: "Hélène CRUYPENNINCK",
-            description: "",
+            description: "adjointe au maire environnement de la mairie d'Angers",
           },
         ],
         cinema: CINEMAS.ANGERS,
