@@ -30,7 +30,7 @@ export const CINEMAS: Record<string, Cinema> = {
     },
     access: "",
     ticketingOpenDate: "2023-10-18",
-    ticketingRedirection: "http://www.cinema-vendome.be/",
+    ticketingRedirection: "https://www.billetweb.fr/projection-transition",
     organization: CITIES.BRUXELLES,
     phone: "+32 2 502 37 00",
     website: "http://www.cinema-vendome.be/",
