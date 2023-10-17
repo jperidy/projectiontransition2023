@@ -1,6 +1,6 @@
 <script>
   import config from "../../../config.json";
-  import { cinemas, films } from "../../data-local";
+  import { cinemas, days, films } from "../../data-local";
   import CustomContainer from "../CustomContainer.svelte";
   import SelecteCity from "../programmation/SelecteCity.svelte";
   import { city } from "../../store";
@@ -41,13 +41,22 @@
         <h3 class="text-pomme">
           {billetterie.cinemaName} ({billetterie.cinemaAddress})
         </h3>
-        {#each filmsList.filter((film) => film.cinemaName === billetterie.cinemaName && film.day && film.moment) as item}
-          <p class="text-center">
-            <a
-              href={item.ticketingRedirection || billetterie.billetterie}
-              target="_blank">{item.day} - {item.moment} : {item.title}</a
-            >
-          </p>
+        {#each Object.values(days[config.EDITION]) as day}
+          {#each filmsList
+            .filter((film) => film.cinemaName === billetterie.cinemaName && film.day === day && film.moment)
+            .sort((a, b) => {
+              if (a.moment > b.moment) {
+                return 1;
+              }
+              return -1;
+            }) as item}
+            <p class="text-center">
+              <a
+                href={item.ticketingRedirection || billetterie.billetterie}
+                target="_blank">{item.day} - {item.moment} : {item.title}</a
+              >
+            </p>
+          {/each}
         {/each}
       </div>
     {/each}
