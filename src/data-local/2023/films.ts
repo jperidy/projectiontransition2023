@@ -71,7 +71,7 @@ export const CINEMAS: Record<string, Cinema> = {
       "M4 (Vavin), M6 (Edgard Quinet ou Montparnasse Bienvenue), M12 (Montparnasse Bienvenue), M13 (Notre-Dame-des-Champs), Bus 58, 68, 82, 91 (Vavin)",
     ticketingOpenDate: "2023-10-18",
     ticketingRedirection:
-      "https://www.parnassiens.com/evenement/2029152-projection-transition",
+      "https://www.parnassiens.com/evenement/2109690-festival-projection-transition-2023",
     organization: CITIES.PARIS,
     phone: "+33 (0)1 43 35 13 89",
     website: "https://www.parnassiens.com/",
@@ -376,8 +376,6 @@ export const films: Film[] = [
         moment: "21h",
         debatMoment: "23h40",
         animator: "",
-        ticketingRedirection:
-          "https://www.parnassiens.com/film/2001-l-odyssee-de-l-espace-2001/",
         participants: [
           {
             name: "Jean-Marc Jancovici",
@@ -434,8 +432,6 @@ export const films: Film[] = [
         moment: "15h",
         debatMoment: "16h40",
         animator: "Akos Barrin",
-        ticketingRedirection:
-          "https://www.parnassiens.com/film/12-hommes-en-colere-2007/",
         participants: [
           {
             name: "Anastasia Magat",
@@ -539,8 +535,6 @@ export const films: Film[] = [
         moment: "19h15",
         debatMoment: "21h40",
         animator: "Thierry Keller",
-        ticketingRedirection:
-          "https://www.parnassiens.com/film/fight-club-1999/",
         participants: [
           {
             name: "Anastasia Magat",
@@ -627,8 +621,6 @@ export const films: Film[] = [
         debatMoment: "19h00",
         animator:
           "Loup Espargillière - Co-fondateur et rédacteur en chef de Vert, le média",
-        ticketingRedirection:
-          "https://www.parnassiens.com/film/captain-fantastic-2016-2/",
         participants: [
           {
             name: "Lucile Schmid ",
@@ -746,7 +738,6 @@ export const films: Film[] = [
         moment: "10h00",
         debatMoment: "12h15",
         animator: "",
-        ticketingRedirection: "https://www.parnassiens.com/film/556376/#jour9",
         participants: [
           {
             name: "Alexandre Florentin",
@@ -841,8 +832,6 @@ export const films: Film[] = [
         debatMoment: "12h00",
         animator:
           "Audrey boehly - Conférencière et autrice du podcast et livre LIMITES PLANETAIRES",
-        ticketingRedirection:
-          "https://www.parnassiens.com/film/meme-la-pluie-2011/",
         participants: [
           {
             name: "Dan Lert",
