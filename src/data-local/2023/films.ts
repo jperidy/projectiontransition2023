@@ -398,8 +398,8 @@ export const films: Film[] = [
           "https://s.pathe.fr/fr/V3308S70014/booking?_gl=1*bfziri*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Renaud Hétier",
+            description: "Professeur en Sciences de l'Education",
           },
         ],
         cinema: CINEMAS.ANGERS,
@@ -499,7 +499,7 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "20h30",
         debatMoment: "22h05",
-        animator: "",
+        animator: "Audrey Mazars - DG adjointe Ressources et Transformation administrative du Département du Tarn",
         participants: [
           {
             name: "",
@@ -904,11 +904,11 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "11h00",
         debatMoment: "12h45",
-        animator: "",
+        animator: "Emilce Ligneau",
         participants: [
           {
             name: "Sandrine Nieto",
-            description: "",
+            description: "Avocate en droit de l'environnement, Co-présidente Commission Environnement Energie du Barreau de Toulouse",
           },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
@@ -964,7 +964,7 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h45",
         debatMoment: "17h15",
-        animator: "Emilce Ligneau",
+        animator: "",
         participants: [
           {
             name: "Alexandre Tisserant",
