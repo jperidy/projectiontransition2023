@@ -353,7 +353,7 @@ export const films: Film[] = [
   },
   {
     edition: 2023,
-    title: "2001 : l'Odyseée de l'espace",
+    title: "2001 : l'Odyssée de l'espace",
     author: "Stanley Kubrick",
     releaseDate: 1968,
     duration: "2h21",
@@ -688,7 +688,7 @@ export const films: Film[] = [
         participants: [
           {
             name: "Jean Phillipe Decka",
-            description: "",
+            description: "Auteur du livre Le courage de RENONCER, Doctorant-chercheur en sciences de gestion",
           },
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
@@ -909,6 +909,10 @@ export const films: Film[] = [
           {
             name: "Sandrine Nieto",
             description: "Avocate en droit de l'environnement, Co-présidente Commission Environnement Energie du Barreau de Toulouse",
+          },
+          {
+            name: "Jean Francois Berthoumieu",
+            description: "Association Climatologique de la Moyenne-Garonne et du Sud-Ouest",
           },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
