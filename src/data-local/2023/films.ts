@@ -373,8 +373,8 @@ export const films: Film[] = [
       {
         city: CITIES.PARIS,
         day: DAYS.VENDREDI_17_11,
-        moment: "21h",
-        debatMoment: "23h40",
+        moment: "20h15h",
+        debatMoment: "22h50",
         animator: "",
         participants: [
           {
@@ -455,7 +455,7 @@ export const films: Film[] = [
         participants: [
           {
             name: "François Gallon",
-            description: "",
+            description: "Docteur en sociologie, enseignant-chercheur et directeur de la formation continue à l’Ircom",
           },
           {
             name: "Vincent Drouet",
