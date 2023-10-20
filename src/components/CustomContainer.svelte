@@ -1,8 +1,10 @@
 <script>
   export let size = { xs: 12, sm: 12, md: 12, lg: 10, xl: 10 };
   export let backgroundColor = "bg-transparent";
-  export let backgroundHTML = null;
-  export let backgroundImage = "";
+  /**
+     * @type {string?}
+     */
+   export let backgroundHTML = null;
 </script>
 
 <div
