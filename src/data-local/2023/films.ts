@@ -358,7 +358,7 @@ export const films: Film[] = [
     releaseDate: 1968,
     duration: "2h21",
     originalTitle: "2001: A Space Odyssey ",
-    theme: "Modernité et écologie : quel sens donner au progrès ?",
+    theme: "Écologie et modernité : quel sens donner au progrès ?",
     image: {
       summary: "2023/2001-l-odyssee-de-l-espace.webp",
       programmation: "2023/2001-2.webp",

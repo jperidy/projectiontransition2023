@@ -1,13 +1,13 @@
 import config from "../../config.json";
 export const menu = [
   {
-    name: "Projet pédagogique",
-    url: "/projet-pedagogique",
+    name: `Programmation ${config.EDITION}`,
+    url: "/programmation",
     SUBTITLE: [],
   },
   {
-    name: `Programmation ${config.EDITION}`,
-    url: "/programmation",
+    name: "Projet pédagogique",
+    url: "/projet-pedagogique",
     SUBTITLE: [],
   },
   {
