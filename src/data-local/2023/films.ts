@@ -226,7 +226,7 @@ export const films: Film[] = [
         moment: "14h",
         debatMoment: "15h50",
         animator: "Simon Lebrette - Bénévole The Shifters",
-        ticketingMessage: "Séance réservée au projet pédagogique",
+        ticketingRedirection: "https://www.helloasso.com/associations/the-shifters/evenements/projectiontransition2023parisgagarine",
         withoutTicketing: true,
         participants: [
           {
