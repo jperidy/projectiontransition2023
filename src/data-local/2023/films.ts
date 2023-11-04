@@ -225,21 +225,21 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "14h",
         debatMoment: "15h50",
-        animator: "Simon Lebrette - Bénévole Shifter - Bibliothécaire",
+        animator: "Simon Lebrette - Bénévole The Shifters",
         ticketingMessage: "Séance réservée au projet pédagogique",
         withoutTicketing: true,
         participants: [
           {
             name: "Fanny Liatard",
-            description: "Réalisatrice scénariste",
+            description: "Réalisatrice scénariste de Gagarine",
           },
           {
             name: "Jérémy Trouilh (sous réserve)",
-            description: "Réalisateur scénariste",
+            description: "Réalisateur scénariste de Gagarine",
           },
           {
             name: "Olivier Faber",
-            description: "Architecte | Co-fondateur de Roofscapes",
+            description: "Architecte, co-fondateur de Roofscapes",
           },
           {
             name: "Sabrina Decanton",
@@ -253,22 +253,22 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "13h45",
         debatMoment: "15h25",
-        animator: "Vinz Kante",
+        animator: "Vinz Kante - Créateur du média Limit",
         withoutTicketing: true,
         ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
           {
             name: "Thomas GRENOUILLEAU",
             description:
-              "Dirigeant de ERB, entreprise générale de construction",
+              "Président de l'ERB Entreprise Générale",
           },
           {
             name: "Jean-Louis LEHUGER",
-            description: "",
+            description: "Directeur territorial chez Transdev",
           },
           {
             name: "Hélène CRUYPENNINCK",
-            description: "adjointe au maire environnement de la mairie d'Angers",
+            description: "Adjointe à l'Environnement à la Ville d'Angers",
           },
         ],
         cinema: CINEMAS.ANGERS,
@@ -279,7 +279,7 @@ export const films: Film[] = [
         moment: "14h",
         debatMoment: "15h50",
         animator:
-          "Hugo Struna - Journaliste environnement pour Euractiv France",
+          "Hugo Struna - Journaliste environnement chez Euractiv France",
         withoutTicketing: true,
         ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
@@ -289,11 +289,11 @@ export const films: Film[] = [
           },
           {
             name: "Matthieu FISCHER",
-            description: "Adjoint à l'Urbanisme à la mairie de Vaulx-en-Velin",
+            description: "Adjoint à l'Urbanisme à la Ville de Vaulx-en-Velin",
           },
           {
             name: "Harout Mekhsian",
-            description: "Directeur CCO La Rayonne",
+            description: "Directeur de la CCO La Rayonne",
           },
         ],
         cinema: CINEMAS.LYON_PP,
@@ -303,7 +303,7 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "14h00",
         debatMoment: "15h50",
-        animator: "",
+        animator: "Jeanne Gallien - Chargée de Communication & Référente Communication du Groupe Locale des Shifters Midi-Pyrénées",
         withoutTicketing: true,
         ticketingMessage: "Séance réservée au projet pédagogique",
         participants: [
@@ -319,7 +319,7 @@ export const films: Film[] = [
           },
           {
             name: "Xavier Normand",
-            description: "maire et urbaniste",
+            description: "Maire de Castanet-Tolosan, urbaniste",
           },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
@@ -344,7 +344,7 @@ export const films: Film[] = [
           },
           {
             name: "Camille MAY",
-            description: "",
+            description: "Co-fondateur du Champignon Urbain à Nantes",
           },
         ],
         cinema: CINEMAS.NANTES,
@@ -379,12 +379,16 @@ export const films: Film[] = [
         participants: [
           {
             name: "Jean-Marc Jancovici",
-            description: "",
+            description: "Président The Shift Project",
           },
           {
             name: "Alexandra Bidet ",
-            description: "",
+            description: "Chargée de recherche au CNRS",
           },
+          {
+            name: "Eric Moulines",
+            description: "Membre de l'Académie des Sciences",
+          }
         ],
         cinema: CINEMAS.PARIS,
       },
@@ -399,8 +403,12 @@ export const films: Film[] = [
         participants: [
           {
             name: "Renaud Hétier",
-            description: "Professeur en Sciences de l'Education",
+            description: "Professeur en Sciences de l'Éducation à l'Université Catholique de l'Ouest d'Angers",
           },
+          {
+            name: "Yannick Bourdin",
+            description: "",
+          }
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -431,15 +439,19 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h",
         debatMoment: "16h40",
-        animator: "Akos Barrin",
+        animator: "Akos Barrin - Bénévole The Shifters",
         participants: [
           {
             name: "Anastasia Magat",
-            description: "",
+            description: "Directrice adjointe de l'Institut Rousseau",
           },
           {
             name: "Chloé Ridel",
-            description: "",
+            description: "Porte-parole du Parti socialiste",
+          },
+          {
+            name: "Gérald Garutti",
+            description: "Fondateur et directeur du centre Des Arts De La Parole",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -449,21 +461,21 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h",
         debatMoment: "16h30",
-        animator: "François Desset - Shifter angevin et archéologue",
+        animator: "François Desset - Bénévole The Shifters et archéologue",
         ticketingRedirection:
           "https://s.pathe.fr/fr/V3308S69865/booking?_gl=1*1ly0fpd*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "François Gallon",
-            description: "Docteur en sociologie, enseignant-chercheur et directeur de la formation continue à l’Ircom",
+            description: "Docteur en sociologie, enseignant-chercheur et directeur de la formation continue à l’IRCOM",
           },
           {
             name: "Vincent Drouet",
-            description: "Chargé de projet et associé de la SCOP",
+            description: "Chargé de projet et associé de la SCOP Light",
           },
           {
             name: "Boris Butaeye",
-            description: "Light. Communication responsable",
+            description: "Directeur artistique de la SCOP Light",
           },
         ],
         cinema: CINEMAS.ANGERS,
@@ -473,7 +485,7 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "20h",
         debatMoment: "21h35",
-        animator: "Paul Messad - Journaliste environnement à Euractiv France",
+        animator: "Paul Messad - Journaliste environnement chez Euractiv France",
         participants: [
           {
             name: "Louise TSCHANZ",
@@ -482,12 +494,7 @@ export const films: Film[] = [
           {
             name: "Léa Falco",
             description:
-              "Formation aux enjeux écologiques & Membre du collectif Pour un réveil écologique",
-          },
-          {
-            name: "Nathalie Dompnier",
-            description:
-              "Présidente Université Lumière Lyon 2 - Professeure de sciences économiques et sociales",
+              "Formatrice aux enjeux écologiques & membre du collectif Pour un réveil écologique",
           },
         ],
         cinema: CINEMAS.LYON_LEONARD,
@@ -499,12 +506,16 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "20h30",
         debatMoment: "22h05",
-        animator: "Audrey Mazars - DG adjointe Ressources et Transformation administrative du Département du Tarn",
+        animator: "",
         participants: [
           {
-            name: "",
-            description: "",
+            name: "Wulfran Despicht",
+            description: "Directeur de la mission démocratie Participative/Egalité femmes-hommes au conseil départemental de la Haute Garonne",
           },
+          {
+            name: "Zachary Baqué",
+            description: "Maitre de conférences en études étatsuniennes et analyse filmique à l'Université Toulouse - Jean Jaurès",
+          }
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
@@ -534,15 +545,19 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "19h15",
         debatMoment: "21h40",
-        animator: "Thierry Keller",
+        animator: "Thierry Keller - Journaliste, essayiste, conférencier",
         participants: [
           {
             name: "Anastasia Magat",
-            description: "",
+            description: "Directrice adjointe de l'Institut Rousseau",
           },
           {
             name: "Marion Robin",
-            description: "",
+            description: "Pédopsychiatre dans le département de Psychiatrie de l’adolescent de l'Institut Mutualiste Montsouris",
+          },
+          {
+            name: "Amine Messal",
+            description: "Étudiant à l'École normale supérieure de Paris-Saclay et militant",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -552,12 +567,15 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "14h",
         debatMoment: "16h20",
-        animator: "",
+        animator: "Florence Gault - Journaliste et formatrice",
         participants: [
           {
             name: "Nadège RAFFOUX",
-            description:
-              "Psychologue à Université Lumière Lyon 2, Centre de Recherche en Psychopathologie et Psychologie Clinique",
+            description: "Psychologue",
+          },
+          {
+            name: "Anaïs LESIOURD",
+            description: "Facilitatrice et formatrice en accompagnement du changement écologique chez Néoécolo",
           },
           {
             name: "Benoit Rolland de Ravel",
@@ -585,7 +603,7 @@ export const films: Film[] = [
             description: "Psychologue spécialisée dans l’éco-anxiété",
           },
           {
-            name: "Iris-Amata Dion",
+            name: "Iris Dion",
             description: "Climatologue",
           },
         ],
@@ -623,9 +641,13 @@ export const films: Film[] = [
           "Loup Espargillière - Co-fondateur et rédacteur en chef de Vert, le média",
         participants: [
           {
-            name: "Lucile Schmid ",
+            name: "Gabrielle Paoli ",
             description:
               "Co-fondatrcie et Vice présidente de La Fabrique écologique",
+          },
+          {
+            name: "Lucile Schmid ",
+            description: "Co-fondatrcie et Vice présidente de La Fabrique Écologique",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -635,20 +657,24 @@ export const films: Film[] = [
         day: DAYS.VENDREDI_17_11,
         moment: "19h45",
         debatMoment: "21h45",
-        animator: "Amélie Tissot - Shifteuse",
+        animator: "Amélie Tissot - Bénévole The Shifters",
         ticketingRedirection:
           "https://s.pathe.fr/fr/V3308S69863/booking?_gl=1*2ifr99*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "Virginie Raisson-Victor",
             description:
-              "Présidente du GIEC des Pays-de-la-Loire, Co-fondatrice du Grand Défi des entreprises pour la planète",
+              "Géopolitologue et prospectiviste, Présidente du GIEC des Pays-de-la-Loire, Co-fondatrice du Grand Défi des entreprises pour la planète",
           },
           {
             name: "Adrien Salomé",
             description:
-              "Enseignant & consultant énergie/climat - Administrateur du Tiers lieu 122",
+              "Enseignant & consultant énergie/climat et redirectionniste à vingt et un vingt deux",
           },
+          {
+            name: "Francis Guiteau",
+            description: "Adjoint à la rénovation urbaine, la vie des quartiers et la vie associative à la ville d'Angers",
+          }
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -684,8 +710,12 @@ export const films: Film[] = [
         moment: "18h00",
         debatMoment: "20h00",
         animator:
-          "Caroline  Leroy - Doctorante chercheuse en Gouvernance adaptative et résilience des territoires touristiques",
+          "Amaury La Burthe - Entrepreneur en transition et bénévole chez Les Shifters",
         participants: [
+          {
+            name: "Caroline  Leroy",
+            description: "Doctorante chercheuse en Gouvernance adaptative et résilience des territoires touristiques",
+          },
           {
             name: "Jean Phillipe Decka",
             description: "Auteur du livre Le courage de RENONCER, Doctorant-chercheur en sciences de gestion",
@@ -709,6 +739,10 @@ export const films: Film[] = [
             description:
               'Co fondateur Tiers Lieu "l\'arbre qui pousse" à Ottignie',
           },
+          {
+            name: "Valérie Zoydo",
+            description: "Storytelleuse du changement individuel et collectif",
+          }
         ],
         cinema: CINEMAS.BRUXELLES,
       },
@@ -737,11 +771,19 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "10h00",
         debatMoment: "12h15",
-        animator: "",
+        animator: "Alexandre Florentin - Conseiller à la Ville de Paris",
         participants: [
           {
-            name: "Alexandre Florentin",
-            description: "",
+            name: "Camille Brunel",
+            description: "Journaliste, écrivain, critique de cinéma",
+          },
+          {
+            name: "Marc-André Selosse",
+            description: "Professeur du Muséum national d'Histoire naturelle, Paris",
+          },
+          {
+            name: "Emanuele Coccia",
+            description: "Philosophe et maître de conférences à l'École des hautes études en sciences sociales",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -773,14 +815,18 @@ export const films: Film[] = [
         moment: "19h45",
         debatMoment: "21h25",
         animator:
-          "Clément Mabi - Maître de conférence en Science de l’information et de la communication",
+          "Clément Mabi - Maître de conférence en Sciences de l’Information et de la Communication à l'Université de Technologie de Compiègne",
         ticketingRedirection:
           "https://s.pathe.fr/fr/V3308S69867/booking?_gl=1*vm23wb*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx",
         participants: [
           {
             name: "William AUCANT",
-            description: "",
+            description: "Conseiller régional des Pays-de-la-Loire et membre de la Convention Citoyenne pour le Climat",
           },
+          {
+            name: "Esther Le Cordier",
+            description: "Militante pour différentes luttes écologistes",
+          }
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -831,21 +877,21 @@ export const films: Film[] = [
         moment: "10h15",
         debatMoment: "12h00",
         animator:
-          "Audrey boehly - Conférencière et autrice du podcast et livre LIMITES PLANETAIRES",
+          "Audrey boehly - Conférencière et autrice du podcast et du livre DERNIÈRES LIMITES",
         participants: [
           {
             name: "Dan Lert",
             description:
-              "Adjoint à la Maire de Paris en charge de la transition écologique, du Plan Climat, de l’eau et de l’énergie et Président d’Eau de Paris",
+              "Adjoint en charge de la transition écologique, du Plan Climat, de l’eau et de l’énergie à la Ville de Paris et Président d’Eau de Paris",
           },
           {
             name: "Gaspard Manesse",
             description:
-              "Maraîcher bio en AMAP, Porte parole IdF et membre du Comité National de la Confédération Paysanne",
+              "Membre du Comité National de la Confédération Paysanne",
           },
           {
             name: "Agnés Ducharne ",
-            description: "Hydrologue et climatologue",
+            description: "Directrice de recherche au CNRS",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -855,19 +901,19 @@ export const films: Film[] = [
         day: DAYS.DIMANCHE_19_11,
         moment: "19h00",
         debatMoment: "20h45",
-        animator: "Vincent Raimbault - Shifter",
+        animator: "Vincent Raimbault - Bénévole The Shifters",
         ticketingRedirection:
           "https://s.pathe.fr/fr/V3308S71305/booking?_gl=1*1ugagqu*_gcl_au*MTg1ODcxODY2MS4xNjk3NDg1NjEx&pos=cHJpY2luZw%3D%3D",
         participants: [
           {
             name: "Charlène Descollonges",
             description:
-              'Ingénieure hydrologue indépendante à "Pour une Hydrologie Régénérative"',
+              "Co-fondatrice de l'association Pour une Hydrologie Régénérative",
           },
           {
             name: "Morgan Priol",
             description:
-              "Directrice de la délégation Maine-Loire-Océan chez Agence de l'eau Loire-Bretagne",
+              "Directrice de la délégation Maine-Loire-Océan à l'Agence de l'eau Loire-Bretagne",
           },
           {
             name: "Jean-Paul Pavillon",
@@ -883,7 +929,7 @@ export const films: Film[] = [
         moment: "18h00",
         debatMoment: "19h50",
         animator:
-          "Valentine Ambert - Chargée de mission Dévelopement Durable chez Suez Environnement",
+          "Valentine Ambert - Rédactrice chez Youmatter",
         participants: [
           {
             name: "Sébastien LEGRAND",
@@ -895,6 +941,10 @@ export const films: Film[] = [
             description:
               "Directeur délégation de Lyon à l'Agence de l'eau Rhone Mediterranée Corse",
           },
+          {
+            name: "Eric Sauquet",
+            description: "Directeur de recherche à l'INRAE",
+          }
         ],
         cinema: CINEMAS.LYON_BELLECOURT,
         ticketingRedirection: "https://urlz.fr/nLpH",
@@ -914,6 +964,10 @@ export const films: Film[] = [
             name: "Jean Francois Berthoumieu",
             description: "Association Climatologique de la Moyenne-Garonne et du Sud-Ouest",
           },
+          {
+            name: "Dominique Fouchier",
+            description: "Maire de Tournefeuille , vice président de Toulouse Métropole"
+          }
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
@@ -932,12 +986,12 @@ export const films: Film[] = [
           {
             name: "Martin Oohse",
             description:
-              "Team Manager/ Water Departement at Bruxelles Environnement",
+              "Responsable Maillage Bleu - Bruxelles Environnement",
           },
           {
             name: "Aurore Degré",
             description:
-              "Université de Liège, Professeur agronomie et hydrologie ",
+              "Professeure d’hydrologie et de physique des sols (Gembloux Agro-Bio Tech)",
           },
         ],
         cinema: CINEMAS.BRUXELLES,
