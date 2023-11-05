@@ -223,7 +223,7 @@ export const films: Film[] = [
       {
         city: CITIES.PARIS,
         day: DAYS.VENDREDI_17_11,
-        moment: "14h",
+        moment: "14h00",
         debatMoment: "15h50",
         animator: "Simon Lebrette - Bénévole The Shifters",
         ticketingRedirection: "https://www.helloasso.com/associations/the-shifters/evenements/projectiontransition2023parisgagarine",
@@ -275,7 +275,7 @@ export const films: Film[] = [
       {
         city: CITIES.LYON,
         day: DAYS.VENDREDI_17_11,
-        moment: "14h",
+        moment: "14h00",
         debatMoment: "15h50",
         animator:
           "Hugo Struna - Journaliste environnement chez Euractiv France",
@@ -372,7 +372,7 @@ export const films: Film[] = [
       {
         city: CITIES.PARIS,
         day: DAYS.VENDREDI_17_11,
-        moment: "20h15h",
+        moment: "20h15",
         debatMoment: "22h50",
         animator: "",
         participants: [
@@ -394,7 +394,7 @@ export const films: Film[] = [
       {
         city: CITIES.ANGERS,
         day: DAYS.DIMANCHE_19_11,
-        moment: "14h",
+        moment: "14h00",
         debatMoment: "16h25",
         animator: "Julia Meyer - Ingénieure Numérique Responsable à l'ADEME",
         ticketingRedirection:
@@ -436,7 +436,7 @@ export const films: Film[] = [
       {
         city: CITIES.PARIS,
         day: DAYS.SAMEDI_18_11,
-        moment: "15h",
+        moment: "15h00",
         debatMoment: "16h40",
         animator: "Akos Barrin - Bénévole The Shifters",
         participants: [
@@ -458,7 +458,7 @@ export const films: Film[] = [
       {
         city: CITIES.ANGERS,
         day: DAYS.SAMEDI_18_11,
-        moment: "15h",
+        moment: "15h00",
         debatMoment: "16h30",
         animator: "François Desset - Bénévole The Shifters et archéologue",
         ticketingRedirection:
@@ -482,7 +482,7 @@ export const films: Film[] = [
       {
         city: CITIES.LYON,
         day: DAYS.VENDREDI_17_11,
-        moment: "20h",
+        moment: "20h00",
         debatMoment: "21h35",
         animator: "Paul Messad - Journaliste environnement chez Euractiv France",
         participants: [
@@ -564,7 +564,7 @@ export const films: Film[] = [
       {
         city: CITIES.LYON,
         day: DAYS.DIMANCHE_19_11,
-        moment: "14h",
+        moment: "14h00",
         debatMoment: "16h20",
         animator: "Florence Gault - Journaliste et formatrice",
         participants: [

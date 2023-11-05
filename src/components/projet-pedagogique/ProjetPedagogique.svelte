@@ -1,6 +1,8 @@
 <script>
   import Title from "../../ui/Title.svelte";
   import UnderlineTitle from "../../ui/UnderlineTitle.svelte";
+  import ColumnTitle from "./ColumnTitle.svelte";
+  import ParticipateButton from "./ParticipateButton.svelte";
   import Step from "./Step.svelte";
 </script>
 
@@ -17,11 +19,10 @@
 
     <div class="line">
       <div class="column">
-        <div class="border-bottom border-primary border-2 w-100 mb-4">
-          <h3 class="text-primary text-start">
-            Embarquer la jeunesse dans la construction de son avenir
-          </h3>
-        </div>
+        <ColumnTitle>
+          Embarquer la jeunesse dans la construction de son avenir
+        </ColumnTitle>
+
         <p>
           Tous les ans, Projection Transition met un point d'honneur à démarrer
           le festival avec des lycéennes et lyceens ! Porté par un film projeté
@@ -43,9 +44,7 @@
         </p>
       </div>
       <div class="column">
-        <div class="border-bottom border-primary border-2 w-100 mb-4">
-          <h3 class="text-primary text-start">Le thème de l'année 2023</h3>
-        </div>
+        <ColumnTitle>Le thème de l'année 2023</ColumnTitle>
         <div class="line">
           <img src="projet-pedagogique/affiche.jpg" alt="affiche gagarine" />
           <div>
@@ -61,9 +60,7 @@
     </div>
     <div class="line">
       <div class="column">
-        <div class="border-bottom border-primary border-2 w-100 mb-4">
-          <h3 class="text-primary text-center">Les étapes du projet</h3>
-        </div>
+        <ColumnTitle>Les étapes du projet</ColumnTitle>
         <div class="line">
           <Step
             img="atelier1.png"
@@ -113,6 +110,100 @@
         </div>
       </div>
     </div>
+    <div class="line">
+      <div class="column">
+        <ColumnTitle>Ressources</ColumnTitle>
+        <h4>
+          Les ressources proposées par l'ADEME, partenaire du projet pédagogique
+        </h4>
+        <UnderlineTitle />
+        <p>
+          Tout au long de la construction du projet pédagogique, l'équipe est
+          épaulée par le pôle <i>information et éducation</i> de l'ADEME.
+        </p>
+        <p>
+          L'ADEME a aidé à sélectionner les ressources utiles permettant aux
+          enseignants d'ouvrir le débat avec leurs élèves sur des questions
+          liées au changement climatique.
+        </p>
+        <p>
+          Retrouvez de nombreuses ressources sur le site <a
+            href="https://mtaterre.fr/"
+            target="_blank">M ta terre</a
+          >
+          et dans
+          <a
+            href="https://agirpourlatransition.ademe.fr/acteurs-education/"
+            target="_blank"
+            >l'espace de l'ADEME pour les acteurs de l'éducation</a
+          >.
+        </p>
+      </div>
+      <div class="column">
+        <ColumnTitle>Poursuivre l'engagement de la classe</ColumnTitle>
+        <p>
+          <strong>
+            À la suite du festival, les professeurs peuvent continuer à
+            mobiliser leurs élèves sur les sujets climats, en lien les
+            programmes scolaires, avec les projets de l'établissement, etc.
+            Voici quelques initiatives repérées par l'équipe du projet
+            pédagogique&nbsp;:
+          </strong>
+        </p>
+        <h4>Ma petite Planète</h4>
+        <UnderlineTitle />
+        <p>
+          Engager une classe dans le prochain challenge Ma Petite Planète qui
+          aura lieu en mars 2014.
+        </p>
+        <ParticipateButton
+          href="https://mapetiteplanete.org/"
+          text="Je participe"
+        />
+        <h4>Bilan carbone</h4>
+        <UnderlineTitle />
+        <p>
+          Réaliser le bilan carbone de votre établissement, avec les élèves.
+        </p>
+        <ParticipateButton href="/" text="Je participe" />
+      </div>
+      <div class="column">
+        <ColumnTitle>Kit pédagogique</ColumnTitle>
+        <h4>
+          Utiliser le kit pédagogique pour mener un ciné-débat avec vos élèves
+        </h4>
+        <UnderlineTitle />
+        <p>
+          Les contenus produits par notre équipe dans le cadre du projet
+          pédagogique du festival Projection Transition ont vocation à servir
+          aux professeurs et aux élèves. Vous pouvez utiliser librement le
+          déroulé que nous proposons ci-dessus et ajuster :
+        </p>
+        <p>
+          • Atelier 1 : vous pouvez contacter l'association de la Fresque du
+          climat pour vous former et l'animer auprès de vos élèves, ou
+          solliciter un-e bénévole pour l'animer.
+        </p>
+        <p>
+          • Atelier 2 : télécharger le kit avec les "fiches profs" et "fiches
+          élèves" et rapprochez-vous des professeurs documentalistes de votre
+          établissement pour accéder à un maximum de ressources.
+        </p>
+        <p>
+          • Ciné : contacter un cinéma local pour organiser une séance, ou
+          rapprochez-vous des professeurs documentalistes de votre établissement
+          pour connaître les modalités d'une projection en classe.
+        </p>
+        <p>
+          • Débat : contacter (vous ou vos élèves) des expert-es locaux pour
+          mener un débat en classe ou au cinéma, ou visionner l'enregistrement
+          du débat mené au festival Projection Transition à Paris sur la <a
+            href="https://www.youtube.com/channel/UCgSSefHpeDC42nXZcOy97aA"
+            target="_blank">page Youtube du festival</a
+          >.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -120,9 +211,9 @@
   .content-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 64px;
     margin-top: 16px;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
   .img-container {
     width: 100%;
@@ -144,5 +235,8 @@
     flex-direction: column;
     align-items: start;
     flex: 1;
+  }
+  a {
+    color: white;
   }
 </style>
