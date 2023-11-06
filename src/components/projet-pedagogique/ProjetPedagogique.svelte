@@ -157,7 +157,7 @@
           aura lieu en mars 2014.
         </p>
         <ParticipateButton
-          href="https://mapetiteplanete.org/"
+          href="https://mapetiteplanete.org/mpp-scolaire/"
           text="Je participe"
         />
         <h4>Bilan carbone</h4>
@@ -165,7 +165,10 @@
         <p>
           Réaliser le bilan carbone de votre établissement, avec les élèves.
         </p>
-        <ParticipateButton href="/" text="Je participe" />
+        <ParticipateButton
+          href="https://agirpourlatransition.ademe.fr/acteurs-education/enseigner/calculez-bilan-carbone-college-lycee"
+          text="Je participe"
+        />
       </div>
       <div class="column">
         <ColumnTitle>Kit pédagogique</ColumnTitle>
@@ -180,9 +183,14 @@
           déroulé que nous proposons ci-dessus et ajuster :
         </p>
         <p>
-          • Atelier 1 : vous pouvez contacter l'association de la Fresque du
-          climat pour vous former et l'animer auprès de vos élèves, ou
-          solliciter un-e bénévole pour l'animer.
+          • Atelier 1 : vous pouvez contacter l'association de <a
+            href="https://fresqueduclimat.org/"
+            target="_blank">la&nbsp;Fresque&nbsp;du&nbsp;climat</a
+          >
+          ou l'association
+          <a href="https://educlimat.fr/" target="_blank">Educlimat</a> pour vous
+          former et l'animer auprès de vos élèves, ou solliciter un-e bénévole pour
+          l'animer.
         </p>
         <p>
           • Atelier 2 : télécharger le kit avec les "fiches profs" et "fiches

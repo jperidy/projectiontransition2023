@@ -3,6 +3,22 @@ export const communiques = [
     title: "Communiqué de presse - septembre 2023",
     href: "/presse/Communique de presse - septembre 2023.zip",
   },
+  {
+    title: "Dossier de presse PROGRAMMATION PARIS - octobre 2023",
+    href: "/presse/Dossier de presse PROGRAMMATION PARIS - octobre 2023.pdf",
+  },
+  {
+    title: "Dossier de presse PROGRAMMATION ANGERS - octobre 2023",
+    href: "/presse/Dossier de presse PROGRAMMATION ANGERS - octobre 2023.pdf",
+  },
+  {
+    title: "Dossier de presse PROGRAMMATION LYON - octobre 2023",
+    href: "/presse/Dossier de presse PROGRAMMATION LYON - octobre 2023.pdf",
+  },
+  {
+    title: "Dossier de presse PROGRAMMATION TOULOUSE - octobre 2023",
+    href: "/presse/Dossier de presse PROGRAMMATION TOULOUSE - octobre 2023.pdf",
+  },
 ];
 
 export const photos2021 = [
