@@ -448,10 +448,6 @@ export const films: Film[] = [
             name: "Chloé Ridel",
             description: "Porte-parole du Parti socialiste",
           },
-          {
-            name: "Gérald Garutti",
-            description: "Fondateur et directeur du centre Des Arts De La Parole",
-          },
         ],
         cinema: CINEMAS.PARIS,
       },
