@@ -233,10 +233,6 @@ export const films: Film[] = [
             description: "Réalisatrice scénariste de Gagarine",
           },
           {
-            name: "Jérémy Trouilh (sous réserve)",
-            description: "Réalisateur scénariste de Gagarine",
-          },
-          {
             name: "Olivier Faber",
             description: "Architecte, co-fondateur de Roofscapes",
           },
@@ -633,16 +629,16 @@ export const films: Film[] = [
         moment: "17h00",
         debatMoment: "19h00",
         animator:
-          "Loup Espargillière - Co-fondateur et rédacteur en chef de Vert, le média",
+          "Loup Espargilière - Co-fondateur et rédacteur en chef de Vert, le média",
         participants: [
           {
             name: "Gabrielle Paoli ",
             description:
-              "Co-fondatrcie et Vice présidente de La Fabrique écologique",
+              "Administratrice de la Coopérative Oasis",
           },
           {
             name: "Lucile Schmid ",
-            description: "Co-fondatrcie et Vice présidente de La Fabrique Écologique",
+            description: "Co-fondatrice et Vice présidente de La Fabrique Écologique",
           },
         ],
         cinema: CINEMAS.PARIS,
