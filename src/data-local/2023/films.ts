@@ -497,7 +497,7 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "20h30",
         debatMoment: "22h05",
-        animator: "",
+        animator: "Romain Clappier - Étudiant en dernière année à Science Po Toulouse",
         participants: [
           {
             name: "Wulfran Despicht",
@@ -506,6 +506,10 @@ export const films: Film[] = [
           {
             name: "Zachary Baqué",
             description: "Maitre de conférences en études étatsuniennes et analyse filmique à l'Université Toulouse - Jean Jaurès",
+          },
+          {
+            name: "Alain Boscus",
+            description: "Historien et enseignant à l’Université Toulouse Jean Jaurès à la retraite. Militant associatif engagé auprès du collectif La Voie est libre.",
           }
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
@@ -640,6 +644,10 @@ export const films: Film[] = [
             name: "Lucile Schmid ",
             description: "Co-fondatrice et Vice présidente de La Fabrique Écologique",
           },
+          {
+            name: "Valérie Zoydo ",
+            description: "A l’initiative de l’Assemblée citoyenne des Imaginaires",
+          },
         ],
         cinema: CINEMAS.PARIS,
       },
@@ -711,6 +719,10 @@ export const films: Film[] = [
             name: "Jean Phillipe Decka",
             description: "Auteur du livre Le courage de RENONCER, Doctorant-chercheur en sciences de gestion",
           },
+          {
+            name: "Karim Lahiani",
+            description: "Paysagiste et Urbaniste, initiateur du projet Une Autre Voie face à l’A69.",
+          }
         ],
         cinema: CINEMAS.TOULOUSE_AMERICAN,
       },
@@ -957,8 +969,12 @@ export const films: Film[] = [
           },
           {
             name: "Dominique Fouchier",
-            description: "Maire de Tournefeuille , vice président de Toulouse Métropole"
-          }
+            description: "Maire de Tournefeuille , vice président de Toulouse Métropole",
+          },
+          {
+            name: "Roxelane Cakir",
+            description: "Fondatrice et CEO de la société HETWA",
+          },
         ],
         cinema: CINEMAS.TOULOUSE_TOURNEFEUILLE,
       },
@@ -1013,7 +1029,7 @@ export const films: Film[] = [
         day: DAYS.SAMEDI_18_11,
         moment: "15h45",
         debatMoment: "17h15",
-        animator: "",
+        animator: "Guillaume Wable - Ingénieur aéronautique et bénévole chez Les Shifters",
         participants: [
           {
             name: "Alexandre Tisserant",
