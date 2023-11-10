@@ -45,15 +45,15 @@
           coopérer vers ce monde en commun.</strong
         >
       </p>
-      <!-- <iframe
+      <iframe
         width="848"
         height="476"
-        src="https://www.youtube.com/embed/8jyFzkIz86g"
+        src="https://www.youtube.com/embed/SxB9j0tnHJk"
         title="Projection Transition - 2è édition - Bande-annonce officielle (2021)"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      /> -->
+      />
     </div>
     <SidePanel
       description="Depuis toujours le cinéma s'est emparé de thèmes de société, et, pour une partie c'est une question environnementale qui était au centre de l'intrigue (...) Venez nombreux !"
