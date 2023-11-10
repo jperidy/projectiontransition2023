@@ -33,18 +33,7 @@
           demain.</strong
         >
       </p>
-      <p>
-        Pour nous aider à nous projeter dans cet avenir, nous avons besoin
-        d'histoires qui nourrissent notre imagination. Le cinéma possède un
-        pouvoir évocateur exceptionnel et une capacité à susciter des questions,
-        à mobiliser et à inspirer qui sont plus nécessaires que jamais pour
-        accompagner cet élan. C'est pourquoi Projection Transition s'engage à
-        semer les graines de l'action collective, de la réflexion commune et de
-        la vie en communauté. <strong
-          >Les solutions existent, et l'avenir dépend de notre capacité à
-          coopérer vers ce monde en commun.</strong
-        >
-      </p>
+
       <iframe
         width="848"
         height="476"
