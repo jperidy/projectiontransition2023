@@ -402,8 +402,8 @@ export const films: Film[] = [
           },
           {
             name: "Yannick Bourdin",
-            description: "",
-          }
+            description: "Co-Pilote de projets et de transformation",
+          },
         ],
         cinema: CINEMAS.ANGERS,
       },
