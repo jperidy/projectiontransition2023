@@ -487,6 +487,10 @@ export const films: Film[] = [
             description:
               "Formatrice aux enjeux écologiques & membre du collectif Pour un réveil écologique",
           },
+          {
+            name: "Mélanie Petit",
+            description: "Doctorante, chercheuse sur les facteurs favorisant les comportements pro-environnementaux",
+          },
         ],
         cinema: CINEMAS.LYON_LEONARD,
         ticketingRedirection:
