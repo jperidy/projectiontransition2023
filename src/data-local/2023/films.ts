@@ -782,11 +782,11 @@ export const films: Film[] = [
         participants: [
           {
             name: "Marc-André Selosse",
-            description: "Professeur du Muséum national d'Histoire naturelle, Paris",
+            description: "Professeur du Muséum d'Histoire naturelle",
           },
           {
             name: "Emanuele Coccia",
-            description: "Philosophe et maître de conférences à l'École des hautes études en sciences sociales",
+            description: "Philosophe et maître de conférences à l’EHESS",
           },
           {
             name: "Pauline André-Dominguez",
