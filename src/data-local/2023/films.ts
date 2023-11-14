@@ -640,6 +640,10 @@ export const films: Film[] = [
           "Loup Espargilière - Co-fondateur et rédacteur en chef de Vert, le média",
         participants: [
           {
+            name: "Fabrice Bonnifet",
+            description: "Directeur Développement Durable & QSE Groupe Bouygues et Président du Collège des Directeurs du Développement Durable (C3D)",
+          },
+          {
             name: "Gabrielle Paoli ",
             description:
               "Administratrice de la Coopérative Oasis",
