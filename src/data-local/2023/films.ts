@@ -781,16 +781,20 @@ export const films: Film[] = [
         animator: "Alexandre Florentin - Conseiller à la Ville de Paris",
         participants: [
           {
-            name: "Camille Brunel",
-            description: "Journaliste, écrivain, critique de cinéma",
-          },
-          {
             name: "Marc-André Selosse",
             description: "Professeur du Muséum national d'Histoire naturelle, Paris",
           },
           {
             name: "Emanuele Coccia",
             description: "Philosophe et maître de conférences à l'École des hautes études en sciences sociales",
+          },
+          {
+            name: "Pauline André-Dominguez",
+            description: "Chercheuse-doctorante sur les nouveaux récits de l’écologie et des mondes marins au sein de l’EHESS et du Museum national d’Histoire naturelle",
+          },
+          {
+            name: "Claire Nouvian",
+            description: "Fondatrice et directrice de l’association Bloom",
           },
         ],
         cinema: CINEMAS.PARIS,
