@@ -115,15 +115,15 @@ export const partenairesSections: PartenaireSection[] = [
         url: "https://www.cut-collectif.fr/",
       },
       {
-        name: "Novethic",
-        logo: "2023/2023_novethic.webp",
-        url: "https://www.novethic.fr/qui-sommes-nous.html",
-      },
-      {
         name: "Socialter",
         logo: "2023/2023_socialter.webp",
         url: "https://www.socialter.fr/",
         dark: true,
+      },
+      {
+        name: "TV4Planet",
+        logo: "2023/2023_tv4p.webp",
+        url: "https://tv4planet.tv/",
       },
     ],
   },
