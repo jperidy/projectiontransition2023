@@ -404,6 +404,10 @@ export const films: Film[] = [
             name: "Yannick Bourdin",
             description: "Co-Pilote de projets et de transformation",
           },
+          {
+            name: "Anne-Charlotte Bonjean",
+            description: "Ingénieure réparabilité et Low Tech à l'ADEME",
+          },
         ],
         cinema: CINEMAS.ANGERS,
       },
