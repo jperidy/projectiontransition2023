@@ -441,8 +441,8 @@ export const films: Film[] = [
         animator: "Akos Barrin - Bénévole The Shifters",
         participants: [
           {
-            name: "Anastasia Magat",
-            description: "Directrice adjointe de l'Institut Rousseau",
+            name: "Marie Chureau",
+            description: "Activiste à Youth For Climate",
           },
           {
             name: "Chloé Ridel",
