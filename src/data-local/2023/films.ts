@@ -855,15 +855,19 @@ export const films: Film[] = [
         moment: "18h30",
         debatMoment: "20h30",
         animator:
-          "Adelaïde Charlier - Activiste pour le Climat et les Droits Humains",
+          "Gwenaëlle Dekegeleer - Journaliste, éditrice, présentatrice à la RTBF et animatrice de « Alors on change !»",
         participants: [
+          {
+            name: "Adelaïde Charlier",
+            description: "Activiste pour le Climat et les Droits Humains"
+          },
           {
             name: "Maxime Lambrecht",
             description: "Chargé de cours et médiateur scientifique en éthique du climat à l’Université Catholique de Louvain"
           },
           {
             name: "Chloé Mikolajczak",
-            description: "Coordinatrice à Fossil Free Politics Campaign",
+            description: "Coordinatrice de la campagne Fossil Free Politics",
           },
           {
             name: "Carine Thibaut",
