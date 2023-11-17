@@ -126,7 +126,7 @@ export const partenairesSections: PartenaireSection[] = [
       },
       {
         name: "Resilfood",
-        logo: "2023/resilfood.webp",
+        logo: "2023/2023_resilfood.webp",
         url: "https://www.resilfood.be/",
       },
       {
