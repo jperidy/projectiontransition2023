@@ -743,20 +743,20 @@ export const films: Film[] = [
         day: DAYS.JEUDI_23_11,
         moment: "18h30",
         debatMoment: "20h45",
-        animator: "",
+        animator: "Pascalina Suciu, Pédagogue par la nature et musicienne",
         participants: [
+          {
+            name: "Pierre-Alexandre Klein",
+            description:
+              'Co fondateur Tiers Lieu "l\'arbre qui pousse" à Ottignies',
+          },
           {
             name: "Pierre LARROUTUROU",
             description: "Parlementaire européen",
           },
           {
-            name: "Pierre-Alexandre Klein",
-            description:
-              'Co fondateur Tiers Lieu "l\'arbre qui pousse" à Ottignie',
-          },
-          {
             name: "Valérie Zoydo",
-            description: "Storytelleuse du changement individuel et collectif",
+            description: "Storytelleuse du changement individuel et collectif, à l’initiative de l’Assemblée citoyenne des Imaginaires",
           }
         ],
         cinema: CINEMAS.BRUXELLES,
@@ -855,15 +855,19 @@ export const films: Film[] = [
         moment: "18h30",
         debatMoment: "20h30",
         animator:
-          "DEKEGELEER Gwenaëlle - journaliste, éditrice, présentatrice à la RTBF. Animatrice de «Alors on change !»",
+          "Adelaïde Charlier - Activiste pour le Climat et les Droits Humains",
         participants: [
+          {
+            name: "Maxime Lambrecht",
+            description: "Chargé de cours et médiateur scientifique en éthique du climat à l’Université Catholique de Louvain"
+          },
+          {
+            name: "Chloé Mikolajczak",
+            description: "Coordinatrice à Fossil Free Politics Campaign",
+          },
           {
             name: "Carine Thibaut",
             description: "Directrice générale Amnesty Belgique",
-          },
-          {
-            name: "Chloé mikolajczak",
-            description: "Coordinatrice à Fossil Free Politics Campaign",
           },
         ],
         cinema: CINEMAS.BRUXELLES,
@@ -999,7 +1003,7 @@ export const films: Film[] = [
         day: DAYS.MERCREDI_22_11,
         moment: "18h30",
         debatMoment: "20h30",
-        animator: "",
+        animator: "Vinz Kanté - Créateur du média Limit",
         participants: [
           {
             name: "Claire Baffert",
@@ -1007,14 +1011,14 @@ export const films: Film[] = [
               "Senior Water Policy Officer at WWF (European Policy Office)",
           },
           {
-            name: "Martin Oohse",
-            description:
-              "Responsable Maillage Bleu - Bruxelles Environnement",
-          },
-          {
             name: "Aurore Degré",
             description:
-              "Professeure d’hydrologie et de physique des sols (Gembloux Agro-Bio Tech)",
+              "Professeure d’hydrologie et de physique des sols à Gembloux Agro-Bio Tech",
+          },
+          {
+            name: "Martin Oohse",
+            description:
+              "Responsable Maillage Bleu à Bruxelles Environnement",
           },
         ],
         cinema: CINEMAS.BRUXELLES,

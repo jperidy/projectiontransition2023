@@ -34,6 +34,16 @@ export const partenairesSections: PartenaireSection[] = [
         logo: "2023/2023_ville-de-paris.webp",
         url: "https://www.paris.fr",
       },
+      {
+        name: "Commune d'Ixelles",
+        logo: "2023/2023_ixelles.webp",
+        url: "https://www.ixelles.be/site/index.php",
+      },
+      {
+        name: "Loterie nationale",
+        logo: "2023/2023_loterie_nationale.webp",
+        url: "https://www.loterie-nationale.be",
+      },
     ],
   },
   {
@@ -104,6 +114,26 @@ export const partenairesSections: PartenaireSection[] = [
         logo: "2023/2023_weforge.webp",
         url: "https://www.weforge.fr/office-angers/",
       },
+      {
+        name: "Coherence - Carbone strategy consulting",
+        logo: "2023/2023_coherence.webp",
+        url: "https://www.coherence-carbon-consulting.com/?lang=en",
+      },
+      {
+        name: "Neo&Nea",
+        logo: "2023/2023_neo_nea.webp",
+        url: "https://neoenea.be/"
+      },
+      {
+        name: "Resilfood",
+        logo: "2023/resilfood.webp",
+        url: "https://www.resilfood.be/",
+      },
+      {
+        name: "Triodos",
+        logo: "2023/2023_triodos.webp",
+        url: "https://www.triodos.be/"
+      },
     ],
   },
   {
@@ -124,6 +154,16 @@ export const partenairesSections: PartenaireSection[] = [
         name: "TV4Planet",
         logo: "2023/2023_tv4p.webp",
         url: "https://tv4planet.tv/",
+      },
+      {
+        name: "RTBF",
+        logo: "2023/2023_rtbf.webp",
+        url: "https://www.rtbf.be/",
+      },
+      {
+        name: "Imagine",
+        logo: "2023/2023_imagine.webp",
+        url: "https://www.imagine-magazine.com/",
       },
     ],
   },
@@ -190,6 +230,11 @@ export const partenairesSections: PartenaireSection[] = [
         logo: "2023/2023_utopia.webp",
         url: "http://www.cinemas-utopia.org/toulouse/",
       },
+      {
+        name: "Vendôme",
+        logo: "2023/2023_vendome.webp",
+        url: "http://www.cinema-vendome.be/",
+      }
     ],
   },
   {
