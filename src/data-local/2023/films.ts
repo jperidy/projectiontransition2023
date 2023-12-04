@@ -402,8 +402,12 @@ export const films: Film[] = [
           },
           {
             name: "Yannick Bourdin",
-            description: "",
-          }
+            description: "Co-Pilote de projets et de transformation",
+          },
+          {
+            name: "Anne-Charlotte Bonjean",
+            description: "Ingénieure réparabilité et Low Tech à l'ADEME",
+          },
         ],
         cinema: CINEMAS.ANGERS,
       },
@@ -487,6 +491,10 @@ export const films: Film[] = [
             description:
               "Formatrice aux enjeux écologiques & membre du collectif Pour un réveil écologique",
           },
+          {
+            name: "Mélanie Petit",
+            description: "Doctorante, chercheuse sur les facteurs favorisant les comportements pro-environnementaux",
+          },
         ],
         cinema: CINEMAS.LYON_LEONARD,
         ticketingRedirection:
@@ -543,8 +551,8 @@ export const films: Film[] = [
         animator: "Thierry Keller - Journaliste, essayiste, conférencier",
         participants: [
           {
-            name: "Anastasia Magat",
-            description: "Directrice adjointe de l'Institut Rousseau",
+            name: "Marie Chureau",
+            description: "Activiste à Youth For Climate",
           },
           {
             name: "Marion Robin",
@@ -635,6 +643,10 @@ export const films: Film[] = [
         animator:
           "Loup Espargilière - Co-fondateur et rédacteur en chef de Vert, le média",
         participants: [
+          {
+            name: "Fabrice Bonnifet",
+            description: "Directeur Développement Durable & QSE Groupe Bouygues et Président du Collège des Directeurs du Développement Durable (C3D)",
+          },
           {
             name: "Gabrielle Paoli ",
             description:
@@ -731,20 +743,20 @@ export const films: Film[] = [
         day: DAYS.JEUDI_23_11,
         moment: "18h30",
         debatMoment: "20h45",
-        animator: "",
+        animator: "Pascalina Suciu, Pédagogue par la nature et musicienne",
         participants: [
+          {
+            name: "Pierre-Alexandre Klein",
+            description:
+              'Co fondateur Tiers Lieu "l\'arbre qui pousse" à Ottignies',
+          },
           {
             name: "Pierre LARROUTUROU",
             description: "Parlementaire européen",
           },
           {
-            name: "Pierre-Alexandre Klein",
-            description:
-              'Co fondateur Tiers Lieu "l\'arbre qui pousse" à Ottignie',
-          },
-          {
             name: "Valérie Zoydo",
-            description: "Storytelleuse du changement individuel et collectif",
+            description: "Storytelleuse du changement individuel et collectif, à l’initiative de l’Assemblée citoyenne des Imaginaires",
           }
         ],
         cinema: CINEMAS.BRUXELLES,
@@ -777,16 +789,20 @@ export const films: Film[] = [
         animator: "Alexandre Florentin - Conseiller à la Ville de Paris",
         participants: [
           {
-            name: "Camille Brunel",
-            description: "Journaliste, écrivain, critique de cinéma",
-          },
-          {
             name: "Marc-André Selosse",
-            description: "Professeur du Muséum national d'Histoire naturelle, Paris",
+            description: "Professeur du Muséum d'Histoire naturelle",
           },
           {
             name: "Emanuele Coccia",
-            description: "Philosophe et maître de conférences à l'École des hautes études en sciences sociales",
+            description: "Philosophe et maître de conférences à l’EHESS",
+          },
+          {
+            name: "Pauline André-Dominguez",
+            description: "Chercheuse-doctorante sur les nouveaux récits de l’écologie et des mondes marins au sein de l’EHESS et du Museum national d’Histoire naturelle",
+          },
+          {
+            name: "Claire Nouvian",
+            description: "Fondatrice et directrice de l’association Bloom",
           },
         ],
         cinema: CINEMAS.PARIS,
@@ -839,15 +855,23 @@ export const films: Film[] = [
         moment: "18h30",
         debatMoment: "20h30",
         animator:
-          "DEKEGELEER Gwenaëlle - journaliste, éditrice, présentatrice à la RTBF. Animatrice de «Alors on change !»",
+          "Gwenaëlle Dekegeleer - Journaliste, éditrice, présentatrice à la RTBF et animatrice de « Alors on change !»",
         participants: [
+          {
+            name: "Adelaïde Charlier",
+            description: "Activiste pour le Climat et les Droits Humains"
+          },
+          {
+            name: "Maxime Lambrecht",
+            description: "Chargé de cours et médiateur scientifique en éthique du climat à l’Université Catholique de Louvain"
+          },
+          {
+            name: "Chloé Mikolajczak",
+            description: "Coordinatrice de la campagne Fossil Free Politics",
+          },
           {
             name: "Carine Thibaut",
             description: "Directrice générale Amnesty Belgique",
-          },
-          {
-            name: "Chloé mikolajczak",
-            description: "Coordinatrice à Fossil Free Politics Campaign",
           },
         ],
         cinema: CINEMAS.BRUXELLES,
@@ -983,7 +1007,7 @@ export const films: Film[] = [
         day: DAYS.MERCREDI_22_11,
         moment: "18h30",
         debatMoment: "20h30",
-        animator: "",
+        animator: "Vinz Kanté - Créateur du média Limit",
         participants: [
           {
             name: "Claire Baffert",
@@ -991,14 +1015,14 @@ export const films: Film[] = [
               "Senior Water Policy Officer at WWF (European Policy Office)",
           },
           {
-            name: "Martin Oohse",
-            description:
-              "Responsable Maillage Bleu - Bruxelles Environnement",
-          },
-          {
             name: "Aurore Degré",
             description:
-              "Professeure d’hydrologie et de physique des sols (Gembloux Agro-Bio Tech)",
+              "Professeure d’hydrologie et de physique des sols à Gembloux Agro-Bio Tech",
+          },
+          {
+            name: "Martin Oohse",
+            description:
+              "Responsable Maillage Bleu à Bruxelles Environnement",
           },
         ],
         cinema: CINEMAS.BRUXELLES,
