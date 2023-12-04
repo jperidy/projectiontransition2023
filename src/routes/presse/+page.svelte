@@ -1,5 +1,5 @@
 <script>
-  import { communiques, photos2022 } from "../../data-local/2023/presse";
+  import { communiques, photos2023 } from "../../data-local/2023/presse";
   import Container from "../../ui/Container.svelte";
   import Title from "../../ui/Title.svelte";
 </script>
@@ -17,17 +17,17 @@
         <li><a href={communique.href} download="">{communique.title}</a></li>
       {/each}
     </ul>
-    <h2>Photos 2022</h2>
+    <h2>Photos 2023</h2>
     <p>Retrouvez une sélection des photos officielles du festival :</p>
     <ul>
-      {#each photos2022 as photo}
+      {#each photos2023 as photo}
         <li><a href={photo.href} target="_blank">{photo.title}</a></li>
       {/each}
     </ul>
-    <h2>Bande-annonce 2021</h2>
+    <h2>Bande-annonce 2023</h2>
     <p>
-      Revivez la 2ème édition de Projection Transition à travers la <a
-        href="https://www.youtube.com/watch?v=TVfU66jOx9k"
+      Revivez la 4ème édition de Projection Transition à travers la <a
+        href="https://www.youtube.com/watch?v=SxB9j0tnHJk"
         target="_blank">bande-annonce</a
       >.
     </p>
