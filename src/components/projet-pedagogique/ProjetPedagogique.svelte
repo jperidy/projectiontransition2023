@@ -210,6 +210,9 @@
             target="_blank">page Youtube du festival</a
           >.
         </p>
+        <div class="download border-primary">
+          <a class="download-link text-primary" href="projet-pedagogique/FPT_2023_kitpeda_grandpublic.pdf" download=""><h5 class="m-auto">Télécharger le kit pédagogique</h5></a>
+        </div>
       </div>
     </div>
   </div>
@@ -246,5 +249,13 @@
   }
   a {
     color: white;
+  }
+
+  .download {
+    border: 1px solid;
+    padding: 4px 8px;
+  }
+  .download-link{
+    text-decoration: none;
   }
 </style>
